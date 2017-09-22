@@ -13,11 +13,6 @@ Wij hebben nog een aantal specifieke vragen. Kunt u hier expliciet naar kijken? 
 De catalogus is benaderbaar via:
 - [BRO gegevenscatalogus Mijnbouwwetvergunning][2] 
 
-Voor de consultatie van de overige BRO gegevenscatalogi zijn er aparte pagina's:
-- [Consultatie BRO Grondwatermonitoringput][6]
-- [Consultatie Geotechnisch Sondeeronderzoek][5]
-- [Consultatie BRO Booronderzoek][8]
-
 Opmerkingen en vragen moeten in het Github platform middels issues worden geplaatst. 
 
 Bij het aanmaken van het issue dienen de volgende gegevens te worden opgenomen:
