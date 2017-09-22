@@ -48,5 +48,5 @@ Volg de onderstaande stappen om de gegevenscatalogus te reviewen:
 [4]: https://github.com/join
 [5]: https://github.com/BROprogramma/geotechnischsondeeronderzoek
 [6]: https://github.com/BROprogramma/grondwatermonitoringput
-[7]: https://github.com/BROprogramma/booronderzoek/issues/1
+[7]: https://github.com/BROprogramma/EPL/issues/2
 [8]: https://github.com/BROprogramma/BHR-P
