@@ -4,7 +4,7 @@ Repository voor open consultatie van de BRO gegevenscatalogus Mijnbouwwetvergunn
 # Consultatie toelichting: how to
 De Basisregistratie Ondergrond is in ontwikkeling. Via deze site kan er actief meegedacht worden en op de documentatie worden gereageerd.  Vanaf december 2016 is er via deze site een consultatie van een aantal gegevenscatalogi van de BRO. Voor attendering van stakeholders is er een emailnotificatie.
 
-De BRO gegevenscatalogus 'Mijnbouwwetvergunning' is vanaf 22 september 2017 in consultatie. De consultatietermijn eindigt 20 oktober 2017 
+De BRO gegevenscatalogus 'Mijnbouwwetvergunning' is vanaf 22 september 2017 in consultatie. De consultatietermijn eindigt 20 oktober 2017. 
 
 Het registratieobject mijnbouwwetvergunning beschrijft het recht op het uitvoeren van bepaalde mijnbouwactiviteiten in een bepaald gebied en volgt de terminologie van de mijnbouwwet die dit allemaal regelt. De activiteiten waar het over gaat zijn het opsporen van delfstoffen, aardwarmte, en CO2-opslagcomplexen, het winnen van delfstoffen en aardwarmte, en het opslaan van stoffen en het permanent opslaan van CO2 in de ondergrond.
 
