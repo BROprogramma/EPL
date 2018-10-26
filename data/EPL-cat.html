@@ -1,10 +1,10 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "brocommon conceptueel MIM" door Imvertor 1.47.5 op October 22, 2018 at 09:58:40.
+   "brocommon conceptueel MIM" door Imvertor 1.47.6 op October 26, 2018 at 07:43:58.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-brocommonconceptueelMIM-1.0-1-20181003-20181022-115842"</i> door. 
+   <i>"Conceptualmodel-brocommonconceptueelMIM-1.0-1-20181003-20181026-094400"</i> door. 
    
 </p>
 <section id="">
@@ -562,18 +562,18 @@
             </tr>
             <tr>
                <th>Definitie</th>
-               <td>De identificatie van een object in de registratie ondergrond.</td>
+               <td>De identificatie van een registratieobject in de registratie ondergrond.</td>
             </tr>
             <tr>
                <th>Toelichting</th>
-               <td>Opbouw: BHRNNNNNNNNNNNN
+               <td>Opbouw: [BRO-mnemonic]NNNNNNNNNNNN
                   De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
                   het object toe.
                </td>
             </tr>
             <tr>
                <th>Patroon</th>
-               <td>BHRNNNNNNNNNNNN</td>
+               <td>[BRO-mnemonic]NNNNNNNNNNNN</td>
             </tr>
          </tbody>
       </table>
@@ -724,23 +724,17 @@
       <tbody>
          <tr>
             <th><a class="anchor" name="global_class_DomeinmodelBrocommon_CoRdinaattransformatie"></a><a class="link" href="#detail_class_DomeinmodelBrocommon_CoRdinaattransformatie">Coördinaattransformatie</a></th>
-            <td>Keuzelijst met de methode die de basisregistratie ondergrond heeft gebruikt voor het
-               omzetten van de aangeleverde begrenzing. De lijst met waarden is een uitbreidbare
-               opsomming van waarden.
+            <td>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van
+               de aangeleverde coördinaten.
             </td>
          </tr>
          <tr>
             <th><a class="anchor" name="global_class_DomeinmodelBrocommon_Referentiestelsel"></a><a class="link" href="#detail_class_DomeinmodelBrocommon_Referentiestelsel">Referentiestelsel</a></th>
-            <td>Systeem voor het uitdrukken van een plaats op het aardoppervlak, zijnde een punt,
-               een lijn of een vlak. De lijst met toegestane waarden is een uitbreidbare opsomming
-               van waarden.
-            </td>
+            <td>Het referentiestelsel van de aangeleverde coördinaten.</td>
          </tr>
          <tr>
             <th><a class="anchor" name="global_class_DomeinmodelBrocommon_Registratiestatus"></a><a class="link" href="#detail_class_DomeinmodelBrocommon_Registratiestatus">Registratiestatus</a></th>
-            <td>Keuzelijst met de actuele fase van registratie waarin het object zich bevindt. De
-               lijst met waarden is een uitbreidbare opsomming van waarden.
-            </td>
+            <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
          </tr>
       </tbody>
    </table>
@@ -767,14 +761,11 @@
          </tr>
          <tr>
             <th><a class="anchor" name="global_class_DomeinmodelBrocommon_Kwaliteitsregime"></a><a class="link" href="#detail_class_DomeinmodelBrocommon_Kwaliteitsregime">Kwaliteitsregime</a></th>
-            <td>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden
-               voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding
-               van de keuzelijst is niet mogelijk.
-            </td>
+            <td>De aanduiding van de kwaliteitseis waaraan de gegevens van het registratieobject voldoen.</td>
          </tr>
          <tr>
             <th><a class="anchor" name="global_class_DomeinmodelBrocommon_RedenGeenWaarde"></a><a class="link" href="#detail_class_DomeinmodelBrocommon_RedenGeenWaarde">RedenGeenWaarde</a></th>
-            <td>TODO</td>
+            <td>Geen datum bekend, met als vaste waarde onbekend.</td>
          </tr>
       </tbody>
    </table>
@@ -1260,9 +1251,8 @@
          <tbody>
             <tr>
                <th>Definitie</th>
-               <td>Keuzelijst met de methode die de basisregistratie ondergrond heeft gebruikt voor het
-                  omzetten van de aangeleverde begrenzing. De lijst met waarden is een uitbreidbare
-                  opsomming van waarden.
+               <td>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van
+                  de aangeleverde coördinaten.
                </td>
             </tr>
          </tbody>
@@ -1303,12 +1293,21 @@
             <tr>
                <td></td>
                <td>7parameterTransformatie</td>
-               <td>TODO</td>
+               <td>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
+                  transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
+                  en zijn tijdsafhankelijk. Voor elk jaar is een parameterset beschikbaar voor de berekening
+                  van coördinaten in ETRS89 in Nederland, waarna een transformatieprocedure naar de
+                  juiste dag volgt.
+               </td>
             </tr>
             <tr>
                <td></td>
                <td>7parameterTransformatie1989</td>
-               <td>TODO</td>
+               <td>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
+                  transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
+                  en zijn tijdsafhankelijk. Bij transformatie is gebruik gemaakt van de parameterset
+                  1989.0.
+               </td>
             </tr>
          </tbody>
       </table>
@@ -1323,10 +1322,7 @@
          <tbody>
             <tr>
                <th>Definitie</th>
-               <td>Systeem voor het uitdrukken van een plaats op het aardoppervlak, zijnde een punt,
-                  een lijn of een vlak. De lijst met toegestane waarden is een uitbreidbare opsomming
-                  van waarden.
-               </td>
+               <td>Het referentiestelsel van de aangeleverde coördinaten.</td>
             </tr>
          </tbody>
       </table>
@@ -1344,17 +1340,17 @@
             <tr>
                <td></td>
                <td>ETRS89</td>
-               <td></td>
+               <td>European Terrestrial Reference System 1989 (EPSG 4258).</td>
             </tr>
             <tr>
                <td></td>
                <td>RD</td>
-               <td></td>
+               <td>Rijks Driehoeksmeting ? Amersfoort RD New (EPSG 28992).</td>
             </tr>
             <tr>
                <td></td>
                <td>WGS84</td>
-               <td></td>
+               <td>World Geodetic System 1984 (EPSG 4326).</td>
             </tr>
          </tbody>
       </table>
@@ -1369,9 +1365,7 @@
          <tbody>
             <tr>
                <th>Definitie</th>
-               <td>Keuzelijst met de actuele fase van registratie waarin het object zich bevindt. De
-                  lijst met waarden is een uitbreidbare opsomming van waarden.
-               </td>
+               <td>De actuele fase van registratie waarin het registratieobject zich bevindt.</td>
             </tr>
          </tbody>
       </table>
@@ -1509,10 +1503,7 @@
          <tbody>
             <tr>
                <th>Definitie</th>
-               <td>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden
-                  voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding
-                  van de keuzelijst is niet mogelijk.
-               </td>
+               <td>De aanduiding van de kwaliteitseis waaraan de gegevens van het registratieobject voldoen.</td>
             </tr>
          </tbody>
       </table>
@@ -1554,7 +1545,7 @@
          <tbody>
             <tr>
                <th>Definitie</th>
-               <td>TODO</td>
+               <td>Geen datum bekend, met als vaste waarde onbekend.</td>
             </tr>
          </tbody>
       </table>

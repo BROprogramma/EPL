@@ -3,8 +3,8 @@
       subpath="Conceptual model/brocommon conceptueel MIM/20181003"
       type="BASISMODEL"
       id="EAPK_8318B8D6_C62C_44fe_9F24_6FD4E2FAE6BB"
-      generator-version="1.47.5"
-      generator-date="2018-10-22T09:58:40Z">
+      generator-version="1.47.6"
+      generator-date="2018-10-26T07:43:58Z">
    <section type="DOMAIN"
             name="Domeinmodel brocommon"
             id="global_package_DomeinmodelBrocommon"><!--removed empty content-->
@@ -429,16 +429,16 @@ Wanneer een attribuut een domein van het type meetwaarde heeft wordt de opbouw, 
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>De identificatie van een object in de registratie ondergrond.</item>
+                  <item>De identificatie van een registratieobject in de registratie ondergrond.</item>
                </part>
                <part type="CFG-DOC-TOELICHTING">
                   <item>Toelichting</item>
-                  <item>Opbouw: BHRNNNNNNNNNNNN
+                  <item>Opbouw: [BRO-mnemonic]NNNNNNNNNNNN
 De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan het object toe.</item>
                </part>
                <part type="CFG-DOC-PATROON">
                   <item>Patroon</item>
-                  <item>BHRNNNNNNNNNNNN</item>
+                  <item>[BRO-mnemonic]NNNNNNNNNNNN</item>
                </part>
             </content>
          </section>
@@ -533,19 +533,19 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <item id="global_class_DomeinmodelBrocommon_CoRdinaattransformatie"
                      uuid="EAID_9AB6D7EA_36A4_4131_B20F_FB856F9B6769"
                      idref="detail_class_DomeinmodelBrocommon_CoRdinaattransformatie">Coördinaattransformatie</item>
-               <item>Keuzelijst met de methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde begrenzing. De lijst met waarden is een uitbreidbare opsomming van waarden.</item>
+               <item>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde coördinaten.</item>
             </part>
             <part>
                <item id="global_class_DomeinmodelBrocommon_Referentiestelsel"
                      uuid="EAID_F1F72F9A_8B56_4146_993F_9BF427052710"
                      idref="detail_class_DomeinmodelBrocommon_Referentiestelsel">Referentiestelsel</item>
-               <item>Systeem voor het uitdrukken van een plaats op het aardoppervlak, zijnde een punt, een lijn of een vlak. De lijst met toegestane waarden is een uitbreidbare opsomming van waarden.</item>
+               <item>Het referentiestelsel van de aangeleverde coördinaten.</item>
             </part>
             <part>
                <item id="global_class_DomeinmodelBrocommon_Registratiestatus"
                      uuid="EAID_44F4C2C3_523E_4e1d_9B3B_962AC6423223"
                      idref="detail_class_DomeinmodelBrocommon_Registratiestatus">Registratiestatus</item>
-               <item>Keuzelijst met de actuele fase van registratie waarin het object zich bevindt. De lijst met waarden is een uitbreidbare opsomming van waarden.</item>
+               <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
             </part>
          </content>
       </section>
@@ -567,13 +567,13 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <item id="global_class_DomeinmodelBrocommon_Kwaliteitsregime"
                      uuid="EAID_C6427646_36DA_4473_AE8D_33AB4BB93E72"
                      idref="detail_class_DomeinmodelBrocommon_Kwaliteitsregime">Kwaliteitsregime</item>
-               <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding van de keuzelijst is niet mogelijk.</item>
+               <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het registratieobject voldoen.</item>
             </part>
             <part>
                <item id="global_class_DomeinmodelBrocommon_RedenGeenWaarde"
                      uuid="EAID_A04CDAFA_6A90_4771_9CA1_A1F49E24151C"
                      idref="detail_class_DomeinmodelBrocommon_RedenGeenWaarde">RedenGeenWaarde</item>
-               <item>TODO</item>
+               <item>Geen datum bekend, met als vaste waarde onbekend.</item>
             </part>
          </content>
       </section>
@@ -996,7 +996,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Keuzelijst met de methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde begrenzing. De lijst met waarden is een uitbreidbare opsomming van waarden.</item>
+                     <item>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde coördinaten.</item>
                   </part>
                </content>
                <content>
@@ -1021,12 +1021,12 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                   <part>
                      <item/>
                      <item>7parameterTransformatie</item>
-                     <item>TODO</item>
+                     <item>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie en zijn tijdsafhankelijk. Voor elk jaar is een parameterset beschikbaar voor de berekening van coördinaten in ETRS89 in Nederland, waarna een transformatieprocedure naar de juiste dag volgt.</item>
                   </part>
                   <part>
                      <item/>
                      <item>7parameterTransformatie1989</item>
-                     <item>TODO</item>
+                     <item>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie en zijn tijdsafhankelijk. Bij transformatie is gebruik gemaakt van de parameterset 1989.0.</item>
                   </part>
                </content>
             </section>
@@ -1038,7 +1038,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Systeem voor het uitdrukken van een plaats op het aardoppervlak, zijnde een punt, een lijn of een vlak. De lijst met toegestane waarden is een uitbreidbare opsomming van waarden.</item>
+                     <item>Het referentiestelsel van de aangeleverde coördinaten.</item>
                   </part>
                </content>
                <content>
@@ -1048,17 +1048,17 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                   <part>
                      <item/>
                      <item>ETRS89</item>
-                     <item/>
+                     <item>European Terrestrial Reference System 1989 (EPSG 4258).</item>
                   </part>
                   <part>
                      <item/>
                      <item>RD</item>
-                     <item/>
+                     <item>Rijks Driehoeksmeting ? Amersfoort RD New (EPSG 28992).</item>
                   </part>
                   <part>
                      <item/>
                      <item>WGS84</item>
-                     <item/>
+                     <item>World Geodetic System 1984 (EPSG 4326).</item>
                   </part>
                </content>
             </section>
@@ -1070,7 +1070,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Keuzelijst met de actuele fase van registratie waarin het object zich bevindt. De lijst met waarden is een uitbreidbare opsomming van waarden.</item>
+                     <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
                   </part>
                </content>
                <content>
@@ -1163,7 +1163,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden voor het duiden van de kwaliteitseis waaraan de gegevens van het object voldoen. Uitbreiding van de keuzelijst is niet mogelijk.</item>
+                     <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het registratieobject voldoen.</item>
                   </part>
                </content>
                <content>
@@ -1190,7 +1190,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>TODO</item>
+                     <item>Geen datum bekend, met als vaste waarde onbekend.</item>
                   </part>
                </content>
                <content>
