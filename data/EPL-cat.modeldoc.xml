@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_8318B8D6_C62C_44fe_9F24_6FD4E2FAE6BB"
       generator-version="1.47.6"
-      generator-date="2018-10-26T08:15:58Z">
+      generator-date="2018-11-12T10:28:22Z">
    <section type="DOMAIN"
             name="Domeinmodel brocommon"
             id="global_package_DomeinmodelBrocommon"><!--removed empty content-->
@@ -429,7 +429,7 @@ Wanneer een attribuut een domein van het type meetwaarde heeft wordt de opbouw, 
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>De identificatie van een registratieobject in de registratie ondergrond.</item>
+                  <item>De identificatie van een object in de registratie ondergrond.</item>
                </part>
                <part type="CFG-DOC-TOELICHTING">
                   <item>Toelichting</item>
