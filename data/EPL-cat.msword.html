@@ -1,7 +1,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Conceptual model/brocommon conceptueel MIM/20191209</title><style>
+      <title>Conceptual model/Sample1/20200127</title><style>
                     table tbody tr th,
                     table tbody tr td {text-align: left; vertical-align: top;} 
                     
@@ -11,9 +11,9 @@
                     table.list tbody tr td {border: 1px solid black;}
                 </style></head>
    <body>
-      <p>Conceptual model/brocommon conceptueel MIM/20191209</p>
-      <p>Imvertor: 1.56.2</p>
-      <p>Model release: Conceptualmodel-brocommonconceptueelMIM-1.0-1-20191209-20191209-155427</p>
+      <p>Conceptual model/Sample1/20200127</p>
+      <p>Imvertor: 1.58.0</p>
+      <p>Model release: Conceptualmodel-Sample1-1.0-1-20200127-20200131-090954</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -23,7 +23,7 @@
          </section>
          <section>
             <h2>Registratieobject</h2>
-            <section id="global_class_DomeinmodelBrocommon_Registratieobject">
+            <section id="global_class_Sample1_Registratieobject">
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -41,10 +41,19 @@
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Een entititeit met het geheel van generieke gegevens die voorkomen bij alle verschillende
-                              soorten registratieobjecten in de basisregistratie ondergrond (BRO).
+                           <p>Het geheel van gegevens dat betrekking heeft op een wandonderzoek dat vanuit een bepaalde
+                              opdracht is uitgevoerd door op een bepaald moment op een bepaalde locatie in Nederland
+                              een wand in de bodem te maken, de wand te beschrijven of te bemonsteren en de monsters
+                              te onderzoeken.
                            </p>
                            
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>Populatie</th>
+                        <td>De populatie wandonderzoeken in de registratie ondergrond omvat alleen de onderzoeken
+                           die vanuit het vakgebied van de bodemkunde worden uitgevoerd. De huidige gegevensdefinitie
+                           beperkt zich tot de wandbeschrijving.
                         </td>
                      </tr>
                   </tbody>
@@ -54,8 +63,8 @@
          </section>
          <section>
             <h2>Entiteiten en attributen</h2>
-            <section id=""><a class="anchor" id="graph_EAID_42468102_48FA_417d_B6D7_3BA469C87528"></a><section id="global_class_DomeinmodelBrocommon_Datuminterval">
-                  <h3>   Datuminterval</h3>
+            <section id=""><a class="anchor" id="graph_EAID_6CE68CCC_91B5_420c_9785_B856D55BDB32"></a><a class="anchor" id="global_class_Sample1_Markdowntest"></a><section id="global_class_Sample1_Markdowntest">
+                  <h3>   markdowntest</h3>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -68,133 +77,19 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Periode aangegeven door een begindatum en einddatum.</p>
-                              
-                           </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>De periode is inclusief de begindatum en de eindatum (vanaf / tot en met).</p>
-                              
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Datuminterval_begindatum">
-                     <h4>  begindatum</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Datuminterval</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Oudste datum (kleinste waarde) van een periode.</p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Datum</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Datuminterval_einddatum">
-                     <h4>  einddatum</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Datuminterval</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Jongste datum (grootste waarde) van een periode.</p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Datum</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-               </section><a class="anchor" id="graph_EAID_D3997E8C_3F03_4380_9426_82CEDA1A24A6"></a><section id="global_class_DomeinmodelBrocommon_GestandaardiseerdeLocatie">
-                  <h3>   Gestandaardiseerde locatie</h3>
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Type gegeven</th>
-                           <td>Entiteit</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De gegevens over de plaats van het registratieobject op het aardoppervlak zoals die
-                                 door de basisregistratie ondergrond zijn getransformeerd.
+                              <p>Water formuleren we als H<sub>2</sub>O.
+                                 Daarin zit geen CO<sup>2</sup>.
                               </p>
                               
-                           </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>De gegevens staan niet in een brondocument. De gestandaardiseerde locatie wordt door
-                                 de basisregistratie ondergrond berekend ten behoeve van afnemers. Het maakt het mogelijk
-                                 alle gegevens in de registratie ondergrond in een en hetzelfde referentiestelsel te
-                                 ontsluiten.
+                              <p>De volgende tekst is met de sub- en supertekst buttons van EA Element Notes
+                                 Water formuleren we als H<sub>2</sub>O. Daarin zit geen CO<sup>2</sup>
+                                 
                               </p>
                               
                            </td>
                         </tr>
                      </tbody>
-                  </table>
-                  <section id="detail_attribute_DomeinmodelBrocommon_GestandaardiseerdeLocatie_coRdinaten">
+                  </table><a class="anchor" id="detail_attribute_Sample1_Markdowntest_coRdinaten"></a><section id="detail_attribute_Sample1_Markdowntest_coRdinaten">
                      <h4>  coördinaten</h4>
                      
                      <table style="width: 100%;">
@@ -203,13 +98,13 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Gestandaardiseerde locatie</td>
+                              <td>Attribuut van markdowntest</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De coördinaten in het standaard referentiestelsel.</p>
+                                 <p>De coördinaten die zijn aangeleverd.</p>
                                  
                               </td>
                            </tr>
@@ -227,13 +122,22 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Coordinatenpaar</td>
+                              <td>CHARACTERSTRING</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>De locatie ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
+                                    
+                                 </p>
+                                 
+                              </td>
                            </tr>
                         </tbody>
                      </table>
                      
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_GestandaardiseerdeLocatie_referentiestelsel">
+                  </section><a class="anchor" id="detail_attribute_Sample1_Markdowntest_referentiestelsel"></a><section id="detail_attribute_Sample1_Markdowntest_referentiestelsel">
                      <h4>  referentiestelsel</h4>
                      
                      <table style="width: 100%;">
@@ -242,13 +146,13 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Gestandaardiseerde locatie</td>
+                              <td>Attribuut van markdowntest</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het referentiestelsel van de gestandaardiseerde coördinaten.</p>
+                                 <p>Het referentiestelsel van de aangeleverde coördinaten.</p>
                                  
                               </td>
                            </tr>
@@ -266,55 +170,24 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Referentiestelsel</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_GestandaardiseerdeLocatie_coRdinaattransformatie">
-                     <h4>  coördinaattransformatie</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Gestandaardiseerde locatie</td>
+                              <td>Integer</td>
                            </tr>
                            <tr>
-                              <th>Definitie</th>
+                              <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van
-                                    de aangeleverde coördinaten.
+                                 <p>De locatie ligt aan de landzijde van de UNCLOS-basislijn en de coördinaten zijn  gedefinieerd
+                                    in RD of ETRS89.
                                  </p>
                                  
                               </td>
                            </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Coördinaattransformatie</td>
-                           </tr>
                         </tbody>
                      </table>
                      
                   </section>
-               </section><a class="anchor" id="graph_EAID_3765877B_973F_49ce_8F06_EAA04060ED1F"></a><section id="global_class_DomeinmodelBrocommon_Registratiegeschiedenis">
-                  <h3>   Registratiegeschiedenis</h3>
+               </section><a class="anchor" id="graph_EAID_95D9873F_E7B3_4cca_B7EC_78E395325456"></a><a class="anchor" id="global_class_Sample1_AangeleverdeLocatie"></a><section id="global_class_Sample1_AangeleverdeLocatie">
+                  <h3>   Aangeleverde locatie</h3>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -327,7 +200,9 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De gegevens die de geschiedenis van het object in de registratie ondergrond markeren.</p>
+                              <p>De gegevens over de plaats van het wandonderzoek op het aardoppervlak, zoals die zijn
+                                 aangeleverd aan de basisregistratie ondergrond.
+                              </p>
                               
                            </td>
                         </tr>
@@ -335,16 +210,15 @@
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>De gegevens staan niet in een brondocument maar worden automatisch door de basisregistratie
-                                 ondergrond gegenereerd.
+                              <p>De locatie van wandonderzoek is gedefinieerd als een punt. Het punt dat wordt opgenomen
+                                 is het punt waar de beschrijflijn van de wand is gedefinieerd. 
                               </p>
                               
                            </td>
                         </tr>
                      </tbody>
-                  </table>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipRegistratieObject">
-                     <h4>  tijdstip registratie object</h4>
+                  </table><a class="anchor" id="detail_attribute_Sample1_AangeleverdeLocatie_coRdinaten"></a><section id="detail_attribute_Sample1_AangeleverdeLocatie_coRdinaten">
+                     <h4>  coördinaten</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -352,21 +226,19 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
+                              <td>Attribuut van Aangeleverde locatie</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum en het tijdstip waarop er voor het eerst gegevens van het object in de registratie
-                                    ondergrond zijn opgenomen.
-                                 </p>
+                                 <p>De coördinaten die zijn aangeleverd.</p>
                                  
                               </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
-                              <td>Overig</td>
+                              <td>Authentiek</td>
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
@@ -378,155 +250,14 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_registratiestatus">
-                     <h4>  registratiestatus</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De actuele fase van registratie waarin het registratieobject zich bevindt.</p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Registratiestatus</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipLaatsteAanvulling">
-                     <h4>  tijdstip laatste aanvulling</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
-                                    ondergrond is doorgevoerd.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Het gegeven is alleen aanwezig wanneer na de registratie van een deelonderzoek ander
-                                    deelonderzoek is vastgelegd.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipVoltooiingRegistratie">
-                     <h4>  tijdstip voltooiing registratie</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
-                                    zijn opgenomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
+                              <td>CHARACTERSTRING</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het gegeven is alleen aanwezig wanneer de <em>registratiestatus</em> de waarde <em>voltooid</em> heeft. 
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Het gegeven is alleen aanwezig als alle aan te leveren gegevens zijn geregistreerd.
-                                    Na dit tijdstip kunnen geen nieuwe gegevens meer ter registratie worden aangeboden.
-                                    Wel kunnen fouten in de registratie worden verbeterd.
+                                 <p>De locatie ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
+                                    
                                  </p>
                                  
                               </td>
@@ -534,9 +265,8 @@
                         </tbody>
                      </table>
                      
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_gecorrigeerd">
-                     <h4>  gecorrigeerd</h4>
+                  </section><a class="anchor" id="detail_attribute_Sample1_AangeleverdeLocatie_referentiestelsel"></a><section id="detail_attribute_Sample1_AangeleverdeLocatie_referentiestelsel">
+                     <h4>  referentiestelsel</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -544,21 +274,19 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
+                              <td>Attribuut van Aangeleverde locatie</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft of er een verbetering in de gegevens van het object in
-                                    de registratie ondergrond heeft plaatsgevonden.
-                                 </p>
+                                 <p>Het referentiestelsel van de aangeleverde coördinaten.</p>
                                  
                               </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
-                              <td>Overig</td>
+                              <td>Authentiek</td>
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
@@ -570,382 +298,14 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipLaatsteCorrectie">
-                     <h4>  tijdstip laatste correctie</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop de laatste correctie in de gegevens van het registratieobject
-                                    is doorgevoerd.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                                    attribuut <em>gecorrigeerd</em>. 
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_inOnderzoek">
-                     <h4>  in onderzoek</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De aanduiding die aangeeft of het registratieobject door de registerbeheerder in onderzoek
-                                    is genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
+                              <td>Integer</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Wanneer een registratieobject in onderzoek is genomen betekent dit dat er bij de registerbeheerder
-                                    gerede twijfel bestaat over de juistheid van de geregistreerde gegevens en dat er
-                                    een onderzoek is gestart om vast te stellen wat de juiste gegevens zijn. Normaliter
-                                    gaat hieraan een melding van derden vooraf. 
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_inOnderzoekSinds">
-                     <h4>  in onderzoek sinds</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop de registerbeheerder het registratieobject in onderzoek
-                                    heeft genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                                    attribuut <em>in onderzoek</em>.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_uitRegistratieGenomen">
-                     <h4>  uit registratie genomen</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De aanduiding die aangeeft of de gegevens van het registratieobject door de registerbeheerder
-                                    uit registratie zijn genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Wanneer de registerbeheerder een registratieobject uit registratie heeft genomen,
-                                    zijn de gegevens niet langer beschikbaar voor andere afnemers dan bronhouder en dataleverancier.
-                                    De registerbeheerder zal een registratieobject alleen bij hoge uitzondering uit registratie
-                                    nemen en alleen na akkoord van de bronhouder. Aan de beslissing gaat een proces van
-                                    zorgvuldige afweging vooraf en dat komt tot uitdrukking in de regel dat een registratieobject
-                                    slechts een keer uit registratie kan worden genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipUitRegistratieGenomen">
-                     <h4>  tijdstip uit registratie genomen</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop het registratieobject uit registratie is genomen.</p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                                    attribuut <em>uit registratie genomen</em>. 
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_weerInRegistratieGenomen">
-                     <h4>  weer in registratie genomen</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De aanduiding die aangeeft of het object in de registratie ondergrond is opgenomen,
-                                    nadat het eerder uit registratie was genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>IndicatieJaNee</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Type</th>
-                              <td>Waardelijst niet uitbreidbaar</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De registerbeheerder kan een registratieobject eenmalig uit registratie nemen, en
-                                    die actie kan hij eenmalig ongedaan maken. Ook hiervoor geldt dat akkoord van de bronhouder
-                                    vereist is.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                  </section>
-                  <section id="detail_attribute_DomeinmodelBrocommon_Registratiegeschiedenis_tijdstipWeerInRegistratieGenomen">
-                     <h4>  tijdstip weer in registratie genomen</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Registratiegeschiedenis</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen,
-                                    nadat het uit registratie was genomen.
-                                 </p>
-                                 
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Overig</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>DatumTijd</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>Het al dan niet aanwezig zijn van het gegeven wordt bepaald door de waarde van het
-                                    attribuut <em>weer in registratie genomen</em>. 
+                                 <p>De locatie ligt aan de landzijde van de UNCLOS-basislijn en de coördinaten zijn  gedefinieerd
+                                    in RD of ETRS89.
                                  </p>
                                  
                               </td>
@@ -960,310 +320,6 @@
       </section>
       <section>
          <h1>Artikel 2 Beschrijving van uitbreidbare waardelijsten    </h1>
-         <section id="detail_class_DomeinmodelBrocommon_CoRdinaattransformatie">
-            <h3>  Coördinaattransformatie</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>Definitie</td>
-                     <td>
-                        
-                        <p>De lijst met de methoden waarmee de coördinaten zijn omgezet.</p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>nietGetransformeerd</td>
-                     <td>
-                        
-                        <p>De gegevens zijn aangeleverd in ETRS89; transformatie was niet nodig.</p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>RDNAPTRANS2008</td>
-                     <td>
-                        
-                        <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                           RDNAPTRANS™, versie 2008. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                           en ETRS89 afkomstig van het Kadaster.
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>RDNAPTRANS2008MV0</td>
-                     <td>
-                        
-                        <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                           RDNAPTRANS™, versie 2008. De positie van het aardoppervlak is onbekend, bij transformatie
-                           is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                           en ETRS89 afkomstig van het Kadaster.
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>7parameterTransformatie</td>
-                     <td>
-                        
-                        <p>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
-                           transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
-                           en zijn tijdsafhankelijk. Voor elk jaar is een parameterset beschikbaar voor de berekening
-                           van coördinaten in ETRS89 in Nederland, waarna een transformatieprocedure naar de
-                           juiste dag volgt. 
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>7parameterTransformatie1989</td>
-                     <td>
-                        
-                        <p>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
-                           transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
-                           en zijn tijdsafhankelijk. Bij transformatie is gebruik gemaakt van de parameterset
-                           1989.0.
-                        </p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         <section id="detail_class_DomeinmodelBrocommon_Referentiestelsel">
-            <h3>  Referentiestelsel</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>Definitie</td>
-                     <td>
-                        
-                        <p>De lijst met de referentiestelsels waarin de coördinaten zijn gedefinieerd.</p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>ETRS89</td>
-                     <td>
-                        
-                        <p>European Terrestrial Reference System 1989 (EPSG 4258).</p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>RD</td>
-                     <td>
-                        
-                        <p>Rijks Driehoeksmeting – Amersfoort RD New (EPSG 28992).</p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>WGS84</td>
-                     <td>
-                        
-                        <p>World Geodetic System 1984 (EPSG 4326).</p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         <section id="detail_class_DomeinmodelBrocommon_Registratiestatus">
-            <h3>  Registratiestatus</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>Definitie</td>
-                     <td>
-                        
-                        <p>De lijst met de statussen waarin het registratieobject zich bevindt.</p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>geregistreerd</td>
-                     <td>
-                        
-                        <p>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste
-                           brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe
-                           gegevens geregistreerd.
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>aangevuld</td>
-                     <td>
-                        
-                        <p>Het registeren van de gegevens van het object heeft na de start van de registratie
-                           een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer
-                           aangevuld met nieuwe gegevens.
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>voltooid</td>
-                     <td>
-                        
-                        <p>Het registeren van de gegevens van het object is voltooid. Alle gegevens zijn in de
-                           registratie ondergrond vastgelegd en er kunnen geen nieuwe gegevens meer worden geregistreerd.
-                        </p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         <section id="detail_class_DomeinmodelBrocommon_IndicatieJaNee">
-            <h3>Enumeratie details  IndicatieJaNee</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>Definitie</td>
-                     <td>
-                        
-                        <p>
-                           <em>zie inleiding catalogus</em>
-                           
-                        </p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>ja</td>
-                     <td>
-                        
-                        <p>Ja</p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>nee</td>
-                     <td>
-                        
-                        <p>Nee</p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
-         <section id="detail_class_DomeinmodelBrocommon_Kwaliteitsregime">
-            <h3>Enumeratie details  Kwaliteitsregime</h3>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <td>Definitie</td>
-                     <td>
-                        
-                        <p>
-                           <em>zie inleiding catalogus</em>
-                           
-                        </p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <table style="width: 100%;" class="list">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Waarde</th>
-                     <th>Omschrijving</th>
-                  </tr>
-                  <tr>
-                     <td>IMBRO</td>
-                     <td>
-                        
-                        <p>De strikte kwaliteitseis die na beëindiging van de transitieperiode geldt voor alle
-                           objecten die nadien geregistreerd zijn.
-                        </p>
-                        
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>IMBRO/A</td>
-                     <td>
-                        
-                        <p>De minder strikte kwaliteitseis die tot beëindiging van de transitieperiode gebruikt
-                           kan zijn.
-                        </p>
-                        
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-         </section>
       </section>
    </body>
 </html>
