@@ -1,7 +1,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Conceptual model/Sample1/20200127</title><style>
+      <title>Conceptual model/95 Gestructureerd datatype (SAMPLE1)/20190731</title><style>
                     table tbody tr th,
                     table tbody tr td {text-align: left; vertical-align: top;} 
                     
@@ -11,19 +11,15 @@
                     table.list tbody tr td {border: 1px solid black;}
                 </style></head>
    <body>
-      <p>Conceptual model/Sample1/20200127</p>
-      <p>Imvertor: 1.58.0</p>
-      <p>Model release: Conceptualmodel-Sample1-1.0-1-20200127-20200131-090954</p>
+      <p>Conceptual model/95 Gestructureerd datatype (SAMPLE1)/20190731</p>
+      <p>Imvertor: 1.59.3</p>
+      <p>Model release: Conceptualmodel-95GestructureerddatatypeSAMPLE1-1.0-1-20190731-20200401-171639</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
          <section>
-            <h2>Het domeinmodel</h2>
-            <section id=""></section>
-         </section>
-         <section>
             <h2>Registratieobject</h2>
-            <section id="global_class_Sample1_Registratieobject">
+            <section id="global_class_Model_Registratieobject">
                
                <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
@@ -31,30 +27,27 @@
                   <tbody>
                      <tr>
                         <th>Naam</th>
-                        <td></td>
+                        <td>Grondwatersamenstellingsonderzoek</td>
                      </tr>
                      <tr>
                         <th>Code</th>
-                        <td>EPL</td>
+                        <td>GAR</td>
                      </tr>
                      <tr>
                         <th>Definitie</th>
                         <td>
                            
-                           <p>Het geheel van gegevens dat betrekking heeft op een wandonderzoek dat vanuit een bepaalde
-                              opdracht is uitgevoerd door op een bepaald moment op een bepaalde locatie in Nederland
-                              een wand in de bodem te maken, de wand te beschrijven of te bemonsteren en de monsters
-                              te onderzoeken.
+                           <p>Het geheel van gegevens dat betrekking heeft op een grondwatersamenstellingsonderzoek
+                              dat vanuit een bepaalde opdracht is uitgevoerd door op een bepaald moment op een bepaalde
+                              locatie in Nederland metingen aan het grondwater uit te voeren en/of grondwatermonsters
+                              te nemen voor onderzoek in het laboratorium.
                            </p>
                            
                         </td>
                      </tr>
                      <tr>
                         <th>Populatie</th>
-                        <td>De populatie wandonderzoeken in de registratie ondergrond omvat alleen de onderzoeken
-                           die vanuit het vakgebied van de bodemkunde worden uitgevoerd. De huidige gegevensdefinitie
-                           beperkt zich tot de wandbeschrijving.
-                        </td>
+                        <td>Zie scope document.</td>
                      </tr>
                   </tbody>
                </table>
@@ -62,9 +55,13 @@
             </section>
          </section>
          <section>
+            <h2>Het domeinmodel</h2>
+            <section id=""></section>
+         </section>
+         <section>
             <h2>Entiteiten en attributen</h2>
-            <section id=""><a class="anchor" id="graph_EAID_6CE68CCC_91B5_420c_9785_B856D55BDB32"></a><a class="anchor" id="global_class_Sample1_Markdowntest"></a><section id="global_class_Sample1_Markdowntest">
-                  <h3>   markdowntest</h3>
+            <section id=""><a class="anchor" id="graph_EAID_6AFD7588_D576_4771_91E8_1604679A155B"></a><a class="anchor" id="global_class_Model_HetObject"></a><section id="global_class_Model_HetObject">
+                  <h3>   HetObject</h3>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -75,22 +72,11 @@
                         </tr>
                         <tr>
                            <th>Definitie</th>
-                           <td>
-                              
-                              <p>Water formuleren we als H<sub>2</sub>O.
-                                 Daarin zit geen CO<sup>2</sup>.
-                              </p>
-                              
-                              <p>De volgende tekst is met de sub- en supertekst buttons van EA Element Notes
-                                 Water formuleren we als H<sub>2</sub>O. Daarin zit geen CO<sup>2</sup>
-                                 
-                              </p>
-                              
-                           </td>
+                           <td>TODO</td>
                         </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_attribute_Sample1_Markdowntest_coRdinaten"></a><section id="detail_attribute_Sample1_Markdowntest_coRdinaten">
-                     <h4>  coördinaten</h4>
+                  </table><a class="anchor" id="detail_attribute_Model_HetObject_eigenschapWatEenDatatypeIs"></a><section id="detail_attribute_Model_HetObject_eigenschapWatEenDatatypeIs">
+                     <h4>  eigenschapWatEenDatatypeIs</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -98,15 +84,11 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van markdowntest</td>
+                              <td>Attribuut van HetObject</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De coördinaten die zijn aangeleverd.</p>
-                                 
-                              </td>
+                              <td>TODO</td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -122,23 +104,13 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>CHARACTERSTRING</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>De locatie ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
-                                    
-                                 </p>
-                                 
-                              </td>
+                              <td>EenGestructureerdDatatype</td>
                            </tr>
                         </tbody>
                      </table>
                      
-                  </section><a class="anchor" id="detail_attribute_Sample1_Markdowntest_referentiestelsel"></a><section id="detail_attribute_Sample1_Markdowntest_referentiestelsel">
-                     <h4>  referentiestelsel</h4>
+                  </section><a class="anchor" id="detail_attribute_Model_HetObject_eigenschapWatEenGegevensGroepIs"></a><section id="detail_attribute_Model_HetObject_eigenschapWatEenGegevensGroepIs">
+                     <h4>  eigenschapWatEenGegevensGroepIs</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -146,15 +118,11 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van markdowntest</td>
+                              <td>Attribuut van HetObject</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het referentiestelsel van de aangeleverde coördinaten.</p>
-                                 
-                              </td>
+                              <td>TODO</td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -170,24 +138,14 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Integer</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De locatie ligt aan de landzijde van de UNCLOS-basislijn en de coördinaten zijn  gedefinieerd
-                                    in RD of ETRS89.
-                                 </p>
-                                 
-                              </td>
+                              <td>EenGegevensgroepType</td>
                            </tr>
                         </tbody>
                      </table>
                      
                   </section>
-               </section><a class="anchor" id="graph_EAID_95D9873F_E7B3_4cca_B7EC_78E395325456"></a><a class="anchor" id="global_class_Sample1_AangeleverdeLocatie"></a><section id="global_class_Sample1_AangeleverdeLocatie">
-                  <h3>   Aangeleverde locatie</h3>
+               </section><a class="anchor" id="graph_EAID_DB5D59B1_0C61_4bc6_B475_7CA15EC86221"></a><a class="anchor" id="global_class_Model_EenGegevensgroepType"></a><section id="global_class_Model_EenGegevensgroepType">
+                  <h3>   EenGegevensgroepType</h3>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
                      <colgroup style="width: 70%;"></colgroup>
@@ -196,29 +154,9 @@
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
                         </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>De gegevens over de plaats van het wandonderzoek op het aardoppervlak, zoals die zijn
-                                 aangeleverd aan de basisregistratie ondergrond.
-                              </p>
-                              
-                           </td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>De locatie van wandonderzoek is gedefinieerd als een punt. Het punt dat wordt opgenomen
-                                 is het punt waar de beschrijflijn van de wand is gedefinieerd. 
-                              </p>
-                              
-                           </td>
-                        </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_attribute_Sample1_AangeleverdeLocatie_coRdinaten"></a><section id="detail_attribute_Sample1_AangeleverdeLocatie_coRdinaten">
-                     <h4>  coördinaten</h4>
+                  </table><a class="anchor" id="detail_attribute_Model_EenGegevensgroepType_startdatum"></a><section id="detail_attribute_Model_EenGegevensgroepType_startdatum">
+                     <h4>  startdatum</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -226,15 +164,11 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Aangeleverde locatie</td>
+                              <td>Attribuut van EenGegevensgroepType</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De coördinaten die zijn aangeleverd.</p>
-                                 
-                              </td>
+                              <td>TODO</td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -250,23 +184,13 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>CHARACTERSTRING</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>De locatie ligt in Nederland en aan de landzijde van de UNCLOS-basislijn.<br clear="none">
-                                    
-                                 </p>
-                                 
-                              </td>
+                              <td>Datum</td>
                            </tr>
                         </tbody>
                      </table>
                      
-                  </section><a class="anchor" id="detail_attribute_Sample1_AangeleverdeLocatie_referentiestelsel"></a><section id="detail_attribute_Sample1_AangeleverdeLocatie_referentiestelsel">
-                     <h4>  referentiestelsel</h4>
+                  </section><a class="anchor" id="detail_attribute_Model_EenGegevensgroepType_einddatum"></a><section id="detail_attribute_Model_EenGegevensgroepType_einddatum">
+                     <h4>  einddatum</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -274,15 +198,11 @@
                         <tbody>
                            <tr>
                               <th>Type gegeven</th>
-                              <td>Attribuut van Aangeleverde locatie</td>
+                              <td>Attribuut van EenGegevensgroepType</td>
                            </tr>
                            <tr>
                               <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>Het referentiestelsel van de aangeleverde coördinaten.</p>
-                                 
-                              </td>
+                              <td>TODO</td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -290,7 +210,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -298,17 +218,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Integer</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De locatie ligt aan de landzijde van de UNCLOS-basislijn en de coördinaten zijn  gedefinieerd
-                                    in RD of ETRS89.
-                                 </p>
-                                 
-                              </td>
+                              <td>Datum</td>
                            </tr>
                         </tbody>
                      </table>
