@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GeologischeEenheid>
+		<Waarde>basisAltenaGroep</Waarde>
+		<Code>AT</Code>
+		<Omschrijving>De basis van de Altena Groep (code AT). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Altena Group.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisChalkGroep</Waarde>
+		<Code>CK</Code>
+		<Omschrijving>De basis van de Chalk Groep (code CK). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Chalk Group.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisEpenFormatie</Waarde>
+		<Omschrijving>De basis van de Epen Formatie (code DCGE). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Epen Formation.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisHollandFormatie</Waarde>
+		<Omschrijving>De basis van de Holland Formatie (code KNGL). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Holland Formation.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisJura</Waarde>
+		<Omschrijving>De basis van het Jura. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Jurassic.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisLimburgGroep</Waarde>
+		<Omschrijving>De basis van de Limburg Groep (code DC). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Limburg Group.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisPerm</Waarde>
+		<Omschrijving>De basis van het Perm. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Permian.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisTrias</Waarde>
+		<Omschrijving>De basis van het Trias. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Triassic.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>basisVlielandKleisteenFormatie</Waarde>
+		<Omschrijving>De basis van de Vlieland Kleisteen Formatie (code KNNC). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Vlieland Claystone Formation.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topAltenaGroep</Waarde>
+		<Omschrijving>De top van de Altena Groep (code AT). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Altena Group.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topChalkGroep</Waarde>
+		<Omschrijving>De top van de Chalk Groep (code CK). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Chalk Group.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topHollandFormatie</Waarde>
+		<Omschrijving>De top van de Holland Formatie (code KNGL). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Holland Formation.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topNamurien</Waarde>
+		<Omschrijving>De top van het Namurien. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Namurian.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topOnderBontzandsteenFormatie</Waarde>
+		<Omschrijving>De top van de Onder-Bontzandsteen Formatie (code RBSH). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Lower Buntsandstein Formation.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topTrias</Waarde>
+		<Omschrijving>De top van het Trias. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Triassic.</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>topVlielandKleisteenFormatie</Waarde>
+		<Omschrijving>De top van de Vlieland Kleisteen Formatie (code KNNC). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Vlieland Claystone Formation.</Omschrijving>
+	</GeologischeEenheid>
+</domeintabel>
