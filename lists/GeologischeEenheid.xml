@@ -3,56 +3,56 @@
 	<GeologischeEenheid>
 		<Waarde>AltenaGroep</Waarde>
 		<Code>AT</Code>
-		<Omschrijving>Altena Groep (code AT). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Altena Group.</Omschrijving>
+		<Omschrijving>Altena Groep, in het Engels Altena Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>ChalkGroep</Waarde>
 		<Code>CK</Code>
-		<Omschrijving>Chalk Groep (code CK). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Chalk Group.</Omschrijving>
+		<Omschrijving>Chalk Groep, in het engels Chalk Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>EpenFormatie</Waarde>
 		<Code>DCGE</Code>
-		<Omschrijving>Epen Formatie (code DCGE). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Epen Formation.</Omschrijving>
+		<Omschrijving>Epen Formatie, in het Engelse Epen Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>HollandFormatie</Waarde>
 		<Code>KNGL</Code>
-		<Omschrijving>Holland Formatie (code KNGL). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Holland Formation.</Omschrijving>
+		<Omschrijving>Holland Formatie, in het engels Holland Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Jura</Waarde>
 		<Code>JURASSIC</Code>
-		<Omschrijving>Jura. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Jurassic.</Omschrijving>
+		<Omschrijving>Jura in het Engels Jurassic. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020). </Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>LimburgGroep</Waarde>
 		<Code>DC</Code>
-		<Omschrijving>Limburg Groep (code DC). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Limburg Group.</Omschrijving>
+		<Omschrijving>Limburg Groep, in het Engels Limburg Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Namurien</Waarde>
 		<Code>NAMURIAN</Code>
-		<Omschrijving>Namurien. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Namurian.</Omschrijving>
+		<Omschrijving>Namurien, in het Engels Namurian. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
-		<Waarde>OnderBontzandsteenFormatie</Waarde>
-		<Code>RBSH</Code>
-		<Omschrijving>Onder-Bontzandsteen Formatie (code RBSH). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Lower Buntsandstein Formation.</Omschrijving>
+		<Waarde>OnderBontzandsteenSubgroep</Waarde>
+		<Code>RBS</Code>
+		<Omschrijving>Onder-Bontzandsteen Subgroep, in het Engels Lower Buntsandstein Subgroup. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Perm</Waarde>
 		<Code>PERMIAN</Code>
-		<Omschrijving>Perm. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Permian.</Omschrijving>
+		<Omschrijving>Perm in het Engels Permian. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Trias</Waarde>
 		<Code>TRIASSIC</Code>
-		<Omschrijving>Trias. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Triassic.</Omschrijving>
+		<Omschrijving>Trias, in het Engels Triassic. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>VlielandKleisteenFormatie</Waarde>
 		<Code>KNNC</Code>
-		<Omschrijving>Vlieland Kleisteen Formatie (code KNNC). De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2013) in het Engels. De Engelse naam is Vlieland Claystone Formation.</Omschrijving>
+		<Omschrijving>Vlieland Kleisteen Formatie, in het Engels Vlieland Claystone Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 </domeintabel>
