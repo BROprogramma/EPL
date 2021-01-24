@@ -6,9 +6,9 @@
 		<Omschrijving>Altena Groep, in het Engels Altena Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
-		<Waarde>ChalkGroep</Waarde>
-		<Code>CK</Code>
-		<Omschrijving>Chalk Groep, in het engels Chalk Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+		<Waarde>Carboon</Waarde>
+		<Code>CARBONIFEROUS</Code>
+		<Omschrijving>Carboon, in het Engels Carboniferous. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>EpenFormatie</Waarde>
@@ -16,19 +16,29 @@
 		<Omschrijving>Epen Formatie, in het Engelse Epen Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
-		<Waarde>HollandFormatie</Waarde>
+		<Waarde>FormatieHolland</Waarde>
 		<Code>KNGL</Code>
-		<Omschrijving>Holland Formatie, in het engels Holland Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+		<Omschrijving>Formatie van Holland, in het Engels Holland Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
-		<Waarde>Jura</Waarde>
-		<Code>JURASSIC</Code>
-		<Omschrijving>Jura in het Engels Jurassic. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020). </Omschrijving>
+		<Waarde>FormatieLanden</Waarde>
+		<Code>NLLA</Code>
+		<Omschrijving>Formatie van Landen, in het Engels Landen Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>KrijtkalkGroep</Waarde>
+		<Code>CK</Code>
+		<Omschrijving>Krijtkalk Groep, in het engels Chalk Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>LimburgGroep</Waarde>
 		<Code>DC</Code>
 		<Omschrijving>Limburg Groep, in het Engels Limburg Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>MiddenJuraVroegJura</Waarde>
+		<Code>MIDDLEJURASSICEARLYJURASSIC</Code>
+		<Omschrijving>Midden-Jura &amp; Vroeg-Jura, in het Engels Middle Jurassic &amp; Early Jurassic. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020). </Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Namurien</Waarde>
@@ -41,9 +51,34 @@
 		<Omschrijving>Onder-Bontzandsteen Subgroep, in het Engels Lower Buntsandstein Subgroup. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
+		<Waarde>OnderNoordzeeGroep</Waarde>
+		<Code>NL</Code>
+		<Omschrijving>Onder-Noordzee Groep, in het Engels Lower North Sea Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>OnderVolpriehausenZandsteenLaagpakket</Waarde>
+		<Code>RBMVL</Code>
+		<Omschrijving>Onder-Volpriehausen Zandsteen Laagpakket, in het Engels Lower Volpriehausen Sandstone Member. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
 		<Waarde>Perm</Waarde>
 		<Code>PERMIAN</Code>
 		<Omschrijving>Perm in het Engels Permian. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>PosidoniaSchalieFormatie</Waarde>
+		<Code>ATPO</Code>
+		<Omschrijving>Posidonia Schalie Formatie, in het Engels Posidonia Shale Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>RuurloFormatie</Waarde>
+		<Code>DCCR</Code>
+		<Omschrijving>Ruurlo Formatie, in het Engels Ruurlo Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>SchielandGroep</Waarde>
+		<Code>SL</Code>
+		<Omschrijving>Schieland Groep, in het Engels Schieland Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 	<GeologischeEenheid>
 		<Waarde>Trias</Waarde>
@@ -54,5 +89,15 @@
 		<Waarde>VlielandKleisteenFormatie</Waarde>
 		<Code>KNNC</Code>
 		<Omschrijving>Vlieland Kleisteen Formatie, in het Engels Vlieland Claystone Formation. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>VroegKrijtLaatJura</Waarde>
+		<Code>EARLYCRETACEOUSLATEJURASSIC</Code>
+		<Omschrijving>Vroeg-Krijt &amp; Laat-Jura, in het Engels Early Cretaceous &amp; Late Jurassic. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
+	</GeologischeEenheid>
+	<GeologischeEenheid>
+		<Waarde>ZechsteinGroep</Waarde>
+		<Code>ZE</Code>
+		<Omschrijving>Zechstein Groep, in het Engels Zechstein Group. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</Omschrijving>
 	</GeologischeEenheid>
 </domeintabel>
