@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20201106</p>
       <p>Imvertor: 1.63.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210124-122158</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210124-144355</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -818,7 +818,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>0..1</td>
+                              <td>1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -836,14 +836,24 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt na de aanvraagdatum.
-                                    Door uiteenlopende oorzaken kan het voorkomen dat de ingangsdatum nog niet bepaald
-                                    is. Alleen in dat geval heeft het attribuut geen waarde.</p>
+                                 <p>De datum mag niet liggen voor de <em>bekendmakingsdatum</em> van de entiteit <em>Levensduur</em>.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Ja</td>
+                           </tr>
+                           <tr>
+                              <th>Reden geen waarde</th>
+                              <td>
+                                 
+                                 <p>Door uiteenlopende oorzaken kan het voorkomen dat de ingangsdatum nog niet bepaald
+                                    is. Alleen in dat geval heeft het attribuut geen waarde.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -899,6 +909,13 @@
                            <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
                               <td> vanaf 1 januari 2003</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>De <em>vervaldatum</em> mag niet liggen voor de <em>ingangsdatum</em>.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -974,7 +991,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e3128"></a><section id="detail_d34451e3128">
+                     </section><a class="anchor" id="detail_d34549e3200"></a><section id="detail_d34549e3200">
                      <h4>  registratiegeschiedenis</h4>
                      
                      
@@ -1021,7 +1038,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e3295"></a><section id="detail_d34451e3295">
+                     </section><a class="anchor" id="detail_d34549e3367"></a><section id="detail_d34549e3367">
                      <h4>  levensduur</h4>
                      
                      
@@ -1079,7 +1096,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e3511"></a><section id="detail_d34451e3511">
+                     </section><a class="anchor" id="detail_d34549e3583"></a><section id="detail_d34549e3583">
                      <h4>  vergunninggeschiedenis</h4>
                      
                      
@@ -1138,7 +1155,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e3719"></a><section id="detail_d34451e3719">
+                     </section><a class="anchor" id="detail_d34549e3791"></a><section id="detail_d34549e3791">
                      <h4>  vergunninggebied</h4>
                      
                      
@@ -1185,7 +1202,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e3886"></a><section id="detail_d34451e3886">
+                     </section><a class="anchor" id="detail_d34549e3958"></a><section id="detail_d34549e3958">
                      <h4>  vergunninghouder</h4>
                      
                      
@@ -1241,7 +1258,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e4106"></a><section id="detail_d34451e4106">
+                     </section><a class="anchor" id="detail_d34549e4178"></a><section id="detail_d34549e4178">
                      <h4>  lopende wijziging</h4>
                      
                      
@@ -1935,8 +1952,8 @@
                               </td>
                         </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Levensduur_bekendmakingsdatumvergunning"></a><section id="detail_attribute_Model_Levensduur_bekendmakingsdatumvergunning">
-                     <h4>  bekendmakingsdatum vergunning</h4>
+                  </table><a class="anchor" id="detail_attribute_Model_Levensduur_bekendmakingsdatum"></a><section id="detail_attribute_Model_Levensduur_bekendmakingsdatum">
+                     <h4>  bekendmakingsdatum</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1950,8 +1967,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop de minister bekend heeft gemaakt de vergunning aan een bepaalde partij
-                                    te willen verlenen.</p>
+                                 <p>De datum waarop de vergunningverlener bekend heeft gemaakt de vergunning aan een bepaalde
+                                    partij te willen verlenen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -1988,8 +2005,8 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Levensduur_beindigingsdatumvergunning"></a><section id="detail_attribute_Model_Levensduur_beindigingsdatumvergunning">
-                     <h4>  beëindigingsdatum vergunning</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_Levensduur_beindigingsdatum"></a><section id="detail_attribute_Model_Levensduur_beindigingsdatum">
+                     <h4>  beëindigingsdatum</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2030,7 +2047,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt na de bekendmakingsdatum vergunning.</p>
+                                 <p>De <em>beeindigingsdatum</em> mag niet liggen voor de <em>bekendmakingsdatum</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2147,8 +2164,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt niet voor de bekendmakingsdatum vergunning en niet na de beëindigingsdatum
-                                    vergunning.</p>
+                                 <p>De <em>datum gebeurtenis</em> mag niet liggen voor de <em>bekendmakingsdatum</em> van de entiteit <em>Levensduur</em>.<br clear="none">
+                                    De <em>datum gebeurtenis</em> mag niet liggen na de <em>beeindigingsdatum</em> van de entiteit <em>Levensduur</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2172,7 +2189,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>[TODO]</p>
+                                 <p>De typering van de wijziging in de vergunning.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2181,7 +2198,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>0..1</td>
+                              <td>0..2</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -2199,7 +2216,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>[TODO]</p>
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>naam gebeurtenis</em> gelijk is aan <em>wijzigingGestart</em> of <em>wijzigingBijgesteld.</em>
+                                    <br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2333,7 +2352,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e7824"></a><section id="detail_d34451e7824">
+                     </section><a class="anchor" id="detail_d34549e7930"></a><section id="detail_d34549e7930">
                      <h4>  verleend gebied</h4>
                      
                      
@@ -2664,7 +2683,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e8925"></a><section id="detail_d34451e8925">
+                     </section><a class="anchor" id="detail_d34549e9031"></a><section id="detail_d34549e9031">
                      <h4>  dieptebereik</h4>
                      
                      
@@ -2735,7 +2754,7 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>Ten minste een van de gegevens <em>geologische bovengrens</em>, <em>geologische ondergrens</em>, <em>begindiepte</em> en <em>einddiepte</em> is aanwezig.</p>
+                              <p>Ten minste één van de volgende attributen moet aanwezig zijn: <em>geologische bovengrens</em>, <em>geologische ondergrens</em>, <em>begindiepte</em> of <em>einddiepte</em>.</p>
                               </td>
                         </tr>
                         <tr>
@@ -2743,11 +2762,10 @@
                            <td>
                               
                               <p>De vergunning heeft betrekking op de ruimte onder het door het gebied begrensde deel
-                                 van het aardoppervlak. Aan het dieptebereik worden worden expliciet grenzen gesteld,
-                                 wanneer de minister dat vanuit het oogpunt van goed beheer van de ondergrondse ruimte
-                                 nodig acht.</p>
-                              
-                              <p>Wanneer een vergunning in diepte wordt begrensd gebeurt dat meestal op basis van geologische
+                                 van het aardoppervlak. Aan het dieptebereik worden expliciet grenzen gesteld, wanneer
+                                 de vergunningverlener dat vanuit het oogpunt van goed beheer van de ondergrondse ruimte
+                                 nodig acht.<br clear="none">
+                                 Wanneer een vergunning in diepte wordt begrensd gebeurt dat meestal op basis van geologische
                                  grenzen en soms door de diepte in meters uit te drukken.</p>
                               </td>
                         </tr>
@@ -2789,19 +2807,15 @@
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
+                              <td>Ja</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
-                                    vergunning verleend is. </p>
-                                 
                                  <p>Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd is. De oude
-                                    waarde blijft behouden.</p>
-                                 
-                                 <p>Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
+                                    waarde blijft behouden.<br clear="none">
+                                    Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
                                     de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
                                     Amsterdams Peil).</p>
                                  </td>
@@ -2847,27 +2861,28 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De einddiepte is groter dan de begindiepte van het bereik.</p>
+                                 <p>De <em>einddiepte</em> moet groter zijn dan de <em>begindiepte</em> van het <em>Dieptebereik</em>.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
+                              <td>Ja</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
-                                    vergunning verleend is. </p>
-                                 
-                                 <p>Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd is. De oude
-                                    waarde blijft behouden.</p>
+                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
+                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
+                                    de oude waarde behouden.<br clear="none">
+                                    Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
+                                    de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
+                                    Amsterdams Peil).</p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e9623"></a><section id="detail_d34451e9623">
+                     </section><a class="anchor" id="detail_d34549e9726"></a><section id="detail_d34549e9726">
                      <h4>  geologische bovengrens</h4>
                      
                      
@@ -2916,13 +2931,10 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
-                                    vergunning verleend is. </p>
-                                 
-                                 <p>Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd is. De oude
-                                    waarde blijft behouden.</p>
-                                 
-                                 <p>Bij voorkeur wordt de diepte gedefinieerd in termen van lithostratigrafie. Bij het
+                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
+                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
+                                    de oude waarde behouden.<br clear="none">
+                                    Bij voorkeur wordt de diepte gedefinieerd in termen van lithostratigrafie. Bij het
                                     winnen van aardwarmte is de bovengrens veelal de basis van een eenheid die niet doorlaatbaar
                                     is voor water. Bij de winning van olie en gas is het gewoonlijk de basis van een gesteentepakket
                                     waarin zich geen koolwaterstofvoorkomens bevinden.</p>
@@ -2930,7 +2942,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e9847"></a><section id="detail_d34451e9847">
+                     </section><a class="anchor" id="detail_d34549e9942"></a><section id="detail_d34549e9942">
                      <h4>  geologische ondergrens</h4>
                      
                      
@@ -2979,11 +2991,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
-                                    vergunning verleend is. </p>
-                                 
-                                 <p>Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd is. De oude
-                                    waarde blijft behouden.</p>
+                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
+                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
+                                    de oude waarde behouden.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3001,6 +3011,13 @@
                            <th>Type gegeven</th>
                            <td>Entiteit</td>
                         </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>TODO</p>
+                              </td>
+                        </tr>
                      </tbody>
                   </table><a class="anchor" id="detail_attribute_Model_GeologischVlak_geologischeeenheid"></a><section id="detail_attribute_Model_GeologischVlak_geologischeeenheid">
                      <h4>  geologische eenheid</h4>
@@ -3012,6 +3029,13 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van GeologischVlak</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De geologische eenheid uit de Stratigrafische Nomenclator.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -3043,8 +3067,8 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_GeologischVlak_begrenzing"></a><section id="detail_attribute_Model_GeologischVlak_begrenzing">
-                     <h4>  begrenzing</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_GeologischVlak_grens"></a><section id="detail_attribute_Model_GeologischVlak_grens">
+                     <h4>  grens</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3058,8 +3082,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft of de bovenkant of de onderkant van de eenheid de grens
-                                    is.</p>
+                                 <p>De aanduiding die aangeeft of de bovenkant of de onderkant van de geologische eenheid
+                                    de grens is.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3076,7 +3100,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_BegrenzingEenheid">BegrenzingEenheid</a></td>
+                              <td><a class="link" href="#detail_class_Model_GrensGeologischeEenheid">GrensGeologischeEenheid</a></td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
@@ -3091,7 +3115,7 @@
                      </section>
                </section><a class="anchor" id="graph_EAID_4F4EC4DC_F06B_4687_B22D_69CBC4D1A797"></a><a class="anchor" id="global_class_Model_Vergunninghouder"></a><section id="global_class_Model_Vergunninghouder">
                   <h3>   Vergunninghouder</h3>
-                  <div class="imageinfo "><img src="Images/EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D.png" usemap="#imagemap-EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D" alt="Diagram "><map name="imagemap-EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D"><area shape="rect" alt="Vergunninghouder" coords="-38,-50,133,16" href="#graph_EAID_4F4EC4DC_F06B_4687_B22D_69CBC4D1A797"></map><p><b></b></p>
+                  <div class="imageinfo "><img src="Images/EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D.png" usemap="#imagemap-EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D" alt="Diagram "><map name="imagemap-EAID_69A85B9A_BFF0_4c45_8D1A_D301762C511D"><area shape="rect" alt="Vergunninghouder" coords="10,10,181,89" href="#graph_EAID_4F4EC4DC_F06B_4687_B22D_69CBC4D1A797"></map><p><b></b></p>
                   </div>
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -3105,18 +3129,16 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>De partij die het vergunde recht heeft. </p>
+                              <p>De indicatie die aangeeft of de vergunninghouder uit 1 of meer personen bestaat. </p>
                               </td>
                         </tr>
                         <tr>
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>De partij kent eenzelfde diversiteit als de vergunningaanvrager. </p>
-                              
-                              <p>Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende
-                                 wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het
-                                 gegeven direct gewijzigd.</p>
+                              <p>De vergunninghouder is meestal een groep van organisaties, minder vaak een organisatie,
+                                 soms een persoon en soms ook een groep van personen of een combinatie van personen
+                                 en organisaties.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3145,7 +3167,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1..*</td>
+                              <td>0..*</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -3159,8 +3181,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De onderneming moet binnen de basisregistratie ondergrond als mijnbouwonderneming
-                                    bekend zijn.</p>
+                                 <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als mijnbouwonderneming.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3172,15 +3193,57 @@
                               <td>Ja</td>
                            </tr>
                            <tr>
+                              <th>Reden geen waarde</th>
+                              <td>
+                                 
+                                 <p>Voor IMBRO/A-gegevens mag de waarde ontbreken.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
-                                    vergunning verleend is. </p>
-                                 
                                  <p>Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd is. De oude
-                                    waarde blijft behouden.</p>
+                                    waarde blijft behouden.<br clear="none">
+                                    </p>
                                  </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Vergunninghouder_persoon"></a><section id="detail_attribute_Model_Vergunninghouder_persoon">
+                     <h4>  persoon</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Vergunninghouder</td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>IndicatieJaNee</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst niet uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
                            </tr>
                         </tbody>
                      </table>
@@ -3264,14 +3327,24 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt na de ingangsdatum en voor de vervaldatum van de vergunning.
-                                    Door uiteenlopende oorzaken kan het voorkomen dat de geplande ingangsdatum (nog) niet
-                                    bepaald is. In die gevallen heeft het attribuut geen waarde.</p>
+                                 <p>De datum ligt na de ingangsdatum en voor de vervaldatum van de vergunning.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Ja</td>
+                           </tr>
+                           <tr>
+                              <th>Reden geen waarde</th>
+                              <td>
+                                 
+                                 <p>Door uiteenlopende oorzaken kan het voorkomen dat de geplande ingangsdatum (nog) niet
+                                    bepaald is. In die gevallen heeft het attribuut geen waarde.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -3286,7 +3359,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e11038"></a><section id="detail_d34451e11038">
+                     </section><a class="anchor" id="detail_d34549e11342"></a><section id="detail_d34549e11342">
                      <h4>  te wijzigen gegevens</h4>
                      
                      
@@ -3302,7 +3375,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>[TODO]</p>
+                                 <p>De gegevens van de lopende wijziging.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3354,6 +3427,13 @@
                               </td>
                         </tr>
                         <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>Ten minste één van de attributen moet aanwezig zijn.</p>
+                              </td>
+                        </tr>
+                        <tr>
                            <th>Toelichting</th>
                            <td>
                               
@@ -3370,74 +3450,7 @@
                               </td>
                         </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_ingangsdatum"></a><section id="detail_attribute_Model_Tewijzigengegevens_ingangsdatum">
-                     <h4>  ingangsdatum</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Te wijzigen gegevens</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De datum die het begin aangeeft van de periode waarin de vergunning geldig is.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Datum</td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Waardebereik</th>
-                              <td> vanaf 1 januari 1900</td>
-                           </tr>
-                           <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>De datum ligt na de aanvraagdatum.
-                                    Door uiteenlopende oorzaken kan het voorkomen dat de ingangsdatum nog niet bepaald
-                                    is. Alleen in dat geval heeft het attribuut geen waarde.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Het gegeven heeft gewoonlijk uiterlijk een waarde op het moment dat de vergunning
-                                    verleend is. De waarde staat op dat moment vast. Er zijn twee uitzonderingen en dat
-                                    is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder
-                                    moet hebben voldaan voordat de vergunning ingaat. In dat geval gaat de vergunning
-                                    pas in op het moment dat aan de voorwaarden is voldaan. De andere uitzondering is
-                                    wanneer de ingangsdatum na de datum ligt waarop de vergunning is verleend. In dat
-                                    geval gaat de vergunning pas in op het moment dat de ingangsdatum is bereikt.
-                                    De datum mag in de toekomst liggen.</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_vervaldatum"></a><section id="detail_attribute_Model_Tewijzigengegevens_vervaldatum">
+                  </table><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_vervaldatum"></a><section id="detail_attribute_Model_Tewijzigengegevens_vervaldatum">
                      <h4>  vervaldatum</h4>
                      
                      <table style="width: 100%;">
@@ -3452,7 +3465,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum die het eind aangeeft van de periode waarin de vergunning geldig is.</p>
+                                 <p>De nieuwe datum die het eind aangeeft van de periode waarin de vergunning geldig is.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3479,64 +3492,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt na de aanvraagdatum.
-                                    Door uiteenlopende oorzaken kan het voorkomen dat de ingangsdatum nog niet bepaald
-                                    is. Alleen in dat geval heeft het attribuut geen waarde.</p>
+                                 <p>De <em>vervaldatum</em> mag niet liggen voor de <em>ingangsdatum</em> van de entiteit Mijnbouwwetvergunning.</p>
                                  </td>
-                           </tr>
-                           <tr>
-                              <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Het gegeven heeft gewoonlijk uiterlijk een waarde op het moment dat de vergunning
-                                    verleend is. De waarde staat op dat moment vast. Er zijn twee uitzonderingen en dat
-                                    is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder
-                                    moet hebben voldaan voordat de vergunning ingaat. In dat geval gaat de vergunning
-                                    pas in op het moment dat aan de voorwaarden is voldaan. De andere uitzondering is
-                                    wanneer de ingangsdatum na de datum ligt waarop de vergunning is verleend. In dat
-                                    geval gaat de vergunning pas in op het moment dat de ingangsdatum is bereikt.
-                                    De datum mag in de toekomst liggen.</p>
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_naamvergunninggebied"></a><section id="detail_attribute_Model_Tewijzigengegevens_naamvergunninggebied">
-                     <h4>  naam vergunninggebied</h4>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Type gegeven</th>
-                              <td>Attribuut van Te wijzigen gegevens</td>
-                           </tr>
-                           <tr>
-                              <th>Definitie</th>
-                              <td>
-                                 
-                                 <p>De nieuwe naam van het vergunninggebied.</p>
-                                 </td>
-                           </tr>
-                           <tr>
-                              <th>Juridische status</th>
-                              <td>Authentiek</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>0..1</td>
-                           </tr>
-                           <tr>
-                              <th>Domein</th>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <th>&nbsp;&nbsp;Naam</th>
-                              <td>Tekst 100</td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -3601,6 +3558,46 @@
                                  <p>In het besluit van de minister is de begrenzing van het gebied beschreven. De aangeleverde
                                     begrenzing is een meer nauwkeurige invulling van die beschrijving.</p>
                                  </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_naamvergunninggebied"></a><section id="detail_attribute_Model_Tewijzigengegevens_naamvergunninggebied">
+                     <h4>  naam vergunninggebied</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Te wijzigen gegevens</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De nieuwe naam van het vergunninggebied.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>0..1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td>Tekst 100</td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
                            </tr>
                         </tbody>
                      </table>
@@ -3686,7 +3683,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e12369"></a><section id="detail_d34451e12369">
+                     </section><a class="anchor" id="detail_d34549e12463"></a><section id="detail_d34549e12463">
                      <h4>  geologische bovengrens</h4>
                      
                      
@@ -3733,7 +3730,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34451e12536"></a><section id="detail_d34451e12536">
+                     </section><a class="anchor" id="detail_d34549e12630"></a><section id="detail_d34549e12630">
                      <h4>  geologische ondergrens</h4>
                      
                      
@@ -3797,7 +3794,7 @@
                      <td>
                         
                         
-                        <p>TODO</p>
+                        <p>De lijst met geologische eenheden uit de Stratigrafische Nomenclator.</p>
                         
                         
                         
@@ -4149,8 +4146,8 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_class_Model_BegrenzingEenheid">
-            <h3>  BegrenzingEenheid</h3>
+         <section id="detail_class_Model_GrensGeologischeEenheid">
+            <h3>  GrensGeologischeEenheid</h3>
             
             <table style="width: 100%;" class="list">
                <colgroup></colgroup>
@@ -4158,7 +4155,7 @@
                   <tr>
                      <td>
                         
-                        <p>De lijst met de delfstoffen waarop de  mijnbouwactiviteit betrekking heeft.</p>
+                        <p>De lijst met de grenzen van geologische eenheden.</p>
                         </td>
                   </tr>
                </tbody>
@@ -4827,7 +4824,7 @@
                   <tr>
                      <td>
                         
-                        <p>TODO</p>
+                        <p>De lijst met de wijzigingen in de verleende vergunning.</p>
                         </td>
                   </tr>
                </tbody>
@@ -4849,25 +4846,37 @@
                      <td>overdracht</td>
                      <td>✔</td>
                      <td>✔</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>De vergunning is overgedragen op een andere vergunninghouder.</p>
+                        </td>
                   </tr>
                   <tr>
                      <td>vergroting</td>
                      <td>✔</td>
                      <td>✔</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Het vergunninggebied is vergroot.</p>
+                        </td>
                   </tr>
                   <tr>
                      <td>verkleining</td>
                      <td>✔</td>
                      <td>✔</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Het vergunninggebied is verkleind.</p>
+                        </td>
                   </tr>
                   <tr>
                      <td>verlenging</td>
                      <td>✔</td>
                      <td>✔</td>
-                     <td></td>
+                     <td>
+                        
+                        <p>De geldigheidsduur van de vergunning is verlengd.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
