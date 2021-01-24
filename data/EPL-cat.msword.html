@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20201106</p>
       <p>Imvertor: 1.63.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210124-162510</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210124-164722</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -461,7 +461,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Het vergunningnaam is uniek in de registratie ondergrond.</p>
+                                 <p>De vergunningnaam is uniek in de registratie ondergrond.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -851,8 +851,8 @@
                               <th>Reden geen waarde</th>
                               <td>
                                  
-                                 <p>Door uiteenlopende oorzaken kan het voorkomen dat de ingangsdatum nog niet bepaald
-                                    is. Alleen in dat geval heeft het attribuut geen waarde.</p>
+                                 <p>Het kan voorkomen dat de ingangsdatum nog niet bepaald is, alleen in dat geval ontbreekt
+                                    de waarde.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3339,7 +3339,8 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum ligt na de ingangsdatum en voor de vervaldatum van de vergunning.</p>
+                                 <p>De <em>geplande ingangsdatum</em> mag niet liggen voor de <em>ingangsdatum</em> van de <em>Mijnbouwwetvergunning</em>.<br clear="none">
+                                    De <em>geplande ingangsdatum</em> mag niet liggen na de <em>vervaldatum</em> van de <em>Mijnbouwwetvergunning</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3354,8 +3355,7 @@
                               <th>Reden geen waarde</th>
                               <td>
                                  
-                                 <p>Door uiteenlopende oorzaken kan het voorkomen dat de geplande ingangsdatum (nog) niet
-                                    bepaald is. In die gevallen heeft het attribuut geen waarde.</p>
+                                 <p>Het kan voorkomen dat de <em>geplande ingangsdatum</em> nog niet bepaald is, alleen in dat geval ontbreekt de waarde.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3371,7 +3371,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34579e11382"></a><section id="detail_d34579e11382">
+                     </section><a class="anchor" id="detail_d34579e11403"></a><section id="detail_d34579e11403">
                      <h4>  te wijzigen gegevens</h4>
                      
                      
@@ -3528,8 +3528,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De begrenzing van het gebied op het aardoppervlak, zoals die is aangeleverd aan de
-                                    basisregistratie ondergrond.</p>
+                                 <p>De nieuwe begrenzing van het gebied op het aardoppervlak, zoals die is aangeleverd
+                                    aan de basisregistratie ondergrond.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3552,11 +3552,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De algemene regel is dat het vergunninggebied in Nederland inclusief zijn Exclusieve
-                                    Economische Zone ligt.
-                                    Wanneer de waarde van het attribuut onshore van de entiteit Mijnbouwwetvergunning
-                                    gelijk is aan ja, is de begrenzing gedefinieerd in RD of ETRS89. In het andere geval
-                                    is de begrenzing gedefinieerd in ETRS89.</p>
+                                 <p>Het gebied moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Vergunninggebied</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Vergunninggebied</em> gelijk is aan <em>nee</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3567,8 +3565,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>In het besluit van de minister is de begrenzing van het gebied beschreven. De aangeleverde
-                                    begrenzing is een meer nauwkeurige invulling van die beschrijving.</p>
+                                 <p>In het besluit van de vergunningverlener is de begrenzing van het gebied beschreven.
+                                    De aangeleverde begrenzing is een meer nauwkeurige invulling van die beschrijving.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3628,7 +3626,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De globale diepte vanaf waar de vergunning geldt.</p>
+                                 <p>De nieuwe globale diepte vanaf waar de vergunning geldt.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3669,7 +3667,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De globale diepte tot waar de vergunning geldt.</p>
+                                 <p>De nieuwe globale diepte tot waar de vergunning geldt.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3695,7 +3693,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34579e12503"></a><section id="detail_d34579e12503">
+                     </section><a class="anchor" id="detail_d34579e12550"></a><section id="detail_d34579e12550">
                      <h4>  geologische bovengrens</h4>
                      
                      
@@ -3711,7 +3709,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het geologische vlak dat de ondergrondse ruimte aan de bovenzijde begrensd.</p>
+                                 <p>Het nieuwe geologische vlak dat de ondergrondse ruimte aan de bovenzijde begrensd.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3742,7 +3740,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d34579e12670"></a><section id="detail_d34579e12670">
+                     </section><a class="anchor" id="detail_d34579e12717"></a><section id="detail_d34579e12717">
                      <h4>  geologische ondergrens</h4>
                      
                      
@@ -3758,7 +3756,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Het geologische vlak dat de ondergrondse ruimte aan de onderzijde begrensd.</p>
+                                 <p>Het nieuwe geologische vlak dat de ondergrondse ruimte aan de onderzijde begrensd.</p>
                                  </td>
                            </tr>
                            <tr>
