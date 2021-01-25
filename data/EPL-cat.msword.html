@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20201106</p>
       <p>Imvertor: 1.63.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210124-235055</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210125-101337</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -909,6 +909,10 @@
                               <td>Datum</td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                              <td>OnvolledigeDatum</td>
+                           </tr>
+                           <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
                               <td> vanaf 1 januari 2003</td>
                            </tr>
@@ -968,8 +972,27 @@
                               <td>EPLNNNNNNNNNNNN</td>
                            </tr>
                            <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>actuele status</em> gelijk is aan <em>opgevolgd</em>.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Ja</td>
+                           </tr>
+                           <tr>
+                              <th>Reden geen waarde</th>
+                              <td>
+                                 
+                                 <p>Voor IMBRO/A-gegevens mag de waarde ontbreken.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -993,7 +1016,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e3206"></a><section id="detail_d35057e3206">
+                     </section><a class="anchor" id="detail_d35368e3288"></a><section id="detail_d35368e3288">
                      <h4>  registratiegeschiedenis</h4>
                      
                      
@@ -1040,7 +1063,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e3373"></a><section id="detail_d35057e3373">
+                     </section><a class="anchor" id="detail_d35368e3455"></a><section id="detail_d35368e3455">
                      <h4>  levensduur</h4>
                      
                      
@@ -1098,7 +1121,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e3589"></a><section id="detail_d35057e3589">
+                     </section><a class="anchor" id="detail_d35368e3671"></a><section id="detail_d35368e3671">
                      <h4>  vergunninggeschiedenis</h4>
                      
                      
@@ -1157,7 +1180,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e3797"></a><section id="detail_d35057e3797">
+                     </section><a class="anchor" id="detail_d35368e3879"></a><section id="detail_d35368e3879">
                      <h4>  vergunninggebied</h4>
                      
                      
@@ -1204,7 +1227,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e3964"></a><section id="detail_d35057e3964">
+                     </section><a class="anchor" id="detail_d35368e4046"></a><section id="detail_d35368e4046">
                      <h4>  vergunninghouder</h4>
                      
                      
@@ -1259,7 +1282,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e4178"></a><section id="detail_d35057e4178">
+                     </section><a class="anchor" id="detail_d35368e4260"></a><section id="detail_d35368e4260">
                      <h4>  lopende wijziging</h4>
                      
                      
@@ -1989,6 +2012,10 @@
                               <td>Datum</td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                              <td>OnvolledigeDatum</td>
+                           </tr>
+                           <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
                               <td>1 januari 1900 tot heden</td>
                            </tr>
@@ -2343,7 +2370,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e7907"></a><section id="detail_d35057e7907">
+                     </section><a class="anchor" id="detail_d35368e7998"></a><section id="detail_d35368e7998">
                      <h4>  verleend gebied</h4>
                      
                      
@@ -2679,7 +2706,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e8996"></a><section id="detail_d35057e8996">
+                     </section><a class="anchor" id="detail_d35368e9087"></a><section id="detail_d35368e9087">
                      <h4>  dieptebereik</h4>
                      
                      
@@ -2760,9 +2787,7 @@
                            <th>Regels</th>
                            <td>
                               
-                              <p>De entiteit moet aanwezig zijn wanneer de waarde van het attribuut <em>verticaal begrensd</em> van de entiteit <em>Verleend gebied</em> gelijk is aan <em>ja</em>.<br clear="none">
-                                 De entiteit mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
-                                 Ten minste één van de volgende attributen moet aanwezig zijn: <em>geologische bovengrens</em>, <em>geologische ondergrens</em>, <em>begindiepte</em> of <em>einddiepte</em>.</p>
+                              <p>Ten minste één van de volgende attributen moet aanwezig zijn: <em>geologische bovengrens</em>, <em>geologische ondergrens</em>, <em>begindiepte</em> of <em>einddiepte</em>.</p>
                               </td>
                         </tr>
                         <tr>
@@ -2890,7 +2915,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e9751"></a><section id="detail_d35057e9751">
+                     </section><a class="anchor" id="detail_d35368e9838"></a><section id="detail_d35368e9838">
                      <h4>  geologische bovengrens</h4>
                      
                      
@@ -2950,7 +2975,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e9967"></a><section id="detail_d35057e9967">
+                     </section><a class="anchor" id="detail_d35368e10054"></a><section id="detail_d35368e10054">
                      <h4>  geologische ondergrens</h4>
                      
                      
@@ -3390,7 +3415,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e11464"></a><section id="detail_d35057e11464">
+                     </section><a class="anchor" id="detail_d35368e11540"></a><section id="detail_d35368e11540">
                      <h4>  te wijzigen gegevens</h4>
                      
                      
@@ -3766,7 +3791,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e12766"></a><section id="detail_d35057e12766">
+                     </section><a class="anchor" id="detail_d35368e12842"></a><section id="detail_d35368e12842">
                      <h4>  geologische bovengrens</h4>
                      
                      
@@ -3813,7 +3838,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d35057e12933"></a><section id="detail_d35057e12933">
+                     </section><a class="anchor" id="detail_d35368e13009"></a><section id="detail_d35368e13009">
                      <h4>  geologische ondergrens</h4>
                      
                      
@@ -3905,8 +3930,10 @@
             </table>
             
             <table style="width: 100%;" class="list">
-               <colgroup style="width: 33.333333333333333333%;"></colgroup>
-               <colgroup style="width: 33.333333333333333333%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
+               <colgroup style="width: 20%;"></colgroup>
                <colgroup></colgroup>
                <tbody>
                   <tr>
@@ -3919,72 +3946,96 @@
                   <tr>
                      <td>AltenaGroep</td>
                      <td>AT</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Altena Groep, in het Engels Altena Group. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>Carboon</td>
                      <td>CARBONIFEROUS</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Carboon, in het Engels Carboniferous. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>EpenFormatie</td>
                      <td>DCGE</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Epen Formatie, in het Engelse Epen Formation. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>FormatieHolland</td>
                      <td>KNGL</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Formatie van Holland, in het Engels Holland Formation. De eenheid is omschreven in
                         de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>FormatieLanden</td>
                      <td>NLLA</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Formatie van Landen, in het Engels Landen Formation. De eenheid is omschreven in de
                         Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>KrijtkalkGroep</td>
                      <td>CK</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Krijtkalk Groep, in het engels Chalk Group. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>LimburgGroep</td>
                      <td>DC</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Limburg Groep, in het Engels Limburg Group. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>MiddenJuraVroegJura</td>
                      <td>MIDDLEJURASSICEARLYJURASSIC</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Midden-Jura &amp; Vroeg-Jura, in het Engels Middle Jurassic &amp; Early Jurassic. De eenheid
                         is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020). </td>
                   </tr>
                   <tr>
                      <td>Namurien</td>
                      <td>NAMURIAN</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Namurien, in het Engels Namurian. De eenheid is omschreven in de Stratigrafische Nomenclator
                         van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>OnderBontzandsteenSubgroep</td>
                      <td>RBS</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Onder-Bontzandsteen Subgroep, in het Engels Lower Buntsandstein Subgroup. De eenheid
                         is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>OnderNoordzeeGroep</td>
                      <td>NL</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Onder-Noordzee Groep, in het Engels Lower North Sea Group. De eenheid is omschreven
                         in de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>OnderVolpriehausenZandsteenLaagpakket</td>
                      <td>RBMVL</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Onder-Volpriehausen Zandsteen Laagpakket, in het Engels Lower Volpriehausen Sandstone
                         Member. De eenheid is omschreven in de Stratigrafische Nomenclator van Nederland (versie
                         2020).</td>
@@ -3992,48 +4043,64 @@
                   <tr>
                      <td>Perm</td>
                      <td>PERMIAN</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Perm in het Engels Permian. De eenheid is omschreven in de Stratigrafische Nomenclator
                         van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>PosidoniaSchalieFormatie</td>
                      <td>ATPO</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Posidonia Schalie Formatie, in het Engels Posidonia Shale Formation. De eenheid is
                         omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>RuurloFormatie</td>
                      <td>DCCR</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Ruurlo Formatie, in het Engels Ruurlo Formation. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>SchielandGroep</td>
                      <td>SL</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Schieland Groep, in het Engels Schieland Group. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>Trias</td>
                      <td>TRIASSIC</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Trias, in het Engels Triassic. De eenheid is omschreven in de Stratigrafische Nomenclator
                         van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>VlielandKleisteenFormatie</td>
                      <td>KNNC</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Vlieland Kleisteen Formatie, in het Engels Vlieland Claystone Formation. De eenheid
                         is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>VroegKrijtLaatJura</td>
                      <td>EARLYCRETACEOUSLATEJURASSIC</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Vroeg-Krijt &amp; Laat-Jura, in het Engels Early Cretaceous &amp; Late Jurassic. De eenheid
                         is omschreven in de Stratigrafische Nomenclator van Nederland (versie 2020).</td>
                   </tr>
                   <tr>
                      <td>ZechsteinGroep</td>
                      <td>ZE</td>
+                     <td>v</td>
+                     <td>v</td>
                      <td>Zechstein Groep, in het Engels Zechstein Group. De eenheid is omschreven in de Stratigrafische
                         Nomenclator van Nederland (versie 2020).</td>
                   </tr>
@@ -4783,6 +4850,34 @@
                         
                         <p>De vergunningverlener deelt mee dat de tijdelijke verlening is opgeheven omdat de
                            aangevraagde vervolgvergunning of verlenging definitief is geweigerd. </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>gewijzigd</td>
+                     <td></td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>De vergunning is beeindigd en de beeindiging is ingegaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>beeindigd</td>
+                     <td></td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>De vergunning is gewijzigd en de wijziging is ingegaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>opgevolgd</td>
+                     <td></td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>De vergunning is opgevolgd door 1 of meer andere vergunningen en de vergunning is
+                           beeindigd.</p>
                         </td>
                   </tr>
                </tbody>
