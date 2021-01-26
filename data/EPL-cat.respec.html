@@ -83,7 +83,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De identificatie van een booronderzoek in de registratie ondergrond.</p>
+                        <p>De identificatie van een mijnbouwwetvergunning in de registratie ondergrond.</p>
                         </td>
                   </tr>
                   <tr>
@@ -691,12 +691,12 @@
                         <p>De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut
                            toe bij de verwerking van de brondocumenten.<br clear="none">
                            De vergunning doorloopt tijdens haar leven een aantal stadia. De actuele status geeft
-                           aan in welke stadium de vergunning zich bevindt. De stadia zijn gekoppeld aan de drie
+                           aan in welk stadium de vergunning zich bevindt. De stadia zijn gekoppeld aan de drie
                            processen die een vergunning doorloopt: het verleningsproces, het wijzigingsproces
                            en het beëindigingsproces.<br clear="none">
-                           Wanneer de vergunning wordt beëindigd voordat het verleningsproces is voltooid is
-                           de vergunning <em>voortijdig beëindigd</em>. Wanneer de vergunning wordt beeindigd omdat hij is opgevolgd door 1 of meer andere
-                           vergunningen is de vergunning <em>opgevolgd</em>.</p>
+                           Wanneer de vergunning wordt beëindigd voordat het verleningsproces is voltooid, is
+                           de vergunning <em>voortijdig beëindigd</em>. Wanneer de vergunning wordt beëindigd omdat hij is opgevolgd door 1 of meer andere
+                           vergunningen, is de vergunning <em>opgevolgd</em>.</p>
                         </td>
                   </tr>
                </tbody>
@@ -747,27 +747,12 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>De geldigheidsduur van de vergunning wordt voor onbepaalde tijd verlengd in de volgende
-                           gevallen:</p>
-                        
-                        <ul>
-                           
-                           <li>De vergunninghouder heeft een aanvraag ingediend voor een verlenging van de vergunning.</li>
-                           </ul>
-                        
-                        <ul>
-                           
-                           <li>De vergunninghouder heeft een aanvraag ingediend voor het splitsen of samenvoegen
-                              van de vergunning.</li>
-                           </ul>
-                        
-                        <ul>
-                           
-                           <li>De vergunninghouder heeft een aanvraag ingediend voor een vergunning voor een vervolgactiviteit
-                              in (een deel) van het vergunninggebied. </li>
-                           </ul>
-                        
-                        <p>De vergunning blijft geldig zolang het proces loopt.</p>
+                        <p>De geldigheidsduur van de vergunning wordt voor onbepaalde tijd verlengd wanneer de
+                           vergunninghouder een aanvraag heeft ingediend voor een verlenging van de vergunning,
+                           of voor het splitsen of samenvoegen van de vergunning, en wanneer hij een aanvraag
+                           heeft ingediend voor een vergunning voor een vervolgactiviteit in (een deel) van het
+                           vergunninggebied, 
+                           De vergunning blijft geldig zolang het proces loopt.</p>
                         </td>
                   </tr>
                </tbody>
@@ -896,12 +881,52 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>vervaldatum</em> mag niet liggen voor de <em>ingangsdatum</em>.</p>
+                        <p>De <em>vervaldatum</em> mag niet liggen voor de <em>ingangsdatum</em> van de <em>Mijnbouwwetvergunning</em>.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Ja</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Ja</td>
+                  </tr>
+                  <tr>
+                     <th>Reden geen waarde</th>
+                     <td>
+                        
+                        <p>De waarde moet ontbreken wanneer de waarde van het attribuut <em>ingangsdatum</em> ontbreekt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven heeft gewoonlijk een waarde op het moment dat de vergunning verleend is.
+                           De waarde staat op dat moment vast. Er is een uitzondering en dat is wanneer de vergunning
+                           nog niet is ingegaan. In dat geval is de vervaldatum pas bekend op het moment dat
+                           de vergunning is ingegaan. Zolang de vergunning niet is beëindigd, is de vervaldatum
+                           de datum waarop de vergunning haar geldigheid zal verliezen.
+                           Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd of beëindigd
+                           is. De oude waarde blijft behouden.
+                           In de tussenliggende periode kan het gegeven tijdelijk geen waarde hebben. De reden
+                           daarvoor is dat de geldigheidduur voor onbepaalde tijd verlengd is. Dat gebeurt in
+                           drie gevallen:
+                           · Er is een wijzigingsproces gestart, omdat de vergunninghouder verlenging van de
+                           geldigheidsduur heeft aangevraagd.
+                           · Er is een wijzigingsproces gestart, omdat de vergunninghouder een verkleining van
+                           het vergunninggebied in combinatie met een aanvraag voor een vervolgactiviteit in
+                           een deel van het gebied heeft aangevraagd.
+                           · Er is een beëindigingsproces gestart, omdat de vergunninghouder een aanvraag heeft
+                           ingediend voor een vervolgactiviteit.
+                           · Er is een beëindigingsproces gestart, omdat de minister een eerste besluit heeft
+                           genomen tot het splitsen of samenvoegen van de vergunning.
+                           De vergunning blijft geldig zolang een proces loopt.
+                           De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut
+                           toe bij de verwerking van de brondocumenten, tenzij het gegeven in een brondocument
+                           is opgenomen. Dat laatste is alleen het geval bij intrekking van de vergunning.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -992,7 +1017,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e3290"></a><section id="detail_d35943e3290">
+            </section><a class="anchor" id="detail_d35973e3333"></a><section id="detail_d35973e3333">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -1039,7 +1064,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e3457"></a><section id="detail_d35943e3457">
+            </section><a class="anchor" id="detail_d35973e3500"></a><section id="detail_d35973e3500">
             <h4>  gestandaardiseerde locatie</h4>
             
             
@@ -1094,7 +1119,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e3671"></a><section id="detail_d35943e3671">
+            </section><a class="anchor" id="detail_d35973e3714"></a><section id="detail_d35973e3714">
             <h4>  levensduur</h4>
             
             
@@ -1152,7 +1177,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e3887"></a><section id="detail_d35943e3887">
+            </section><a class="anchor" id="detail_d35973e3930"></a><section id="detail_d35973e3930">
             <h4>  vergunninggeschiedenis</h4>
             
             
@@ -1211,7 +1236,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e4095"></a><section id="detail_d35943e4095">
+            </section><a class="anchor" id="detail_d35973e4138"></a><section id="detail_d35973e4138">
             <h4>  vergunninggebied</h4>
             
             
@@ -1258,7 +1283,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e4262"></a><section id="detail_d35943e4262">
+            </section><a class="anchor" id="detail_d35973e4305"></a><section id="detail_d35973e4305">
             <h4>  vergunninghouder</h4>
             
             
@@ -1313,7 +1338,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e4476"></a><section id="detail_d35943e4476">
+            </section><a class="anchor" id="detail_d35973e4519"></a><section id="detail_d35973e4519">
             <h4>  lopende wijziging</h4>
             
             
@@ -2525,7 +2550,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e8650"></a><section id="detail_d35943e8650">
+            </section><a class="anchor" id="detail_d35973e8693"></a><section id="detail_d35973e8693">
             <h4>  verleend gebied</h4>
             
             
@@ -2764,7 +2789,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e9458"></a><section id="detail_d35943e9458">
+            </section><a class="anchor" id="detail_d35973e9501"></a><section id="detail_d35973e9501">
             <h4>  dieptebereik</h4>
             
             
@@ -2973,7 +2998,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e10210"></a><section id="detail_d35943e10210">
+            </section><a class="anchor" id="detail_d35973e10253"></a><section id="detail_d35973e10253">
             <h4>  geologische bovengrens</h4>
             
             
@@ -3033,7 +3058,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e10426"></a><section id="detail_d35943e10426">
+            </section><a class="anchor" id="detail_d35973e10469"></a><section id="detail_d35973e10469">
             <h4>  geologische ondergrens</h4>
             
             
@@ -3426,7 +3451,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e11767"></a><section id="detail_d35943e11767">
+            </section><a class="anchor" id="detail_d35973e11810"></a><section id="detail_d35973e11810">
             <h4>  te wijzigen gegevens</h4>
             
             
@@ -3851,7 +3876,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e13223"></a><section id="detail_d35943e13223">
+            </section><a class="anchor" id="detail_d35973e13266"></a><section id="detail_d35973e13266">
             <h4>  geologische bovengrens</h4>
             
             
@@ -3898,7 +3923,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35943e13390"></a><section id="detail_d35943e13390">
+            </section><a class="anchor" id="detail_d35973e13433"></a><section id="detail_d35973e13433">
             <h4>  geologische ondergrens</h4>
             
             
