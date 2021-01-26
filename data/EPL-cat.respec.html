@@ -822,13 +822,12 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven heeft gewoonlijk uiterlijk een waarde op het moment dat de vergunning
-                           verleend is. De waarde staat op dat moment vast. Er zijn twee uitzonderingen en dat
-                           is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder
-                           moet hebben voldaan voordat de vergunning ingaat. In dat geval gaat de vergunning
-                           pas in op het moment dat aan de voorwaarden is voldaan. De andere uitzondering is
-                           wanneer de ingangsdatum na de datum ligt waarop de vergunning is verleend. In dat
-                           geval gaat de vergunning pas in op het moment dat de ingangsdatum is bereikt.<br clear="none">
+                        <p>Het gegeven heeft uiterlijk een waarde op het moment dat het verleningsproces is voltooid
+                           en de vergunning <em>verleend</em> is. De waarde staat op dat moment vast.<br clear="none">
+                           Gewoonlijk is dat op het moment dat de verlening definitief is vastgesteld. Er is
+                           1 uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen
+                           waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat
+                           geval wordt de ingangsdatum op een later moment bepaald.<br clear="none">
                            De datum mag in de toekomst liggen.</p>
                         </td>
                   </tr>
@@ -859,7 +858,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..1</td>
+                     <td>1</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -896,36 +895,30 @@
                      <th>Reden geen waarde</th>
                      <td>
                         
-                        <p>De waarde moet ontbreken wanneer de waarde van het attribuut <em>ingangsdatum</em> ontbreekt.</p>
+                        <p>De waarde moet ontbreken wanneer de waarde van het attribuut <em>ingangsdatum</em> ontbreekt.<br clear="none">
+                           De waarde moet ontbreken wanneer de waarde van het attribuut <em>tijdelijk verlengd</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           Voor IMBRO/A-gegevens kan het voorkomen dat de vervaldatum niet bepaald is, in dat
+                           geval ontbreekt de waarde.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven heeft gewoonlijk een waarde op het moment dat de vergunning verleend is.
-                           De waarde staat op dat moment vast. Er is een uitzondering en dat is wanneer de vergunning
-                           nog niet is ingegaan. In dat geval is de vervaldatum pas bekend op het moment dat
-                           de vergunning is ingegaan. Zolang de vergunning niet is beëindigd, is de vervaldatum
-                           de datum waarop de vergunning haar geldigheid zal verliezen.
+                        <p>Het gegeven heeft uiterlijk een waarde op het moment dat het verleningsproces is voltooid
+                           en de vergunning <em>verleend</em> is. De waarde staat op dat moment vast.<br clear="none">
+                           Gewoonlijk is dat op het moment dat de verlening definitief is vastgesteld. Er is
+                           1 uitzondering en dat is wanneer de ingangsdatum op het moment van definitieve vaststelling
+                           nog niet bekend is.<br clear="none">
+                           Zolang de vergunning niet is beëindigd, is de vervaldatum de datum waarop de vergunning
+                           haar geldigheid zal verliezen.<br clear="none">
+                           Wanneer de geldigheidsduur voor onbepaalde duur wordt verlengd, heeft het gegeven
+                           tijdelijk geen waarde (zie <em>tijdelijk verlengd</em>).<br clear="none">
+                           Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum
+                           niet bepaald zijn.<br clear="none">
                            Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning gewijzigd of beëindigd
-                           is. De oude waarde blijft behouden.
-                           In de tussenliggende periode kan het gegeven tijdelijk geen waarde hebben. De reden
-                           daarvoor is dat de geldigheidduur voor onbepaalde tijd verlengd is. Dat gebeurt in
-                           drie gevallen:
-                           · Er is een wijzigingsproces gestart, omdat de vergunninghouder verlenging van de
-                           geldigheidsduur heeft aangevraagd.
-                           · Er is een wijzigingsproces gestart, omdat de vergunninghouder een verkleining van
-                           het vergunninggebied in combinatie met een aanvraag voor een vervolgactiviteit in
-                           een deel van het gebied heeft aangevraagd.
-                           · Er is een beëindigingsproces gestart, omdat de vergunninghouder een aanvraag heeft
-                           ingediend voor een vervolgactiviteit.
-                           · Er is een beëindigingsproces gestart, omdat de minister een eerste besluit heeft
-                           genomen tot het splitsen of samenvoegen van de vergunning.
-                           De vergunning blijft geldig zolang een proces loopt.
-                           De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut
-                           toe bij de verwerking van de brondocumenten, tenzij het gegeven in een brondocument
-                           is opgenomen. Dat laatste is alleen het geval bij intrekking van de vergunning.</p>
+                           is. De oude waarde blijft behouden.<br clear="none">
+                           De datum mag in de toekomst liggen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1017,7 +1010,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e3333"></a><section id="detail_d35973e3333">
+            </section><a class="anchor" id="detail_d35973e3365"></a><section id="detail_d35973e3365">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -1064,7 +1057,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e3500"></a><section id="detail_d35973e3500">
+            </section><a class="anchor" id="detail_d35973e3532"></a><section id="detail_d35973e3532">
             <h4>  gestandaardiseerde locatie</h4>
             
             
@@ -1119,7 +1112,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e3714"></a><section id="detail_d35973e3714">
+            </section><a class="anchor" id="detail_d35973e3746"></a><section id="detail_d35973e3746">
             <h4>  levensduur</h4>
             
             
@@ -1177,7 +1170,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e3930"></a><section id="detail_d35973e3930">
+            </section><a class="anchor" id="detail_d35973e3962"></a><section id="detail_d35973e3962">
             <h4>  vergunninggeschiedenis</h4>
             
             
@@ -1236,7 +1229,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e4138"></a><section id="detail_d35973e4138">
+            </section><a class="anchor" id="detail_d35973e4170"></a><section id="detail_d35973e4170">
             <h4>  vergunninggebied</h4>
             
             
@@ -1283,7 +1276,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e4305"></a><section id="detail_d35973e4305">
+            </section><a class="anchor" id="detail_d35973e4337"></a><section id="detail_d35973e4337">
             <h4>  vergunninghouder</h4>
             
             
@@ -1338,7 +1331,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e4519"></a><section id="detail_d35973e4519">
+            </section><a class="anchor" id="detail_d35973e4551"></a><section id="detail_d35973e4551">
             <h4>  lopende wijziging</h4>
             
             
@@ -2550,7 +2543,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e8693"></a><section id="detail_d35973e8693">
+            </section><a class="anchor" id="detail_d35973e8725"></a><section id="detail_d35973e8725">
             <h4>  verleend gebied</h4>
             
             
@@ -2789,7 +2782,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e9501"></a><section id="detail_d35973e9501">
+            </section><a class="anchor" id="detail_d35973e9533"></a><section id="detail_d35973e9533">
             <h4>  dieptebereik</h4>
             
             
@@ -2998,7 +2991,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e10253"></a><section id="detail_d35973e10253">
+            </section><a class="anchor" id="detail_d35973e10285"></a><section id="detail_d35973e10285">
             <h4>  geologische bovengrens</h4>
             
             
@@ -3058,7 +3051,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e10469"></a><section id="detail_d35973e10469">
+            </section><a class="anchor" id="detail_d35973e10501"></a><section id="detail_d35973e10501">
             <h4>  geologische ondergrens</h4>
             
             
@@ -3451,7 +3444,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e11810"></a><section id="detail_d35973e11810">
+            </section><a class="anchor" id="detail_d35973e11842"></a><section id="detail_d35973e11842">
             <h4>  te wijzigen gegevens</h4>
             
             
@@ -3876,7 +3869,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e13266"></a><section id="detail_d35973e13266">
+            </section><a class="anchor" id="detail_d35973e13298"></a><section id="detail_d35973e13298">
             <h4>  geologische bovengrens</h4>
             
             
@@ -3923,7 +3916,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d35973e13433"></a><section id="detail_d35973e13433">
+            </section><a class="anchor" id="detail_d35973e13465"></a><section id="detail_d35973e13465">
             <h4>  geologische ondergrens</h4>
             
             
