@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20201106</p>
       <p>Imvertor: 1.63.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210128-183740</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.1-1-20201106-20210128-232909</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -49,9 +49,11 @@
                         <td>
                            
                            <p>De populatie mijnbouwwetvergunningen in de registratie ondergrond omvat de vergunningen
-                              die het recht geven op het opsporen van delfstoffen, aardwarmte en CO<sub>2</sub>-opslagcomplexen, en op het winnen van delfstoffen en aardwarmte, het opslaan van
-                              stoffen en het permanent opslaan van CO<sub>2</sub> in de ondergrond. Ieder object heeft ter identificatie een eigen BRO-ID.<br clear="none">
-                              De populatie omvat alleen de vergunningen die op 1 januari 2003 niet waren beëindigd.</p>
+                              die het recht geven op het opsporen van delfstoffen, aardwarmte en CO<sub>2</sub>-opslagcomplexen, op het winnen van delfstoffen, aardwarmte en kalksteen, en het opslaan
+                              van stoffen en het permanent opslaan van CO<sub>2</sub> in de ondergrond. Ieder object heeft ter identificatie een eigen BRO-ID.<br clear="none">
+                              De populatie omvat alleen de vergunningen die op 1 januari 2003 niet waren beëindigd,
+                              en van de vergunningen voor het winnen van kalksteen, de vergunningen die zijn verleend
+                              vanaf 1 januari 2011.</p>
                            </td>
                      </tr>
                   </tbody>
@@ -85,8 +87,7 @@
                               
                               <p>De gegevens die het recht van een bepaalde partij om in een bepaald gebied een bepaalde
                                  mijnbouwactiviteit uit te voeren, identificeren en inzicht geven in de geschiedenis
-                                 van het object voorafgaand aan opname in de registratie ondergrond, met een aantal
-                                 eigenschappen die het recht als geheel karakteriseren.</p>
+                                 van het object voorafgaand aan opname in de registratie ondergrond.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -716,7 +717,7 @@
                                     processen die een vergunning doorloopt: het verleningsproces, het wijzigingsproces
                                     en het beëindigingsproces.<br clear="none">
                                     Wanneer de vergunning wordt beëindigd voordat het verleningsproces is voltooid, is
-                                    de vergunning <em>voortijdig beëindigd</em>. Wanneer de vergunning wordt beëindigd omdat hij is opgevolgd door 1 of meer andere
+                                    de vergunning <em>voortijdig beëindigd</em>. Wanneer de vergunning wordt beëindigd omdat hij is opgevolgd door één of meer andere
                                     vergunningen, is de vergunning <em>opgevolgd</em>.</p>
                                  </td>
                            </tr>
@@ -848,11 +849,10 @@
                               <td>
                                  
                                  <p>Het gegeven heeft uiterlijk een waarde op het moment dat het verleningsproces is voltooid.
-                                    De waarde staat op dat moment vast.<br clear="none">
                                     Gewoonlijk staat de ingangsdatum vast op het moment dat de verlening definitief is
                                     vastgesteld. Er is één uitzondering en dat is wanneer in het definitieve besluit een
                                     voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de
-                                    vergunning ingaat. In dat geval wordt de datum op een later moment bepaald.<br clear="none">
+                                    vergunning ingaat. In dat geval wordt de datum op een later moment vastgesteld.<br clear="none">
                                     Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet
                                     en zijn aangeleverd in het kader van archiefoverdracht, kan de ingangsdatum niet bekend
                                     zijn.<br clear="none">
@@ -930,18 +930,17 @@
                               <td>
                                  
                                  <p>Het gegeven heeft uiterlijk een waarde op het moment dat het verleningsproces is voltooid.
-                                    De waarde staat op dat moment vast. Het gegeven kan een nieuwe waarde krijgen wanneer
-                                    de vergunning is gewijzigd. In dat geval blijft de oude waarde behouden.<br clear="none">
                                     Gewoonlijk staat de vervaldatum vast op het moment dat de verlening definitief is
                                     vastgesteld. Er is één uitzondering en dat is wanneer in het definitieve besluit een
                                     voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de
-                                    vergunning ingaat. In dat geval wordt de datum op een later moment bepaald.<br clear="none">
-                                    Zolang de vergunning niet is beëindigd, is de vervaldatum de datum waarop de vergunning
-                                    haar geldigheid zal verliezen.<br clear="none">
+                                    vergunning ingaat. In dat geval wordt de datum op een later moment vastgesteld.<br clear="none">
+                                    Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd of beëindigd.
+                                    In dat geval blijft de oude waarde behouden.<br clear="none">
                                     Wanneer de geldigheidsduur voor onbepaalde duur wordt verlengd, heeft het gegeven
-                                    tijdelijk geen waarde (zie <em>tijdelijk verlengd</em>).<br clear="none">
+                                    tijdelijk geen waarde.<br clear="none">
                                     Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum
-                                    niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig. 
+                                    niet bepaald zijn. In dat geval heeft het gegeven geen waarde. De vergunning is voor
+                                    onbepaalde tijd geldig.<br clear="none">
                                     De datum mag in de toekomst liggen.</p>
                                  </td>
                            </tr>
@@ -1014,7 +1013,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e3309"></a><section id="detail_d36397e3309">
+                     </section><a class="anchor" id="detail_d36439e3300"></a><section id="detail_d36439e3300">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1047,7 +1046,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e3476"></a><section id="detail_d36397e3476">
+                  </section><a class="anchor" id="detail_d36439e3467"></a><section id="detail_d36439e3467">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1088,7 +1087,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e3690"></a><section id="detail_d36397e3690">
+                  </section><a class="anchor" id="detail_d36439e3681"></a><section id="detail_d36439e3681">
                      <h4>  levensduur</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1129,7 +1128,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e3898"></a><section id="detail_d36397e3898">
+                  </section><a class="anchor" id="detail_d36439e3889"></a><section id="detail_d36439e3889">
                      <h4>  vergunninggeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1169,12 +1168,15 @@
                                     vergunning in de registratie. Iedere keer dat er nieuwe gegevens beschikbaar komen
                                     die van algemeen belang zijn, is er sprake van een gebeurtenis die in de basisregistratie
                                     ondergrond geregistreerd moet worden. Zo bouwt de vergunning in de registratie een
-                                    geschiedenis op.</p>
+                                    geschiedenis op.<br clear="none">
+                                    Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet
+                                    en zijn aangeleverd in het kader van archiefoverdracht, is de geschiedenis summier
+                                    opgenomen. TODO</p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e4106"></a><section id="detail_d36397e4106">
+                  </section><a class="anchor" id="detail_d36439e4105"></a><section id="detail_d36439e4105">
                      <h4>  vergunninggebied</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1207,7 +1209,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e4273"></a><section id="detail_d36397e4273">
+                  </section><a class="anchor" id="detail_d36439e4272"></a><section id="detail_d36439e4272">
                      <h4>  vergunninghouder</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1248,7 +1250,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e4487"></a><section id="detail_d36397e4487">
+                  </section><a class="anchor" id="detail_d36439e4486"></a><section id="detail_d36439e4486">
                      <h4>  lopende wijziging</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2104,8 +2106,7 @@
                               <td>
                                  
                                  <p>De begindatum is de datum waarop het registratieobject ontstaat en de registratie
-                                    in de BRO start. De einddatum is de datum waarop het registratieobject is beëindigt
-                                    en de registratie in de BRO is voltooid.<br clear="none">
+                                    in de BRO start.<br clear="none">
                                     De mijnbouwwetvergunning bestaat vanaf het moment dat de vergunningverlener het eerste
                                     besluit tot verlening bekend heeft gemaakt.<br clear="none">
                                     Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet
@@ -2150,6 +2151,10 @@
                               <td>Datum</td>
                            </tr>
                            <tr>
+                              <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                              <td>OnvolledigeDatum</td>
+                           </tr>
+                           <tr>
                               <th>&nbsp;&nbsp;Waardebereik</th>
                               <td>1 januari 2003 tot heden</td>
                            </tr>
@@ -2163,6 +2168,20 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>De einddatum is de datum waarop het registratieobject is beëindigt en de registratie
+                                    in de BRO is voltooid.<br clear="none">
+                                    De mijnbouwwetvergunning is beëindigd op de datum dat de vergunning is verlopen of
+                                    vervallen. Wanneer de vergunning wordt ingetrokken, gesplits, samengevoegd of wordt
+                                    opgevolgd door een vergunning voor een vervolgactiviteit, is er sprake van een beëindigingsproces.
+                                    In dat geval is de beëindigingsdatum de datum waarop het proces is voltooid.<br clear="none">
+                                    Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht, kan de beëindigingsdatum
+                                    niet bekend zijn.</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -2326,13 +2345,6 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>Wanneer de verleende vergunning wordt gewijzigd, wordt het type wijziging vastgelegd.</p>
-                                 </td>
-                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Gebeurtenis_besluitnummer"></a><section id="detail_attribute_Model_Gebeurtenis_besluitnummer">
@@ -2378,9 +2390,7 @@
                               <td>
                                  
                                  <p>Het besluitnummer is een unieke identificatie die de vergunningverlener toekent aan
-                                    het besluit.<br clear="none">
-                                    De verlening, wijziging, intrekking, opvolging en weigering van een vergunning worden
-                                    altijd vastgelegd in een besluit.</p>
+                                    het besluit.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2450,16 +2460,9 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
-                           <tr>
-                              <th>Toelichting</th>
-                              <td>
-                                 
-                                 <p>De mijnbouwgrens TODO</p>
-                                 </td>
-                           </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e8684"></a><section id="detail_d36397e8684">
+                     </section><a class="anchor" id="detail_d36439e8670"></a><section id="detail_d36439e8670">
                      <h4>  verleend gebied</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2557,7 +2560,7 @@
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
-                              <td>Nee</td>
+                              <td>Ja</td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -2568,7 +2571,7 @@
                                     Het vergunninggebied heeft gewoonlijk een naam die niet verandert en dat is de naam
                                     van het oorspronkelijk verleende gebied. Bij uitzondering geeft de vergunningverlener
                                     bij verkleining een nieuwe naam aan het vergunninggebied. In dat geval krijgt het
-                                    gegeven een nieuwe waarde. De oude waarde wordt overschreven.</p>
+                                    gegeven een nieuwe waarde. De oude waarde blijft behouden.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2627,18 +2630,22 @@
                                  
                                  <p>In het besluit van de vergunningverlener is de begrenzing van het gebied beschreven.
                                     De aangeleverde begrenzing is een meer nauwkeurige invulling van die beschrijving.<br clear="none">
-                                    In de Mijnbouwregeling is bepaald dat de begrenzing van een gebied dat onshore ligt,
-                                    wordt uitgedrukt in RD (Rijksdriehoeksmeting) en de begrenzing van een gebied offshore
-                                    wordt uitgedrukt in ETRS89 (European Terrestrial Reference System 1989).<br clear="none">
-                                    Offshore gebieden werden tot 22 februari 2014 uitgedrukt in ED50 (Europese vereffening).
-                                    Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht waarvan de begrenzing
-                                    is uitgedrukt in ED50, is de begrenzing getransformeerd naar ETRS89.<br clear="none">
-                                    Het domein GM_Surface is een type geometrie gedefinieerd in ISO 19107 en wordt gebruikt
+                                    Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de
+                                    vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is <em>gewijzigd</em>. In dat geval blijft de oude waarde behouden.<br clear="none">
+                                    In de Mijnbouwregeling is bepaald dat de begrenzing van een gebied dat aan de landzijde
+                                    van de mijnbouwgrens (onshore) ligt wordt uitgedrukt in RD (Rijksdriehoeksmeting),
+                                    en de begrenzing van een gebied aan zeezijde van de mijnbouwgrens (offshore) wordt
+                                    uitgedrukt in ETRS89 (European Terrestrial Reference System 1989).<br clear="none">
+                                    Begrenzingen van offshore gebieden die zijn vastgesteld voor 22 februari 2014 werden
+                                    uitgedrukt in ED50 (Europese vereffening). Begrenzingen van verleende gebieden die
+                                    zijn vastgesteld in ED50 en zijn aangeleverd in het kader van archiefoverdracht, zijn
+                                    voorafgaand aan opname in de basisregistratie ondergrond getransformeerd naar ETRS89.<br clear="none">
+                                    </p>
+                                 
+                                 <p>Het domein GM_Surface is een type geometrie gedefinieerd in ISO 19107 en wordt gebruikt
                                     om de locatie van een aaneengesloten gebied op het aardoppervlak vast te leggen, ofwel
                                     een tweedimensionaal (2D) vlak.<br clear="none">
-                                    De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.</p>
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2700,7 +2707,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e9527"></a><section id="detail_d36397e9527">
+                     </section><a class="anchor" id="detail_d36439e9526"></a><section id="detail_d36439e9526">
                      <h4>  dieptebereik</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2826,9 +2833,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.<br clear="none">
+                                 <p>De waarde staat vast op het moment dat de vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. De
+                                    oude waarde blijft behouden.<br clear="none">
                                     Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
                                     de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
                                     Amsterdams Peil).</p>
@@ -2886,9 +2892,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.<br clear="none">
+                                 <p>De waarde staat vast op het moment dat de vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. De
+                                    oude waarde blijft behouden.<br clear="none">
                                     Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
                                     de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
                                     Amsterdams Peil).</p>
@@ -2896,7 +2901,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e10279"></a><section id="detail_d36397e10279">
+                     </section><a class="anchor" id="detail_d36439e10282"></a><section id="detail_d36439e10282">
                      <h4>  geologische bovengrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2931,9 +2936,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.<br clear="none">
+                                 <p>De waarde staat vast op het moment dat de vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. De
+                                    oude waarde blijft behouden.<br clear="none">
                                     Bij voorkeur wordt de diepte gedefinieerd in termen van lithostratigrafie. Bij het
                                     winnen van aardwarmte is de bovengrens veelal de basis van een eenheid die niet doorlaatbaar
                                     is voor water. Bij de winning van olie en gas is het gewoonlijk de basis van een gesteentepakket
@@ -2942,7 +2946,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e10495"></a><section id="detail_d36397e10495">
+                  </section><a class="anchor" id="detail_d36439e10502"></a><section id="detail_d36439e10502">
                      <h4>  geologische ondergrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2977,9 +2981,8 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.</p>
+                                 <p>De waarde staat vast op het moment dat de vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. De
+                                    oude waarde blijft behouden.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3206,12 +3209,12 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde staat vast vanaf het moment dat de vergunning is verleend. Het gegeven kan
-                                    een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. In dat geval blijft
-                                    de oude waarde behouden.<br clear="none">
+                                 <p>De waarde staat vast op het moment dat de vergunning is <em>verleend</em>. Het gegeven kan een nieuwe waarde krijgen wanneer de vergunning is gewijzigd. De
+                                    oude waarde blijft behouden.<br clear="none">
                                     Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht kan het voorkomen
                                     dat de vergunninghouder niet bekend is of het handelsnummer van de organisatie niet
-                                    bekend is.</p>
+                                    bekend is.
+                                    TODO</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3241,18 +3244,15 @@
                            <td>
                               
                               <p>De <em>lopende wijziging</em> omvat de gegevens die bij een actueel wijzigingsbesluit horen. De entiteit is van
-                                 tijdelijke aard.<br clear="none">
-                                 Het gegeven is van tijdelijke aard en ontstaat op het moment dat een wijzigingsproces
-                                 gestart is en verdwijnt op het moment dat het proces is afgesloten. In veel gevallen
-                                 worden dan de waarden van de <em>te wijzigen gegevens</em> onveranderd vastgelegd in de vergunning met de datum waarop zij geldig zijn geworden.
-                                 Het komt ook voor dat de gegevens pas hun uiteindelijke waarde krijgen op het moment
-                                 dat de wijziging wordt doorgevoerd. Het kan zich voordoen dat in het definitieve besluit
-                                 een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat
-                                 de wijziging ingaat of dat er tijdens het wijzigingsproces helemaal geen ingangsdatum
-                                 is bepaald. Verder is het mogelijk dat het wijzigingsproces wordt afgebroken. In dat
-                                 geval verdwijnen de gegevens helemaal.
-                                 De gegevens van de lopende wijziging zijn niet dynamisch. Zolang de wijziging niet
-                                 is vastgesteld kunnen de waarden worden overschreven.</p>
+                                 tijdelijke aard en ontstaat op het moment dat een wijzigingsproces is gestart, en
+                                 verdwijnt op het moment dat het proces is afgesloten.<br clear="none">
+                                 Wanneer het wijzigingsproces is voltooid, en dat is wanneer het besluit onherroepelijk
+                                 is geworden en de wijziging is ingegaan, verdwijnt de lopende wijziging. De waarden
+                                 van de <em>te wijzigen gegevens</em> worden bij de betreffende gegevens in de vergunning vastgelegd met de datum waarop
+                                 zij geldig zijn geworden.<br clear="none">
+                                 Wanneer het wijzigingsproces wordt afgebroken verdwijnen de gegevens helemaal.<br clear="none">
+                                 Zolang de wijziging niet is vastgesteld kunnen de waarden van de lopende wijziging
+                                 worden overschreven.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3322,16 +3322,16 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven kan lopende het wijzigingsproces op ieder moment een waarde krijgen. Dat
-                                    vindt uiterlijk plaats op het moment dat de wijziging definitief is vastgesteld. Op
-                                    dat moment ligt de waarde ook vast. Het kan bij uitzondering voorkomen dat die datum
-                                    er nooit geweest is. In dat geval wijzigt het gegeven op een moment die niet van te
-                                    voren was aangekondigd.</p>
+                                 <p>Het gegeven heeft uiterlijk een waarde op het moment dat het wijzigingsproces is voltooid.
+                                    Gewoonlijk staat de ingangsdatum van de wijziging vast op het moment dat de wijziging
+                                    definitief is vastgesteld. Er is één uitzondering en dat is wanneer in het definitieve
+                                    besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan
+                                    voordat de wijziging ingaat. In dat geval wordt de datum op een later moment vastgesteld.</p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e11837"></a><section id="detail_d36397e11837">
+                     </section><a class="anchor" id="detail_d36439e11856"></a><section id="detail_d36439e11856">
                      <h4>  te wijzigen gegevens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3396,11 +3396,9 @@
                            <td>
                               
                               <p>De inhoud van de lopende wijziging omvat de gegevens van de vergunning die worden
-                                 gewijzigd en dat kunnen er één of meer zijn. De gegevens zijn al eerder gedefinieerd.
-                                 Van deze gegevens worden hier enkel de naam, definitie, kardinaliteit en het domein
-                                 opgenomen.<br clear="none">
-                                 Voor de gegevens geldt de algemene regel dat de waarden van de te wijzigen gegevens
-                                 afwijken van de actuele waarden. De onderlinge consistentie binnen de lopende wijziging
+                                 gewijzigd en dat kunnen er één of meer zijn. Voor de gegevens geldt de algemene regel
+                                 dat de waarden van de te wijzigen gegevens afwijken van de actuele waarden, met uitzondering
+                                 van de vertrekkende organisatie. De onderlinge consistentie binnen de lopende wijziging
                                  en eventueel andere regels worden gewaarborgd in de brondocumenten.</p>
                               </td>
                         </tr>
@@ -3420,7 +3418,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum die het begin aangeeft van de periode waarin de vergunning geldig is.</p>
+                                 <p>De nieuwe datum die het begin aangeeft van de periode waarin de vergunning geldig
+                                    is.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3446,6 +3445,16 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Gewoonlijk kan de ingangsdatum niet meer wijzigingen vanaf het moment dat de verlening
+                                    definitief is vastgesteld. Er is één uitzondering en dat is wanneer de ingangsdatum
+                                    na de datum ligt waarop het besluit definitief is vastgesteld. Zolang de vergunning
+                                    niet is ingegaan, kan de ingangsdatum van de vergunning gewijzigd worden.</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -3533,6 +3542,15 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende
+                                    wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het
+                                    gegeven direct gewijzigd (<em>vergunningOvergedragen</em>).</p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Tewijzigengegevens_toetredendeorganisatie"></a><section id="detail_attribute_Model_Tewijzigengegevens_toetredendeorganisatie">
@@ -3581,6 +3599,15 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende
+                                    wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het
+                                    gegeven direct gewijzigd (<em>vergunningOvergedragen</em>).</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -3756,7 +3783,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d36397e13343"></a><section id="detail_d36397e13343">
+                     </section><a class="anchor" id="detail_d36439e13451"></a><section id="detail_d36439e13451">
                      <h4>  geologische bovengrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3789,7 +3816,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d36397e13510"></a><section id="detail_d36397e13510">
+                  </section><a class="anchor" id="detail_d36439e13618"></a><section id="detail_d36439e13618">
                      <h4>  geologische ondergrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4795,12 +4822,15 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>beeindigd</td>
+                     <td>ingetrokken</td>
                      <td></td>
                      <td>✔</td>
                      <td>
                         
-                        <p>De vergunning is beëindigd en de beëindiging is ingegaan.</p>
+                        <p>De vergunning is ingetrokken, op verzoek van de vergunninghouder of ambtshalve besloten
+                           door de vergunningverlener. Het intrekkingsproces is geregistreerd als één gebeurtenis
+                           en dat is het moment waarop de intrekking is ingegaan.<br clear="none">
+                           De vergunning is daarmee <em>beëindigd</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4809,7 +4839,9 @@
                      <td>✔</td>
                      <td>
                         
-                        <p>De vergunning is gewijzigd en de wijziging is ingegaan.</p>
+                        <p>De vergunning is gewijzigd. Het wijzigingsproces is geregistreerd als één gebeurtenis
+                           en dat is het moment waarop de wijziging is ingegaan.<br clear="none">
+                           De vergunning is daarmee <em>gewijzigd</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4818,8 +4850,10 @@
                      <td>✔</td>
                      <td>
                         
-                        <p>De vergunning is opgevolgd door 1 of meer andere vergunningen en de vergunning is
-                           beëindigd.</p>
+                        <p>De vergunning is gesplitst of samengevoegd, of een vergunning voor een vervolgactiviteit
+                           is verleend. Het opvolgingsproces is geregistreerd als één gebeurtenis en dat is het
+                           moment waarop de opvolging is ingegaan.<br clear="none">
+                           De vergunning is daarmee <em>opgevolgd</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4828,7 +4862,9 @@
                      <td>✔</td>
                      <td>
                         
-                        <p>De vergunning is verleend en ingegaan.</p>
+                        <p>De vergunning is verleend. Het verleningsproces is geregistreerd als één gebeurtenis
+                           en dat is het moment waarop de verlening is ingegaan.<br clear="none">
+                           De vergunning is daarmee <em>verleend</em>.</p>
                         </td>
                   </tr>
                </tbody>
@@ -5004,7 +5040,9 @@
                      <td>✔</td>
                      <td>
                         
-                        <p>De vergunning is overgedragen op een andere vergunninghouder.</p>
+                        <p>De vergunning is overgedragen aan een andere partij. Er zijn één of meer organisaties
+                           tot de partij toegetreden, er zijn één of meer organisaties die de partij hebben verlaten,
+                           of de vergunning is overgedragen aan een geheel nieuwe partij.</p>
                         </td>
                   </tr>
                   <tr>
