@@ -1,4 +1,4 @@
-# Mijnbouwwetvergunning (Exploration production (and storage) licence/EPL)
+# Mijnbouwwetvergunning
 Deze repository wordt gebruikt voor het ontwikkelen van de BRO gegevenscatalogus Mijnbouwwetvergunning.
 
 De onderhanden versie van deze catalogus is te vinden op https://broprogramma.github.io/EPL/.
