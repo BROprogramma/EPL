@@ -1,8 +1,9 @@
 # Mijnbouwwetvergunning (Exploration production (and storage) licence/EPL)
-Repository voor de BRO gegevenscatalogus Mijnbouwwetvergunning.
+Deze repository wordt gebruikt voor het ontwikkelen van de BRO gegevenscatalogus Mijnbouwwetvergunning.
 
-## Publieke consultatie
-Van 1 februari tot en met 15 maart loopt de consultatie over de catalogus Mijnbouwwetvergunning. meer informatie over de consultatie en ook het webformulier om reacties in te dienen vindt u op de [BRO website][1]
+De onderhanden versie van deze catalogus is te vinden op https://broprogramma.github.io/EPL/.
 
+##  Definitieve versie
+De vastgestelde catalogus is te vinden op de [BRO Productomgeving][1].
 
-[1]: https://basisregistratieondergrond.nl/inhoud-bro/registratieobjecten/standaarden/publieke-consultaties/
+[1]: https://bro-productomgeving.nl/bpo/latest
