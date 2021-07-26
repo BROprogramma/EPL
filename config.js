@@ -2,8 +2,8 @@ var respecConfig = {
   specStatus: "GN-WV",
   specType: "IM",
   //subtitle: "",
-  canonicalURI: "VV",
-  publishDate: "2021-07-22",
+  //canonicalURI: "VV",
+  //publishDate: "2021-07-22",
   maxTocLevel: 4,
 logos: [
   {
@@ -28,7 +28,7 @@ logos: [
   shortName: "EPL",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/EPL",
-  previousPublishDate: "2017-11-21",
-  previousStatus: "GN-DEF",
+  //previousPublishDate: "2020-03-25",
+  //previousStatus: "GN-DEF",
   //localBiblio: {},
  };
