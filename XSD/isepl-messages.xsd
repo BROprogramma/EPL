@@ -845,6 +845,30 @@ Explanation: Het element sourceDocument vervangt een eerder aangeboden brondocum
       </xs:sequence>
       <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
    </xs:complexType>
+   <xs:element name="MoveRequest"
+               type="isepl:MoveRequestType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht moveRequest is een specialisatie van isgpd:CorrectionRequest, waaraan het een attribuut dateToBeCorrected toevoegt.
+Explanation: Met een replaceRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt een eerder aangeboden brondocument verplaatst op de tijdlijn van de materiële geschiedenis.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="MoveRequestType">
+      <xs:complexContent>
+         <xs:extension base="brocom:CorrectionRequestType">
+            <xs:sequence>
+               <xs:element name="dateToBeCorrected"
+                           type="brocom:PartialDateType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De (mogelijkerwijs onvolledige) datum van de gebeurtenis, afgeleid van een eerder aangeboden brondocument, die moet worden vervangen.
+Explanation: De juiste datum is opgenomen in het sourceDocument.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
    <xs:complexType name="AmendmentAreaType">
       <xs:sequence>
          <xs:element name="areaToBeRenounced"
