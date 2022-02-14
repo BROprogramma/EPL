@@ -742,14 +742,17 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:attribute name="codeSpace"
                           type="xs:anyURI"
                           use="required"
-                          fixed="urn:brocom:epl:BoundaryGeologicalUnit"/>
+                          fixed="urn:bro:epl:BoundaryGeologicalUnit"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="CurrentStatusType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" 
+						type="xs:anyURI" 
+						use="required" 
+						fixed="urn:bro:epl:CurrentStatus"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
@@ -759,7 +762,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:attribute name="codeSpace"
                           type="xs:anyURI"
                           use="required"
-                          fixed="urn:brocom:epl:DeliveryContext"/>
+                          fixed="urn:bro:epl:DeliveryContext"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
@@ -769,14 +772,14 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:attribute name="codeSpace"
                           type="xs:anyURI"
                           use="required"
-                          fixed="urn:brocom:epl:EventName"/>
+                          fixed="urn:bro:epl:EventName"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
    <xs:complexType name="MineralType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:epl:Mineral"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
@@ -786,7 +789,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:attribute name="codeSpace"
                           type="xs:anyURI"
                           use="required"
-                          fixed="urn:brocom:epl:MiningActivitiy"/>
+                          fixed="urn:bro:epl:MiningActivitiy"/>
          </xs:restriction>
       </xs:simpleContent>
    </xs:complexType>
