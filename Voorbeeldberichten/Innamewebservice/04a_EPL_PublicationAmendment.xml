@@ -5,7 +5,7 @@
         xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
         xmlns:gml="http://www.opengis.net/gml/3.2"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 ../XSD/isepl-messages.xsd">
+        xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 ../../XSD/isepl-messages.xsd">
     <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
         Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
         xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd">
@@ -18,7 +18,7 @@
     <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
     <sourceDocument>
 		<eplcom:EPL_PublicationAmendment gml:id="id_0001">
-			<eplcom:eventDate>2021-08-01</eplcom:eventDate>
+			<eplcom:eventDate>2022-09-01</eplcom:eventDate>
 			<eplcom:eventName codeSpace="urn:bro:epl:EventName">wijzigingsbesluitBekendgemaakt</eplcom:eventName>
 			<eplcom:decreeNumber>String</eplcom:decreeNumber>
 			<!-- 0 to 3 repetitions:-->
@@ -26,11 +26,11 @@
 			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">gebiedswijziging</eplcom:amendmentType>
 			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingGeldigheid</eplcom:amendmentType>
 			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingVergunninghouder</eplcom:amendmentType>
-			<eplcom:plannedEffectiveDate>2021-09-01</eplcom:plannedEffectiveDate>
+			<eplcom:plannedEffectiveDate>2022-09-01</eplcom:plannedEffectiveDate>
 			<!-- Optional: -->
 			<eplcom:amendmentValidity>
-				<eplcom:effectiveDate>2021-08-01</eplcom:effectiveDate>
-				<eplcom:expiryDate>2022-08-01</eplcom:expiryDate>
+				<eplcom:effectiveDate>2022-07-15</eplcom:effectiveDate>
+				<eplcom:expiryDate>2032-08-01</eplcom:expiryDate>
 			</eplcom:amendmentValidity>
 			<!-- Optional: -->
 			<eplcom:amendmentLicenceHolder>
@@ -110,8 +110,8 @@
 					<eplcom:areaToBeReplaced>50</eplcom:areaToBeReplaced>
 					<!--en 2 of meerdere gebieden-->
 					<eplcom:newArea>
-						<eplcom:areaNumber>0</eplcom:areaNumber>
-						<eplcom:areaName>String</eplcom:areaName>
+						<eplcom:areaNumber>79</eplcom:areaNumber>
+						<eplcom:areaName>E3d</eplcom:areaName>
 						<eplcom:deliveredBoundary>
 							<!-- You have a CHOICE of the next 2 items at this level
 							<gml:Surface>?</gml:Surface>
@@ -135,21 +135,27 @@
 						</eplcom:deliveredBoundary>
 						<eplcom:verticalBounded>ja</eplcom:verticalBounded>
 						<eplcom:depthRange>
+							<!-- optional: 
 							<eplcom:beginDepth uom="m">30</eplcom:beginDepth>
+							-->
+							<!-- optional: 
 							<eplcom:endDepth uom="m">300</eplcom:endDepth>
+							-->
+							<!-- optional: -->
 							<eplcom:geologicalUpperBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
 							</eplcom:geologicalUpperBoundary>
+							<!-- optional: -->
 							<eplcom:geologicalLowerBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
 							</eplcom:geologicalLowerBoundary>
 						</eplcom:depthRange>
 					</eplcom:newArea>
 					<eplcom:newArea>
-						<eplcom:areaNumber>0</eplcom:areaNumber>
-						<eplcom:areaName>String</eplcom:areaName>
+						<eplcom:areaNumber>80</eplcom:areaNumber>
+						<eplcom:areaName>F1</eplcom:areaName>
 						<eplcom:deliveredBoundary>
 							<!-- You have a CHOICE of the next 2 items at this level
 							<gml:Surface>?</gml:Surface>
@@ -173,15 +179,21 @@
 						</eplcom:deliveredBoundary>
 						<eplcom:verticalBounded>ja</eplcom:verticalBounded>
 						<eplcom:depthRange>
+							<!-- Optional:
 							<eplcom:beginDepth uom="m">300</eplcom:beginDepth>
+							-->
+							<!-- Optional:
 							<eplcom:endDepth uom="m">330</eplcom:endDepth>
+							-->
+							<!-- Optional: -->
 							<eplcom:geologicalUpperBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
 							</eplcom:geologicalUpperBoundary>
+							<!-- Optional: -->
 							<eplcom:geologicalLowerBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
 							</eplcom:geologicalLowerBoundary>
 						</eplcom:depthRange>
 					</eplcom:newArea>
