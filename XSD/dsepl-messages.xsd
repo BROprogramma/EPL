@@ -9,7 +9,6 @@
     terzake tussen de partijen gesloten overeenkomst.
 -->
 <xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-           xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
            xmlns:dsepl="http://www.broservices.nl/xsd/dsepl/1.0"
            xmlns:eplcom="http://www.broservices.nl/xsd/eplcommon/1.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
