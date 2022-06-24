@@ -25,8 +25,8 @@
             <brocom:rejectionReason>Dit registratieobject bestaat niet.</brocom:rejectionReason>
             <!-- 0 or more repetitions: alleen aanwezig als responseType = rejection. -->
             <brocom:criterionError>
-              <brocom:sequenceNumber>1</brocom:sequenceNumber>
-              <brocom:specification>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</brocom:specification>
+                <brocom:sequenceNumber>1</brocom:sequenceNumber>
+                <brocom:specification>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</brocom:specification>
             </brocom:criterionError>
             <brocom:criterionError>
                 <brocom:sequenceNumber>2</brocom:sequenceNumber>

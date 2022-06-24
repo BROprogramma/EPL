@@ -121,10 +121,10 @@
         <xs:complexContent>
             <xs:extension base="brocom:AbstractCharacteristicsV2Type">
                 <xs:sequence>
-                    <xs:element name="miningActivity" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivitityType">
+                    <xs:element name="miningActivity" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivityType">
                         <xs:annotation>
                             <xs:appinfo>
-                                <CodeListName>MiningActivitity</CodeListName>
+                                <CodeListName>MiningActivity</CodeListName>
                                 <CodeListURI>urn:bro:epl:MiningActivity</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mijnbouwactiviteit waarop het recht betrekking heeft.
@@ -196,7 +196,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
 Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of samengevoegd en wanneer de houder van de vergunning wil overgaan tot een nieuwe vervolgactiviteit in het gebied. In vervolg op opsporing van een CO2-opslagcomplex, is dat opslag van CO2. In vervolg op winning van koolwaterstoffen is dat opslag. In vervolg op opsporing van koolwaterstoffen is dat winning of opslag. In vervolg op opsporing van andere delfstoffen of aardwarmte is dat winning.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="true" type="eplcom:LicenceHolderType">
+                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De partij die het vergunde recht heeft.
 Explanation: De vergunninghouder staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
@@ -231,10 +231,10 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
 Explanation: De wetgever stipuleert dat het gegeven in de basisregistratie ondergrond moet zijn vastgelegd om inzicht te geven in de plaats die het object heeft in de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="miningActivitiy" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivitityType">
+                    <xs:element name="miningActivity" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivityType">
                         <xs:annotation>
                             <xs:appinfo>
-                                <CodeListName>MiningActivitity</CodeListName>
+                                <CodeListName>MiningActivity</CodeListName>
                                 <CodeListURI>urn:bro:epl:MiningActivity</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mijnbouwactiviteit waarop het recht betrekking heeft.
@@ -327,7 +327,7 @@ Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of
 Explanation: De gestandaardiseerde locatie van de mijnbouwwetvergunning is gedefinieerd als een multivlak en omvat alle geldige verleende gebieden van de vergunning.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="true" type="eplcom:LicenceHolderType">
+                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De partij die het vergunde recht heeft.
 Explanation: De vergunninghouder staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
@@ -405,10 +405,10 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
 Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut toe bij de verwerking van de brondocumenten. De vergunning doorloopt tijdens haar leven een aantal stadia. De actuele status geeft aan in welk stadium de vergunning zich bevindt. De stadia zijn gekoppeld aan de drie processen die een vergunning doorloopt: het verleningsproces, het wijzigingsproces en het beëindigingsproces. Wanneer de vergunning wordt beëindigd voordat het verleningsproces is voltooid, is de vergunning voortijdig beëindigd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="miningActivity" minOccurs="0" maxOccurs="1" type="eplcom:MiningActivitityType">
+                    <xs:element name="miningActivity" minOccurs="0" maxOccurs="1" type="eplcom:MiningActivityType">
                         <xs:annotation>
                             <xs:appinfo>
-                                <CodeListName>MiningActivitity</CodeListName>
+                                <CodeListName>MiningActivity</CodeListName>
                                 <CodeListURI>urn:bro:epl:MiningActivity</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mijnbouwactiviteit waarop het recht betrekking heeft.

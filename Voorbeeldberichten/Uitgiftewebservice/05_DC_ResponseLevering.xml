@@ -33,34 +33,69 @@
                     <brocom:underReview>nee</brocom:underReview>
                     <!-- optional: -->
                     <brocom:standardizedLocation>
-						<gml:MultiSurface gml:id="id_0002">
-							<!-- 1 or more repetitions: -->
-							<gml:surfaceMember>
-								<!-- TODO transformeren van EPSG:28992 (RD) naar EPSG:4258 (ETRS89) -->
-								<gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
-									<gml:exterior>
-										<gml:LinearRing>
-											<gml:posList>
-												251575 469400
-												251500 469380
-												251450 469400
-												251500 469455
-												251560 469455
-												251575 469420
-												251575 469400
-											</gml:posList>
-										</gml:LinearRing>
-									</gml:exterior>
-								</gml:Polygon>
-							</gml:surfaceMember>
-						</gml:MultiSurface>
+                        <gml:MultiSurface gml:id="id_0002">
+                            <!-- 1 or more repetitions: -->
+                            <gml:surfaceMember>
+                                <!-- You have a CHOICE of the next 2 items at this level
+                                <gml:Surface>?</gml:Surface>
+                                <gml:Polygon>?</gml:Polygon>
+                                -->
+                                <gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <!-- lat long -->
+                                            <gml:posList>
+                                                52.2042387 6.8000295
+                                                52.2040719 6.7989270
+                                                52.2042604 6.7982014
+                                                52.2047458 6.7989484
+                                                52.2047353 6.7998259
+                                                52.2044182 6.8000353
+                                                52.2042385 6.8000296
+                                            </gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                    <!-- 0 or more repetitions -
+                                    <gml:interior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:interior>
+                                    -->
+                                </gml:Polygon>
+                            </gml:surfaceMember>
+                        </gml:MultiSurface>
                     </brocom:standardizedLocation>
                     <!-- optional:-->
                     <brocom:deliveredLocation>
-						<gml:Polygon gml:id="id_0004" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
-							<gml:exterior>
-								<gml:LinearRing>
-									<gml:posList>
+                        <!-- You have a CHOICE of the next 2 items at this level
+						<gml:Surface>?</gml:Surface>
+						<gml:Polygon>?</gml:Polygon>
+						-->
+                        <!--
+						<gml:Surface gml:id="id_0002" srsDimension="2" srsName="?">
+                            - 1 or more repetitions -
+                            <gml:patches>
+                                <gml:PolygonPatch interpolation="planar">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                    - 0 or more repetitions -
+                                    <gml:interior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:interior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+                        -->
+                        <gml:Polygon gml:id="id_0004" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                            <gml:exterior>
+                                <gml:LinearRing>
+                                    <gml:posList>
 										251575 469400
 										251500 469380
 										251450 469400
@@ -68,61 +103,68 @@
 										251560 469455
 										251575 469420
 										251575 469400
-									</gml:posList>
-								</gml:LinearRing>
-							</gml:exterior>
-						</gml:Polygon>
-					</brocom:deliveredLocation>
+                                    </gml:posList>
+                                </gml:LinearRing>
+                            </gml:exterior>
+                            <!-- 0 or more repetitions -
+                            <gml:interior>
+                                <gml:LinearRing>
+                                    <gml:posList></gml:posList>
+                                </gml:LinearRing>
+                            </gml:interior>
+                            -->
+                        </gml:Polygon>
+                    </brocom:deliveredLocation>
                     <miningActivity codeSpace="urn:bro:epl:MiningActivity">opslaanStof</miningActivity>
-					<!-- Optional:
+                    <!-- Optional:
 					<mineral codeSpace="urn:bro:epl:Mineral">?</mineral>
 					-->
-					<!-- Optional:
+                    <!-- Optional:
 					<substance codeSpace="urn:bro:epl:Substance">?</substance>
 					-->
-					<currentStatus codeSpace="urn:bro:epl:CurrentStatus">verleend</currentStatus>
-					<temporarilyExtended>nee</temporarilyExtended>
-					<!-- Optional -->
-					<effectiveDate>
-						<!-- Choose one of these 4 options:
+                    <currentStatus codeSpace="urn:bro:epl:CurrentStatus">verleend</currentStatus>
+                    <temporarilyExtended>nee</temporarilyExtended>
+                    <!-- Optional -->
+                    <effectiveDate>
+                        <!-- Choose one of these 4 options:
 						<brocom:date>2021-08-01</brocom:date>
 						<brocom:yearMonth>2021-08</brocom:yearMonth>
 						<brocom:year>2021</brocom:year>
 						<brocom:voidReason>onbekend</brocom:voidReason>
 						-->
-						<brocom:date>2021-08-01</brocom:date>
-					</effectiveDate>
-					<!-- Optional: -->
-					<expiryDate>2031-06-15</expiryDate>
-					<onshore>ja</onshore>
-					<!-- 0 or more repetitions:
+                        <brocom:date>2021-08-01</brocom:date>
+                    </effectiveDate>
+                    <!-- Optional: -->
+                    <expiryDate>2031-06-15</expiryDate>
+                    <onshore>ja</onshore>
+                    <!-- 0 or more repetitions:
 					<followedBy>EPL_1234567890002</followedBy>
 					<followedBy>EPL_1234567890003</followedBy>
 					-->
-					<licenceHolder>
-						<!-- 1 or more repetitions: -->
-						<eplcom:organization>
-							<!-- Choose one of these 2 options:
+                    <licenceHolder>
+                        <!-- 1 or more repetitions: -->
+                        <eplcom:organization>
+                            <!-- Choose one of these 2 options:
 							<brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
 							<brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
 							-->
-							<brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
-						</eplcom:organization>
-						<eplcom:organization>
-							<!-- Choose one of these 2 options:
+                            <brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
+                        </eplcom:organization>
+                        <eplcom:organization>
+                            <!-- Choose one of these 2 options:
 							<brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
 							<brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
 							-->
-							<brocom:europeanCompanyRegistrationNumber>DEB8537.HRB66039</brocom:europeanCompanyRegistrationNumber>
-						</eplcom:organization>
-					</licenceHolder>
+                            <brocom:europeanCompanyRegistrationNumber>DEB8537.HRB66039</brocom:europeanCompanyRegistrationNumber>
+                        </eplcom:organization>
+                    </licenceHolder>
                 </EPL_C>
             </dispatchDocument>
             <dispatchDocument>
                 <brocom:BRO_DO gml:id="SEQ_0002">
-                  <brocom:broId>EPL210987654321</brocom:broId>
-                  <brocom:deregistered>ja</brocom:deregistered>
-                  <brocom:deregistrationTime>2022-05-21T11:27:04+02:00</brocom:deregistrationTime>
+                    <brocom:broId>EPL210987654321</brocom:broId>
+                    <brocom:deregistered>ja</brocom:deregistered>
+                    <brocom:deregistrationTime>2022-05-21T11:27:04+02:00</brocom:deregistrationTime>
                 </brocom:BRO_DO>
             </dispatchDocument>
         </dispatchCharacteristicsResponse>

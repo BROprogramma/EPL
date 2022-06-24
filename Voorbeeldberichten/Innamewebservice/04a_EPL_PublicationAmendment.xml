@@ -17,60 +17,80 @@
     <brocom:broId>EPL_1234567890001</brocom:broId>
     <brocom:qualityRegime>IMBRO</brocom:qualityRegime>
     <sourceDocument>
-		<eplcom:EPL_PublicationAmendment gml:id="id_0001">
-			<eplcom:eventDate>2022-09-01</eplcom:eventDate>
-			<eplcom:eventName codeSpace="urn:bro:epl:EventName">wijzigingsbesluitBekendgemaakt</eplcom:eventName>
-			<eplcom:decreeNumber>String</eplcom:decreeNumber>
-			<!-- 0 to 3 repetitions:-->
-			<!-- Een amendment/wijziging kan plaatsvinden op Geldigheid, de Vergunninghouder, het Gebied of alle combinaties daartussen-->
-			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">gebiedswijziging</eplcom:amendmentType>
-			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingGeldigheid</eplcom:amendmentType>
-			<eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingVergunninghouder</eplcom:amendmentType>
-			<eplcom:plannedEffectiveDate>2022-09-01</eplcom:plannedEffectiveDate>
-			<!-- Optional: -->
-			<eplcom:amendmentValidity>
-				<eplcom:effectiveDate>2022-07-15</eplcom:effectiveDate>
-				<eplcom:expiryDate>2032-08-01</eplcom:expiryDate>
-			</eplcom:amendmentValidity>
-			<!-- Optional: -->
-			<eplcom:amendmentLicenceHolder>
-				<!-- 0 or more repetitions:-->
-				<eplcom:departingOrganization>
-					<!-- Choose one of these 4 options:
+        <eplcom:EPL_PublicationAmendment gml:id="id_0001">
+            <eplcom:eventDate>2022-09-01</eplcom:eventDate>
+            <eplcom:eventName codeSpace="urn:bro:epl:EventName">wijzigingsbesluitBekendgemaakt</eplcom:eventName>
+            <eplcom:decreeNumber>String</eplcom:decreeNumber>
+            <!-- 0 to 3 repetitions:-->
+            <!-- Een amendment/wijziging kan plaatsvinden op Geldigheid, de Vergunninghouder, het Gebied of alle combinaties daartussen-->
+            <eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">gebiedswijziging</eplcom:amendmentType>
+            <eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingGeldigheid</eplcom:amendmentType>
+            <eplcom:amendmentType codeSpace="urn:bro:epl:AmendmentType">wijzigingVergunninghouder</eplcom:amendmentType>
+            <eplcom:plannedEffectiveDate>2022-09-01</eplcom:plannedEffectiveDate>
+            <!-- Optional: -->
+            <eplcom:amendmentValidity>
+                <eplcom:effectiveDate>2022-07-15</eplcom:effectiveDate>
+                <eplcom:expiryDate>2032-08-01</eplcom:expiryDate>
+            </eplcom:amendmentValidity>
+            <!-- Optional: -->
+            <eplcom:amendmentLicenceHolder>
+                <!-- 0 or more repetitions:-->
+                <eplcom:departingOrganization>
+                    <!-- Choose one of these 4 options:
 					<brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
 					<brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
 					-->
-					<brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
-				</eplcom:departingOrganization>
-				<!-- 0 or more repetitions:-->
-				<eplcom:joiningOrganization>
-					<!-- Choose one of these 4 options:
+                    <brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
+                </eplcom:departingOrganization>
+                <!-- 0 or more repetitions:-->
+                <eplcom:joiningOrganization>
+                    <!-- Choose one of these 4 options:
 					<brocom:chamberOfCommerceNumber>?</brocom:chamberOfCommerceNumber>
 					<brocom:europeanCompanyRegistrationNumber>?</brocom:europeanCompanyRegistrationNumber>
 					-->
-					<brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
-				</eplcom:joiningOrganization>
-			</eplcom:amendmentLicenceHolder>
-			<!-- Optional: -->
-			<!--Een wijziging op gebied kan zijn: een gebiedswijziging, een splitsing van een gebied of een nieuw gebied   -->
-			<eplcom:amendmentArea>
-				<!-- 0 or more repetitions:-->
-				<eplcom:areaToBeRenounced>51</eplcom:areaToBeRenounced>
-				<!-- 0 or more repetitions:-->
-				<eplcom:areaToBeAmended>
-					<eplcom:areaNumber>5</eplcom:areaNumber>
-					<!-- Optional: -->
-					<eplcom:areaName>String</eplcom:areaName>
-					<!-- Optional: -->
-					<eplcom:deliveredBoundary>
-						<!-- You have a CHOICE of the next 2 items at this level
+                    <brocom:chamberOfCommerceNumber>01234567890</brocom:chamberOfCommerceNumber>
+                </eplcom:joiningOrganization>
+            </eplcom:amendmentLicenceHolder>
+            <!-- Optional: -->
+            <!--Een wijziging op gebied kan zijn: een gebiedswijziging, een splitsing van een gebied of een nieuw gebied   -->
+            <eplcom:amendmentArea>
+                <!-- 0 or more repetitions:-->
+                <eplcom:areaToBeRenounced>51</eplcom:areaToBeRenounced>
+                <!-- 0 or more repetitions:-->
+                <eplcom:areaToBeAmended>
+                    <eplcom:areaNumber>5</eplcom:areaNumber>
+                    <!-- Optional: -->
+                    <eplcom:areaName>String</eplcom:areaName>
+                    <!-- Optional: -->
+                    <eplcom:deliveredBoundary>
+                        <!-- You have a CHOICE of the next 2 items at this level
 						<gml:Surface>?</gml:Surface>
 						<gml:Polygon>?</gml:Polygon>
 						-->
-						<gml:Polygon gml:id="id_0002" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
-							<gml:exterior>
-								<gml:LinearRing>
-									<gml:posList>
+                        <!--
+						<gml:Surface gml:id="id_0002" srsDimension="2" srsName="?">
+                            - 1 or more repetitions -
+                            <gml:patches>
+                                <gml:PolygonPatch interpolation="planar">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                    - 0 or more repetitions -
+                                    <gml:interior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:interior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+                        -->
+                        <gml:Polygon gml:id="id_0002" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                            <gml:exterior>
+                                <gml:LinearRing>
+                                    <gml:posList>
 										251575 469400
 										251500 469380
 										251450 469400
@@ -78,49 +98,56 @@
 										251560 469455
 										251575 469420
 										251575 469400
-									</gml:posList>
-								</gml:LinearRing>
-							</gml:exterior>
-						</gml:Polygon>
-					</eplcom:deliveredBoundary>
-					<!-- Optional: -->
-					<eplcom:verticalBounded>ja</eplcom:verticalBounded>
-					<!-- Optional: -->
-					<eplcom:depthRange>
-						<!-- Optional: -->
-						<eplcom:beginDepth uom="m">3</eplcom:beginDepth>
-						<!-- Optional: -->
-						<eplcom:endDepth uom="m">30</eplcom:endDepth>
-						<!-- Optional: -->
-						<eplcom:geologicalUpperBoundary>
-							<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-							<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
-						</eplcom:geologicalUpperBoundary>
-						<!-- Optional: -->
-						<eplcom:geologicalLowerBoundary>
-							<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
-							<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
-						</eplcom:geologicalLowerBoundary>
-					</eplcom:depthRange>
-				</eplcom:areaToBeAmended>
-				<!-- 0 or more repetitions:-->
-				<!--Een splitsing waarbij een verleend gebied wordt vervangen door 2 of meer gebieden.-->
-				<eplcom:areaToBeSplitted>
-					<!--bestaand verleend gebied-->
-					<eplcom:areaToBeReplaced>50</eplcom:areaToBeReplaced>
-					<!--en 2 of meerdere gebieden-->
-					<eplcom:newArea>
-						<eplcom:areaNumber>79</eplcom:areaNumber>
-						<eplcom:areaName>E3d</eplcom:areaName>
-						<eplcom:deliveredBoundary>
-							<!-- You have a CHOICE of the next 2 items at this level
+                                    </gml:posList>
+                                </gml:LinearRing>
+                            </gml:exterior>
+                            <!-- 0 or more repetitions
+							<gml:interior>
+                                <gml:LinearRing>
+                                    <gml:posList></gml:posList>
+                                </gml:LinearRing>
+                            </gml:interior>
+                            -->
+                        </gml:Polygon>
+                    </eplcom:deliveredBoundary>
+                    <!-- Optional: -->
+                    <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                    <!-- Optional: -->
+                    <eplcom:depthRange>
+                        <!-- Optional: -->
+                        <eplcom:beginDepth uom="m">3</eplcom:beginDepth>
+                        <!-- Optional: -->
+                        <eplcom:endDepth uom="m">30</eplcom:endDepth>
+                        <!-- Optional: -->
+                        <eplcom:geologicalUpperBoundary>
+                            <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                            <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+                        </eplcom:geologicalUpperBoundary>
+                        <!-- Optional: -->
+                        <eplcom:geologicalLowerBoundary>
+                            <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                            <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">String</eplcom:boundary>
+                        </eplcom:geologicalLowerBoundary>
+                    </eplcom:depthRange>
+                </eplcom:areaToBeAmended>
+                <!-- 0 or more repetitions:-->
+                <!--Een splitsing waarbij een verleend gebied wordt vervangen door 2 of meer gebieden.-->
+                <eplcom:areaToBeSplitted>
+                    <!--bestaand verleend gebied-->
+                    <eplcom:areaToBeReplaced>50</eplcom:areaToBeReplaced>
+                    <!--en 2 of meerdere gebieden-->
+                    <eplcom:newArea>
+                        <eplcom:areaNumber>79</eplcom:areaNumber>
+                        <eplcom:areaName>E3d</eplcom:areaName>
+                        <eplcom:deliveredBoundary>
+                            <!-- You have a CHOICE of the next 2 items at this level
 							<gml:Surface>?</gml:Surface>
 							<gml:Polygon>?</gml:Polygon>
 							-->
-							<gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
-								<gml:exterior>
-									<gml:LinearRing>
-										<gml:posList>
+                            <gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>
 											251575 469400
 											251500 469380
 											251450 469400
@@ -128,43 +155,43 @@
 											251560 469455
 											251575 469420
 											251575 469400
-										</gml:posList>
-									</gml:LinearRing>
-								</gml:exterior>
-							</gml:Polygon>
-						</eplcom:deliveredBoundary>
-						<eplcom:verticalBounded>ja</eplcom:verticalBounded>
-						<eplcom:depthRange>
-							<!-- optional: 
+                                        </gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>
+                        </eplcom:deliveredBoundary>
+                        <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                        <eplcom:depthRange>
+                            <!-- optional: 
 							<eplcom:beginDepth uom="m">30</eplcom:beginDepth>
 							-->
-							<!-- optional: 
+                            <!-- optional: 
 							<eplcom:endDepth uom="m">300</eplcom:endDepth>
 							-->
-							<!-- optional: -->
-							<eplcom:geologicalUpperBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
-							</eplcom:geologicalUpperBoundary>
-							<!-- optional: -->
-							<eplcom:geologicalLowerBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
-							</eplcom:geologicalLowerBoundary>
-						</eplcom:depthRange>
-					</eplcom:newArea>
-					<eplcom:newArea>
-						<eplcom:areaNumber>80</eplcom:areaNumber>
-						<eplcom:areaName>F1</eplcom:areaName>
-						<eplcom:deliveredBoundary>
-							<!-- You have a CHOICE of the next 2 items at this level
+                            <!-- optional: -->
+                            <eplcom:geologicalUpperBoundary>
+                                <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+                                <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
+                            </eplcom:geologicalUpperBoundary>
+                            <!-- optional: -->
+                            <eplcom:geologicalLowerBoundary>
+                                <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+                                <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
+                            </eplcom:geologicalLowerBoundary>
+                        </eplcom:depthRange>
+                    </eplcom:newArea>
+                    <eplcom:newArea>
+                        <eplcom:areaNumber>80</eplcom:areaNumber>
+                        <eplcom:areaName>F1</eplcom:areaName>
+                        <eplcom:deliveredBoundary>
+                            <!-- You have a CHOICE of the next 2 items at this level
 							<gml:Surface>?</gml:Surface>
 							<gml:Polygon>?</gml:Polygon>
 							-->				
-							<gml:Polygon gml:id="id_0004" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
-							<gml:exterior>
-								<gml:LinearRing>
-									<gml:posList>
+                            <gml:Polygon gml:id="id_0004" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                                <gml:exterior>
+                                    <gml:LinearRing>
+                                        <gml:posList>
 										251575 469400
 										251500 469380
 										251450 469400
@@ -172,33 +199,33 @@
 										251560 469455
 										251575 469420
 										251575 469400
-									</gml:posList>
-								</gml:LinearRing>
-							</gml:exterior>
-						</gml:Polygon>
-						</eplcom:deliveredBoundary>
-						<eplcom:verticalBounded>ja</eplcom:verticalBounded>
-						<eplcom:depthRange>
-							<!-- Optional:
+                                        </gml:posList>
+                                    </gml:LinearRing>
+                                </gml:exterior>
+                            </gml:Polygon>
+                        </eplcom:deliveredBoundary>
+                        <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                        <eplcom:depthRange>
+                            <!-- Optional:
 							<eplcom:beginDepth uom="m">300</eplcom:beginDepth>
 							-->
-							<!-- Optional:
+                            <!-- Optional:
 							<eplcom:endDepth uom="m">330</eplcom:endDepth>
 							-->
-							<!-- Optional: -->
-							<eplcom:geologicalUpperBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
-							</eplcom:geologicalUpperBoundary>
-							<!-- Optional: -->
-							<eplcom:geologicalLowerBoundary>
-								<eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
-								<eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
-							</eplcom:geologicalLowerBoundary>
-						</eplcom:depthRange>
-					</eplcom:newArea>
-				</eplcom:areaToBeSplitted>
-			</eplcom:amendmentArea>
-		</eplcom:EPL_PublicationAmendment>
-	</sourceDocument>
+                            <!-- Optional: -->
+                            <eplcom:geologicalUpperBoundary>
+                                <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+                                <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">top</eplcom:boundary>
+                            </eplcom:geologicalUpperBoundary>
+                            <!-- Optional: -->
+                            <eplcom:geologicalLowerBoundary>
+                                <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">SchielandGroep</eplcom:unit>
+                                <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
+                            </eplcom:geologicalLowerBoundary>
+                        </eplcom:depthRange>
+                    </eplcom:newArea>
+                </eplcom:areaToBeSplitted>
+            </eplcom:amendmentArea>
+        </eplcom:EPL_PublicationAmendment>
+    </sourceDocument>
 </registrationRequest>

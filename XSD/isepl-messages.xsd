@@ -34,7 +34,7 @@
     -->
 
     <xs:element name="intakeResponse" type="brocom:IntakeResponseType" />
-	<xs:element name="parseFault" type="brocom:ParseFaultType" />
+    <xs:element name="parseFault" type="brocom:ParseFaultType" />
 
     <xs:element name="registrationRequest" type="isepl:RegistrationRequestType">
         <xs:annotation>

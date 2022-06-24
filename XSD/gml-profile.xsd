@@ -395,7 +395,8 @@
             <element ref="gml:AbstractSurface"/>
         </sequence>
         <!-- not needed in our profile: <attributeGroup ref="gml:AssociationAttributeGroup"/>
-<attributeGroup ref="gml:OwnershipAttributeGroup"/> -->
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+        -->
     </complexType>
     <element name="surfaceMember" type="gml:SurfacePropertyType">
         <annotation>
@@ -430,13 +431,13 @@
             <extension base="gml:AbstractCurveSegmentType">
                 <sequence>
                     <!--  These elements are currently not used. Our profile is limited to gml:posList.
-						<choice minOcurs="2"maxOccurs="unbounded"
-							<element ref="gml:pos" />
-							<element ref="gml:pointProperty"/>
-							<element ref="gml:pointRep"/>
-						</choice>
-						<element ref="gml:coordinates" />
-						  -->
+                    <choice minOcurs="2"maxOccurs="unbounded"
+                        <element ref="gml:pos" />
+                        <element ref="gml:pointProperty"/>
+                        <element ref="gml:pointRep"/>
+                    </choice>
+                    <element ref="gml:coordinates" />
+                    -->
                     <element ref="gml:posList"/>
                 </sequence>
                 <attribute name="interpolation" type="gml:CurveInterpolationType" fixed="linear"/>
@@ -627,7 +628,7 @@
     </element>
     <element name="AbstractValue" type="anyType" abstract="true" substitutionGroup="gml:AbstractObject"/>
     <element name="AbstractScalarValue" type="anyType" abstract="true" substitutionGroup="gml:AbstractValue"/>
- -->
+    -->
     <annotation>
         <documentation>June 2021 added: gml:CurvePropertyType, gml:MultiPointPropertyType en gml:MultiSurfacePropertyType</documentation>
     </annotation>
@@ -684,7 +685,7 @@
 	<complexType name="SurfaceArrayPropertyType">
 		<annotation>
 			<documentation>
-gml:SurfaceArrayPropertyType is a container for an array of surfaces. The elements are always contained in the array property, referencing geometry elements or arrays of geometry elements via XLinks is not supported.
+                gml:SurfaceArrayPropertyType is a container for an array of surfaces. The elements are always contained in the array property, referencing geometry elements or arrays of geometry elements via XLinks is not supported.
 			</documentation>
 		</annotation>
 		<sequence minOccurs="0" maxOccurs="unbounded">

@@ -9,13 +9,14 @@
     terzake tussen de partijen gesloten overeenkomst.
 -->
 <xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
-           xmlns:eplcom="http://www.broservices.nl/xsd/eplcommon/1.0"
-           xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.broservices.nl/xsd/eplcommon/1.0"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified"
-           version="1.0.0">
+        xmlns:eplcom="http://www.broservices.nl/xsd/eplcommon/1.0" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" 
+        xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.broservices.nl/xsd/eplcommon/1.0" 
+        elementFormDefault="qualified" 
+        attributeFormDefault="unqualified" 
+        version="1.0.0">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -73,10 +74,10 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
 Explanation: De wetgever stipuleert dat het gegeven in de basisregistratie ondergrond moet zijn vastgelegd om inzicht te geven in de plaats die het object heeft in de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="miningActivitiy" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivitityType">
+                    <xs:element name="miningActivity" minOccurs="1" maxOccurs="1" type="eplcom:MiningActivityType">
                         <xs:annotation>
                             <xs:appinfo>
-                                <CodeListName>MiningActivitity</CodeListName>
+                                <CodeListName>MiningActivity</CodeListName>
                                 <CodeListURI>urn:bro:epl:MiningActivity</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: ToDo
@@ -126,7 +127,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of het vergunninggebied aan de landzijde van de mijnbouwgrens ligt.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="true" type="eplcom:LicenceHolderType">
+                    <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De partij die het vergunde recht heeft.
 Explanation: De vergunninghouder staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
@@ -190,7 +191,7 @@ Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunni
 Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval worden de ingangsdatum en vervaldatum op een later moment vastgesteld. Het gegeven kan een nieuwe waarde krijgen bij een wijziging of beëindiging. In dat geval blijft de oude waarde behouden. Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig en heeft het gegeven geen waarde. De datum mag in de toekomst liggen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="licenceHolder" nillable="true" type="eplcom:LicenceHolderType">
+                    <xs:element minOccurs="0" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De partij die het vergunde recht heeft.
 Explanation: De vergunninghouder staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
@@ -522,7 +523,6 @@ Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verl
             <xs:element ref="eplcom:GrantedArea"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="AmendmentAreaType">
         <xs:sequence>
             <xs:element name="areaToBeRenounced" type="xs:integer" minOccurs="0" maxOccurs="unbounded">
@@ -544,12 +544,12 @@ Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verl
     </xs:complexType>
     <xs:complexType name="AmendmentLicenceHolderType">
         <xs:sequence>
-            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
+            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" type="brocom:OrganizationType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: ToDo</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
+            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" type="brocom:OrganizationType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: ToDo</xs:documentation>
                 </xs:annotation>
@@ -665,13 +665,13 @@ Explanation: Gewoonlijk kan de ingangsdatum niet meer wijzigen vanaf het moment 
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum waarop de vergunning haar geldigheid zal verliezen.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
+            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" type="brocom:OrganizationType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die niet langer deel kan uitmaken van vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="1" type="brocom:OrganizationType">
+            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" type="brocom:OrganizationType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die deel uit gaat maken van de vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
 Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
@@ -896,7 +896,7 @@ Explanation: Gewoonlijk staat de intrekkingsdatum vast op het moment dat de intr
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
-    <xs:complexType name="MiningActivitityType">
+    <xs:complexType name="MiningActivityType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
                 <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed="urn:bro:epl:MiningActivity"/>
