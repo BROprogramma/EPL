@@ -40,18 +40,18 @@
                                 <gml:Surface>?</gml:Surface>
                                 <gml:Polygon>?</gml:Polygon>
                                 -->
-                                <gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                                <gml:Polygon gml:id="id_0003" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4258">
                                     <gml:exterior>
                                         <gml:LinearRing>
                                             <!-- lat long -->
                                             <gml:posList>
-                                                52.2042387 6.8000295
-                                                52.2040719 6.7989270
-                                                52.2042604 6.7982014
-                                                52.2047458 6.7989484
-                                                52.2047353 6.7998259
-                                                52.2044182 6.8000353
                                                 52.2042385 6.8000296
+                                                52.2044182 6.8000353
+                                                52.2047353 6.7998259
+                                                52.2047458 6.7989484
+                                                52.2042604 6.7982014
+                                                52.2040719 6.7989270
+                                                52.2042387 6.8000295
                                             </gml:posList>
                                         </gml:LinearRing>
                                     </gml:exterior>
@@ -96,13 +96,13 @@
                             <gml:exterior>
                                 <gml:LinearRing>
                                     <gml:posList>
-										251575 469400
-										251500 469380
-										251450 469400
-										251500 469455
-										251560 469455
-										251575 469420
-										251575 469400
+                                        251575 469400
+                                        251575 469420
+                                        251560 469455
+                                        251500 469455
+                                        251450 469400
+                                        251500 469380
+                                        251575 469400
                                     </gml:posList>
                                 </gml:LinearRing>
                             </gml:exterior>
