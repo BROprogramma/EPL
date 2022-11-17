@@ -28,7 +28,7 @@ logos: [
   shortName: "EPL",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/EPL",
-  previousPublishDate: "2021-05-03",
-  previousStatus: "GN-VV",
+  previousPublishDate: "2021-10-21",
+  previousStatus: "GN-DEF",
   //localBiblio: {},
  };
