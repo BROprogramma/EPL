@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2012-2022 TNO Geologische Dienst Nederland
+    Alle rechten voorbehouden.
+    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
+    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
+    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
+    terzake tussen de partijen gesloten overeenkomst.
+-->
 <wsdl:definitions name="isepl"
                   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
@@ -28,6 +37,14 @@
         <wsdl:part name="request" element="msg:registrationRequest" />
     </wsdl:message>
 
+    <wsdl:message name="replaceRequest">
+        <wsdl:part name="request" element="msg:replaceRequest" />
+    </wsdl:message>
+
+    <wsdl:message name="moveRequest">
+        <wsdl:part name="request" element="msg:moveRequest" />
+    </wsdl:message>
+
     <wsdl:message name="intakeResponse">
         <wsdl:part name="response" element="msg:intakeResponse" />
     </wsdl:message>
@@ -46,11 +63,47 @@
             <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
         </wsdl:operation>
+        <wsdl:operation name="replace">
+            <wsdl:input message="tns:replaceRequest" wsam:Action="http://www.broservices.nl/wus/isepl/replaceRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
+        </wsdl:operation>
+        <wsdl:operation name="move">
+            <wsdl:input message="tns:moveRequest" wsam:Action="http://www.broservices.nl/wus/isepl/moveRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
+        </wsdl:operation>
     </wsdl:portType>
 
     <wsdl:binding name="isepl_SOAP" type="tns:isepl">
         <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
         <wsdl:operation name="register">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault name="parseFault" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="replace">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault name="parseFault" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="move">
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />
