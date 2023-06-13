@@ -49,6 +49,25 @@
         </xs:complexContent>
     </xs:complexType>
 
+    <xs:element name="dispatchDataResponse" type="dsepl:DispatchDataResponseType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek mijnbouwwetvergunning registratieobject verzonden naar de aanvrager.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="DispatchDataResponseType">
+        <xs:complexContent>
+            <xs:extension base="brocom:DispatchResponseType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="dispatchDocument" nillable="false" type="brocom:AbstractRegistrationObjectPropertyType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een mijnbouwwetvergunning registratieobject. Vanwege het polymorfe karakter is het type of een BRODO uit de package brocom of één van de types EPLPO, EPLPPO, EPLPODP of EPLPPO_DP uit de package dsepl. Deze vijf types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
     <xs:element name="dispatchCharacteristicsRequest" type="dsepl:DispatchCharacteristicsRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
@@ -86,73 +105,6 @@
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
-    </xs:complexType>
-
-    <xs:element name="dispatchDataResponse" type="dsepl:DispatchDataResponseType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek mijnbouwwetvergunning registratieobject verzonden naar de aanvrager.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
-    <xs:complexType name="DispatchDataResponseType">
-        <xs:complexContent>
-            <xs:extension base="brocom:DispatchResponseType">
-                <xs:sequence>
-                    <xs:element minOccurs="0" maxOccurs="1" name="dispatchDocument" nillable="false" type="brocom:AbstractRegistrationObjectPropertyType">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een mijnbouwwetvergunning registratieobject. Vanwege het polymorfe karakter is het type of een BRODO uit de package brocom of één van de types EPLPO, EPLPPO, EPLPODP of EPLPPO_DP uit de package dsepl. Deze vijf types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
-    <xs:element name="EPL_PPO" type="dsepl:EPL_PPOType" substitutionGroup="dsepl:EPL_PPO_DP">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
-    <xs:complexType name="EPL_PPOType">
-        <xs:complexContent>
-            <xs:extension base="dsepl:EPL_PPO_DPType"/>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="EPL_PPOPropertyType">
-        <xs:sequence minOccurs="1">
-            <xs:element ref="dsepl:EPL_PPO"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:element name="EPL_PO" type="dsepl:EPL_POType" substitutionGroup="dsepl:EPL_PO_DP">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
-    <xs:complexType name="EPL_POType">
-        <xs:complexContent>
-            <xs:extension base="dsepl:EPL_PO_DPType"/>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="EPL_POPropertyType">
-        <xs:sequence minOccurs="1">
-            <xs:element ref="dsepl:EPL_PO"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:element name="EPL_PPO_DP" type="dsepl:EPL_PPO_DPType" substitutionGroup="dsepl:EPL_PO_DP">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of het registratieobject uit registratie is genomen of niet.</xs:documentation>
-        </xs:annotation>
-    </xs:element>
-    <xs:complexType name="EPL_PPO_DPType">
-        <xs:complexContent>
-            <xs:extension base="dsepl:EPL_PO_DPType"/>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:complexType name="EPL_PPO_DPPropertyType">
-        <xs:sequence minOccurs="1">
-            <xs:element ref="dsepl:EPL_PPO_DP"/>
-        </xs:sequence>
     </xs:complexType>
 
     <xs:element name="EPL_PO_DP" type="dsepl:EPL_PO_DPType" substitutionGroup="brocom:RegistrationObject">
@@ -304,6 +256,54 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
         </xs:sequence>
     </xs:complexType>
 
+    <xs:element name="EPL_PO" type="dsepl:EPL_POType" substitutionGroup="dsepl:EPL_PO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPL_POType">
+        <xs:complexContent>
+            <xs:extension base="dsepl:EPL_PO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPL_POPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepl:EPL_PO"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPL_PPO_DP" type="dsepl:EPL_PPO_DPType" substitutionGroup="dsepl:EPL_PO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of het registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPL_PPO_DPType">
+        <xs:complexContent>
+            <xs:extension base="dsepl:EPL_PO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPL_PPO_DPPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepl:EPL_PPO_DP"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPL_PPO" type="dsepl:EPL_PPOType" substitutionGroup="dsepl:EPL_PPO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPL_PPOType">
+        <xs:complexContent>
+            <xs:extension base="dsepl:EPL_PPO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPL_PPOPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepl:EPL_PPO"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:element name="EPL_C" type="dsepl:EPL_CType" substitutionGroup="brocom:AbstractCharacteristicsV2">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De lijst met kengegevens van de registratieobjecten die voldoen aan de criteria in het uitgifteverzoek.</xs:documentation>
@@ -411,6 +411,109 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="AmendmentInProgressType">
+        <xs:sequence>
+            <xs:element name="plannedEffectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de wijziging gepland is in te gaan.
+Explanation: Gewoonlijk staat de ingangsdatum van de wijziging vast op het moment dat de wijziging definitief is vastgesteld. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de wijziging ingaat. In dat geval wordt de datum op een later moment vastgesteld.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="amendmentIrrevocable" type="brocom:IndicationYesNoType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of de wijziging definitief is, op het moment dat de registratie ondergrond wordt bevraagd.
+Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut toe bij de verwerking van de brondocumenten. Het gegeven heeft de waarde ja wanneer de wijziging definitief is vastgesteld, het wijzigingsbesluit is onherroepelijk, en de wijziging is nog niet ingegaan.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="dataToBeAmended" nillable="false" type="dsepl:DataToBeAmendedType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens van de lopende wijziging.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AreaDataType">
+        <xs:sequence>
+            <xs:element name="areaNumber" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer dat het verleend gebied identificeert.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="areaName" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe herkenbare naam van het gebied.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="100"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="deliveredBoundary" type="gml:SurfacePropertyType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied op het aardoppervlak.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="verticalBounded" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft dat het verleende gebied in de diepte gaat worden begrensd.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="depthRange" nillable="false" type="eplcom:DepthRangeType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied in de diepte.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataToBeAmendedType">
+        <xs:sequence>
+            <xs:element name="effectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum die het begin aangeeft van de periode gedurende welke de vergunning geldig is.
+Explanation: Gewoonlijk kan de ingangsdatum niet meer wijzigen vanaf het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer de ingangsdatum na de datum ligt waarop het besluit definitief is vastgesteld. Zolang de vergunning niet is ingegaan, kan de ingangsdatum van de vergunning gewijzigd worden.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="expiryDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum waarop de vergunning haar geldigheid zal verliezen.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die niet langer deel kan uitmaken van vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die deel uit gaat maken van de vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="areaToBeTerminated" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer van het verleende gebied van de mijnbouwwetvergunning waarop de houder ingevolge de wijziging geen recht meer zal hebben.
+Explanation: Het te beëindigen gebied is onderdeel van de lopende wijziging en wanneer de wijziging wordt doorgevoerd wordt de datum waarop het gebied is beëindigd vastgelegd bij het verleend gebied.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="areaData" nillable="false" type="dsepl:AreaDataType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens van een gebied in de lopende wijziging.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="EPL_C_CriteriasetType">
         <xs:complexContent>
             <xs:extension base="brocom:CriteriaSetType">
@@ -474,66 +577,6 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <xs:complexType name="AmendmentInProgressType">
-        <xs:sequence>
-            <xs:element name="plannedEffectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de wijziging gepland is in te gaan.
-Explanation: Gewoonlijk staat de ingangsdatum van de wijziging vast op het moment dat de wijziging definitief is vastgesteld. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de wijziging ingaat. In dat geval wordt de datum op een later moment vastgesteld.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="amendmentIrrevocable" type="brocom:IndicationYesNoType" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of de wijziging definitief is, op het moment dat de registratie ondergrond wordt bevraagd.
-Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aan het attribuut toe bij de verwerking van de brondocumenten. Het gegeven heeft de waarde ja wanneer de wijziging definitief is vastgesteld, het wijzigingsbesluit is onherroepelijk, en de wijziging is nog niet ingegaan.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="1" name="dataToBeAmended" nillable="false" type="dsepl:DataToBeAmendedType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens van de lopende wijziging.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="AreaDataType">
-        <xs:sequence>
-            <xs:element name="areaNumber" minOccurs="1" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer dat het verleend gebied identificeert.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="1"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="areaName" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe herkenbare naam van het gebied.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:maxLength value="100"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="deliveredBoundary" type="gml:SurfacePropertyType" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied op het aardoppervlak.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="verticalBounded" type="brocom:IndicationYesNoType" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft dat het verleende gebied in de diepte gaat worden begrensd.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="1" name="depthRange" nillable="false" type="eplcom:DepthRangeType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied in de diepte.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
     <xs:complexType name="EventType">
         <xs:sequence>
             <xs:element name="date" type="xs:date" minOccurs="1" maxOccurs="1">
@@ -573,49 +616,6 @@ Explanation: Het besluitnummer is een unieke identificatie die de vergunningverl
             <xs:element name="sourceDocument" type="eplcom:SourcedocumentType" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het naar aanleiding van de gebeurtenis aangeleverde brondocument.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="DataToBeAmendedType">
-        <xs:sequence>
-            <xs:element name="effectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum die het begin aangeeft van de periode gedurende welke de vergunning geldig is.
-Explanation: Gewoonlijk kan de ingangsdatum niet meer wijzigen vanaf het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer de ingangsdatum na de datum ligt waarop het besluit definitief is vastgesteld. Zolang de vergunning niet is ingegaan, kan de ingangsdatum van de vergunning gewijzigd worden.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="expiryDate" type="xs:date" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum waarop de vergunning haar geldigheid zal verliezen.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die niet langer deel kan uitmaken van vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die deel uit gaat maken van de vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="areaToBeTerminated" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer van het verleende gebied van de mijnbouwwetvergunning waarop de houder ingevolge de wijziging geen recht meer zal hebben.
-Explanation: Het te beëindigen gebied is onderdeel van de lopende wijziging en wanneer de wijziging wordt doorgevoerd wordt de datum waarop het gebied is beëindigd vastgelegd bij het verleend gebied.</xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                    <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="1"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="areaData" nillable="false" type="dsepl:AreaDataType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens van een gebied in de lopende wijziging.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
