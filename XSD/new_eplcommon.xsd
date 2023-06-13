@@ -50,7 +50,7 @@ Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de b
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -70,7 +70,7 @@ Explanation: Het besluitnummer is een unieke identificatie die de vergunningverl
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>DeliveryContext</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:DeliveryContext</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het object is aangeleverd aan de basisregistratie ondergrond.
 Explanation: De wetgever stipuleert dat het gegeven in de basisregistratie ondergrond moet zijn vastgelegd om inzicht te geven in de plaats die het object heeft in de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
@@ -80,7 +80,7 @@ Explanation: De wetgever stipuleert dat het gegeven in de basisregistratie onder
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>MiningActivity</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:MiningActivity</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De mijnbouwactiviteit waarop het recht betrekking heeft.
 Explanation: De mijnbouwwetvergunning is een marktordeningsvergunning die de vergunninghouder het alleenrecht geeft om binnen een bepaald gebied en binnen een bepaalde periode tot activiteiten over te gaan. De oudste vergunningen zijn de vergunningen voor het opsporen en winnen van delfstoffen. Met de inwerkingtreding van de huidige Mijnbouwwet in 2003 zijn daar vergunningen voor het opslaan van stoffen aan toegevoegd en vergunningen voor het opsporen en winnen van aardwarmte. De vergunningen voor aardwarmte worden verleend onder hetzelfde regime als de vergunningen voor delfstoffen, de zogenaamde opsporings- en winningsvergunningen. Vanaf 2021 wordt het vergunningstelsel voor aardwarmte aangepast. Voor het opsporen van aardwarmte wordt een zogenaamde startvergunning verleend, waarbinnen ook een korte periode van testen en winnen is toegestaan. Voor het definitief winnen van aardwarmte wordt een zogenaamde vervolgvergunning verleend. Het permanent opslaan van CO2 en het opsporen van CO2-opslagcomplexen wordt in de Mijnbouwwet gezien als aparte activiteit. Het winnen van kalksteen wordt ook als aparte activiteit gezien in het Mijnbouwbesluit en wordt sinds 1 januari 2011 verleend door Gedeputeerde Staten. Het opsporen en winnen van delfstoffen ten behoeve van wetenschappelijk onderzoek en beleid wordt als aparte activiteit geregistreerd vanwege het eigen karakter van de activiteiten.</xs:documentation>
@@ -90,7 +90,7 @@ Explanation: De mijnbouwwetvergunning is een marktordeningsvergunning die de ver
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>Mineral</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:Mineral</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De delfstof waarop de mijnbouwactiviteit betrekking heeft.
 Explanation: De meeste opsporings- en winningsvergunningen worden uitgegeven voor koolwaterstoffen en een klein aantal voor steenzout. De laatste opsporingsvergunningen voor steenkool zijn verleend in de jaren 80 van de 20e eeuw. Daarnaast zijn er oude winningsvergunningen voor een aantal staatsmijnen t.b.v. steenkool (eerste helft 20e eeuw).</xs:documentation>
@@ -100,7 +100,7 @@ Explanation: De meeste opsporings- en winningsvergunningen worden uitgegeven voo
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>Substance</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:Substance</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam van de stof die wordt opgeslagen.</xs:documentation>
                         </xs:annotation>
@@ -171,7 +171,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -248,7 +248,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <<CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -307,7 +307,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De waarde moet gelijk zijn aan wijzigingsbesluitBekendgemaakt, wijzigingsbesluitBijgesteld, wijzigingVastgesteld of gewijzigd.</xs:documentation>
                         </xs:annotation>
@@ -327,7 +327,7 @@ Explanation: Het besluitnummer is een unieke identificatie die de vergunningverl
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>AmendmentType</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:AmendmentType</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De typering van de wijziging in de vergunning.</xs:documentation>
                         </xs:annotation>
@@ -389,7 +389,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <<CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -435,7 +435,7 @@ Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunni
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -485,7 +485,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -553,7 +553,7 @@ Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -597,7 +597,7 @@ Explanation: Het besluitnummer is een unieke identificatie die de vergunningverl
                         <xs:annotation>
                             <xs:appinfo>
                                 <CodeListName>EventName</CodeListName>
-                                <CodeListURI/>
+                                <CodeListURI>urn:bro:epl:EventName</CodeListURI>
                             </xs:appinfo>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
@@ -879,7 +879,7 @@ Explanation: Bij voorkeur wordt de diepte gedefinieerd in termen van lithostrati
                 <xs:annotation>
                     <xs:appinfo>
                         <CodeListName>BoundaryGeologicalUnit</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:epl:BoundaryGeologicalUnit</CodeListURI>
                     </xs:appinfo>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of de bovenkant of de onderkant van de geologische eenheid de grens is.</xs:documentation>
                 </xs:annotation>
