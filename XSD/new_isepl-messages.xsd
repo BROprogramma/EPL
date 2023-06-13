@@ -23,11 +23,14 @@
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
+
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/eplcommon/1.0/eplcommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
     <xs:element name="intakeResponse" type="brocom:IntakeResponseType"/>
     <xs:element name="parseFault" type="brocom:ParseFaultType"/>
+
     <xs:element name="registrationRequest" type="isepl:RegistrationRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht RegistrationRequest is een specialisatie van de abstract klasse RegistrationRequest uit de package brocommon, waaraan het een sourceDocument toevoegt. Met dit bericht kan een nog niet geregistreerde mijnbouwwetvergunning in de BRO worden opgenomen of kan de registratie van een mijnbouwwetvergunning worden aangevuld of voltooid.
@@ -47,6 +50,7 @@ Explanation: De registratie van een object met een levenscyclus, zoals bij een m
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="replaceRequest" type="isepl:CorrectionRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht replaceRequest is een specialisatie van brocom:CorrectionRequest, waaraan het een correctiereden en een brondocument toevoegt. Met een replaceRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt de inhoud van een eerder aangeboden brondocument in de tijdlijn van de materiële geschiedenis vervangen.
@@ -88,6 +92,7 @@ Explanation: Het element sourceDocument vervangt een eerder aangeboden brondocum
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="moveRequest" type="isepl:MoveRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht moveRequest is een specialisatie van isepl:CorrectionRequest, waaraan het een attribuut dateToBeCorrected toevoegt. Met een moveRequest, dat een dataleverancier (ofwel tevens bronhouder danwel in opdracht van de bronhouder) aanbiedt bij de innamewebservice van het BRO systeem, wordt een eerder aangeboden brondocument verplaatst op de tijdlijn van de materiële geschiedenis.
@@ -108,6 +113,7 @@ Explanation: De juiste datum is opgenomen in het sourceDocument.</xs:documentati
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:complexType name="CorrectionReasonType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">

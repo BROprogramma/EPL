@@ -22,8 +22,10 @@
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
+
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
     <xs:element name="EPL_PublicationLicence" type="eplcom:EPL_PublicationLicenceType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-BekendmakingVergunning wordt aangeboden wanneer de minister het besluit heeft genomen aan een bepaalde partij een vergunning te willen verlenen (verleningsbesluitBekendgemaakt) of te hebben verleend (verleend). De registratie is met dit brondocument gestart.</xs:documentation>
@@ -150,6 +152,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="eplcom:EPL_PublicationLicence"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_AdjustmentGranting" type="eplcom:EPL_AdjustmentGrantingType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-BijstellingVerlening wordt aangeboden wanneer de minister het besluit heeft genomen tot het bijstellen van een eerder genomen besluit tot het verlenen van een vergunning.</xs:documentation>
@@ -226,6 +229,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="eplcom:EPL_AdjustmentGranting"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_FinalisationGranting" type="eplcom:EPL_FinalisationGrantingType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-VaststellingVerlening wordt aangeboden wanneer het verleningsbesluit onherroepelijk is geworden.</xs:documentation>
@@ -284,6 +288,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
             <xs:element ref="eplcom:EPL_FinalisationGranting"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_PublicationAmendment" type="eplcom:EPL_PublicationAmendmentType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-BekendmakingWijziging wordt aangeboden wanneer de vergunningverlener het besluit heeft genomen dat hij de verleende vergunning wil wijzigen, en hij een (bijgesteld) wijzigingsbesluit bekend heeft gemaakt, of - voor de IMBRO/A gebeurtenis gewijzigd - dat de verleende vergunning is gewijzigd.</xs:documentation>
@@ -365,6 +370,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="eplcom:EPL_PublicationAmendment"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_ClosureAmendment" type="eplcom:EPL_ClosureAmendmentType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-AfsluitingWijzing wordt aangeboden wanneer het wijzigingsproces wordt afgesloten omdat het is voltooid of is afgebroken.</xs:documentation>
@@ -410,6 +416,7 @@ Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunni
             <xs:element ref="eplcom:EPL_ClosureAmendment"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_AmendmentLicence" type="eplcom:EPL_AmendmentLicenceType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-WijzigingVergunning wordt aangeboden wanneer: 1) het houderschap van de vergunning is gewijzigd (vergunningOvergedragen); 2) de vergunning tijdelijk is verlengd omdat de vergunninghouder een aanvraag heeft ingediend voor een vervolgvergunning of voor een verlenging van de vergunning (tijdelijkVerlengd); of 3) de tijdelijke verlenging is opgeheven omdat de aangevraagde vervolgvergunning of verlenging definitief is geweigerd (tijdelijkeVerlengingOpgeheven).</xs:documentation>
@@ -459,6 +466,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="eplcom:EPL_AmendmentLicence"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_PublicationTermination" type="eplcom:EPL_PublicationTerminationType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument wordt bij verschillende gebeurtenissen aangeboden die als gemeenschappelijk kenmerk hebben dat het een (eerste) stap is met de intentie om een vergunning te beëindigen, maar nog niet de stap is waarmee een vergunning daadwerkelijk wordt beëindigd.</xs:documentation>
@@ -526,6 +534,7 @@ Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of
             <xs:element ref="eplcom:EPL_PublicationTermination"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_ClosureTermination" type="eplcom:EPL_ClosureTerminationType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument EPL-AfsluitingBeeindiging wordt aangeboden wanneer: 1) de vergunningverlener zijn eerdere besluit tot splitsing of samenvoeging heeft ingetrokken of hij de vervolgvergunning definitief niet heeft verleend (opvolgingAfgebroken); of 2) de vergunningverlener zijn zijn eerdere besluit tot het intrekken van de verleende vergunning heeft ingetrokken (intrekkingAfgebroken).</xs:documentation>
@@ -569,6 +578,7 @@ Explanation: Het besluitnummer is een unieke identificatie die de vergunningverl
             <xs:element ref="eplcom:EPL_ClosureTermination"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_TerminationLicence" type="eplcom:EPL_TerminationLicenceType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument wordt bij verschillende gebeurtenissen aangeboden die als gemeenschappelijk kenmerk hebben dat de vergunning ermee wordt beëindigd. De registratie van de vergunning is met dit brondocument voltooid.</xs:documentation>
@@ -620,6 +630,7 @@ Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of
             <xs:element ref="eplcom:EPL_TerminationLicence"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="GrantedArea" type="eplcom:GrantedAreaType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het gebied of een gebiedsdeel waarvoor de vergunning verleend is.</xs:documentation>
@@ -682,6 +693,7 @@ Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verl
             <xs:element ref="eplcom:GrantedArea"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:complexType name="AmendmentAreaType">
         <xs:sequence>
             <xs:element name="areaToBeRenounced" minOccurs="0" maxOccurs="unbounded">
@@ -955,6 +967,7 @@ Explanation: Gewoonlijk staat de intrekkingsdatum vast op het moment dat de intr
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+
     <xs:complexType name="AmendmentTypeType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">
@@ -1011,6 +1024,7 @@ Explanation: Gewoonlijk staat de intrekkingsdatum vast op het moment dat de intr
             </xs:restriction>
         </xs:simpleContent>
     </xs:complexType>
+
     <xs:complexType name="SourcedocumentType">
         <xs:choice minOccurs="1" maxOccurs="1">
             <xs:element ref="eplcom:EPL_PublicationLicence"/>

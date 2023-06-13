@@ -23,10 +23,13 @@
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
+
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/eplcommon/1.0/eplcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
     <xs:element name="parseFault" type="brocom:ParseFaultType"/>
+
     <xs:element name="dispatchDataRequest" type="dsepl:DispatchDataRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verzoek tot uitgifte van objectgegevens.</xs:documentation>
@@ -45,6 +48,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="dispatchCharacteristicsRequest" type="dsepl:DispatchCharacteristicsRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
@@ -63,6 +67,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="dispatchCharacteristicsResponse" type="dsepl:DispatchCharacteristicsResponseType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchCharacteristicsResponse is een specialisatie van DispatchResponse in de package brocommon, waaraan het een attribuut numberOfDocuments en een associatie relatie naar AbstractRegistrationObject in de package brocommon toevoegt.</xs:documentation>
@@ -82,6 +87,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="dispatchDataResponse" type="dsepl:DispatchDataResponseType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek mijnbouwwetvergunning registratieobject verzonden naar de aanvrager.</xs:documentation>
@@ -100,6 +106,7 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
     <xs:element name="EPL_PPO" type="dsepl:EPL_PPOType" substitutionGroup="dsepl:EPL_PPO_DP">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
@@ -115,6 +122,7 @@
             <xs:element ref="dsepl:EPL_PPO"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_PO" type="dsepl:EPL_POType" substitutionGroup="dsepl:EPL_PO_DP">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
@@ -130,6 +138,7 @@
             <xs:element ref="dsepl:EPL_PO"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_PPO_DP" type="dsepl:EPL_PPO_DPType" substitutionGroup="dsepl:EPL_PO_DP">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat chronologisch geordend de gegevens bevat van een mijnbouwwetvergunning, die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of het registratieobject uit registratie is genomen of niet.</xs:documentation>
@@ -145,6 +154,7 @@
             <xs:element ref="dsepl:EPL_PPO_DP"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_PO_DP" type="dsepl:EPL_PO_DPType" substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat actuele gegevens bevat van een mijnbouwwetvergunning, die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of een registratieobject uit registratie is genomen of niet.</xs:documentation>
@@ -293,6 +303,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_PO_DP"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:element name="EPL_C" type="dsepl:EPL_CType" substitutionGroup="brocom:AbstractCharacteristicsV2">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De lijst met kengegevens van de registratieobjecten die voldoen aan de criteria in het uitgifteverzoek.</xs:documentation>
@@ -399,6 +410,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_C"/>
         </xs:sequence>
     </xs:complexType>
+
     <xs:complexType name="EPL_C_CriteriasetType">
         <xs:complexContent>
             <xs:extension base="brocom:CriteriaSetType">
@@ -649,6 +661,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+
     <xs:simpleType name="DataToBeDeliveredType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van toegestane waarden voor het duiden welke gegevens over het registratieobject worden opgevraagd. Uitbreiding van de keuzelijst is niet mogelijk.</xs:documentation>
