@@ -359,7 +359,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="effectiveDate" type="brocom:PartialDateType" minOccurs="0" maxOccurs="1">
+                    <xs:element name="effectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de wijziging in gaat.
 Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval wordt de datum op een later moment vastgesteld. Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet en zijn aangeleverd in het kader van archiefoverdracht, kan de ingangsdatum niet bekend zijn. De datum mag in de toekomst liggen.</xs:documentation>
