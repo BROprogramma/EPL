@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright 2012-2022 TNO Geologische Dienst Nederland
+
+    Copyright TNO Geologische Dienst Nederland
+
     Alle rechten voorbehouden.
     Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
     microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+
     Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
     en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
     terzake tussen de partijen gesloten overeenkomst.
+
 -->
 <wsdl:definitions name="isepl"
                   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
@@ -24,12 +28,12 @@
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isepl/1.0" targetNamespace="http://www.broservices.nl/wsdl/isepl/1.0">
+            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="isepl-messages.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
             <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd" />
             <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
             -->
-            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="isepl-messages.xsd" />
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
         </xsd:schema>
     </wsdl:types>
 
@@ -39,6 +43,10 @@
 
     <wsdl:message name="replaceRequest">
         <wsdl:part name="request" element="msg:replaceRequest" />
+    </wsdl:message>
+
+    <wsdl:message name="deleteRequest">
+        <wsdl:part name="request" element="msg:deleteRequest" />
     </wsdl:message>
 
     <wsdl:message name="moveRequest">
@@ -68,6 +76,11 @@
             <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
         </wsdl:operation>
+        <wsdl:operation name="delete">
+            <wsdl:input message="tns:deleteRequest" wsam:Action="http://www.broservices.nl/wus/isepl/deleteRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
+        </wsdl:operation>
         <wsdl:operation name="move">
             <wsdl:input message="tns:moveRequest" wsam:Action="http://www.broservices.nl/wus/isepl/moveRequest" />
             <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
@@ -91,6 +104,19 @@
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="replace">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault name="parseFault" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="delete">
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />

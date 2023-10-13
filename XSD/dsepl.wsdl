@@ -23,10 +23,10 @@
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/dsepl/1.0" targetNamespace="http://www.broservices.nl/wsdl/dsepl/1.0">
+            <xsd:import namespace="http://www.broservices.nl/xsd/dsepl/1.0" schemaLocation="dsepl-messages.xsd"/>
             <!--
             <xsd:import namespace="http://www.broservices.nl/xsd/dsepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/dsepl/1.0/dsepl-messages.xsd"/>
             -->
-            <xsd:import namespace="http://www.broservices.nl/xsd/dsepl/1.0" schemaLocation="dsepl-messages.xsd"/>
         </xsd:schema>
     </wsdl:types>
 
