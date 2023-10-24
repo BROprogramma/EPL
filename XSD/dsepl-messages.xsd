@@ -465,8 +465,6 @@ Explanation: Gewoonlijk kan de ingangsdatum niet meer wijzigen vanaf het moment 
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum waarop de vergunning haar geldigheid zal verliezen.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType"/>
-            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType"/>
             <xs:element name="areaToBeTerminated" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer van het verleende gebied van de mijnbouwwetvergunning waarop de houder ingevolge de wijziging geen recht meer zal hebben.
@@ -481,6 +479,12 @@ Explanation: Het te beëindigen gebied is onderdeel van de lopende wijziging en 
             <xs:element minOccurs="0" maxOccurs="unbounded" name="areaData" nillable="false" type="dsepl:AreaDataType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens van een gebied in de lopende wijziging.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe partij die het vergunde recht heeft.
+Explanation: Een wijziging van de vergunninghouder wordt geregistreerd als een lijst met een of meerdere organisaties waaruit de vergunninghouder na wijziging bestaat. Deze lijst wijkt af van de huidige geregistreerde vergunninghouder: vertrekkende organisaties zijn uit de lijst verwijderd en toetredende organisaties zijn eraan toegevoegd.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>

@@ -659,16 +659,10 @@ Explanation: Gedurende de periode dat het verleend gebied geldig is binnen de ve
     </xs:complexType>
     <xs:complexType name="AmendmentLicenceHolderType">
         <xs:sequence>
-            <xs:element name="departingOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
+            <xs:element name="organization" minOccurs="1" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
                 <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die niet langer deel kan uitmaken van vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="joiningOrganization" minOccurs="0" maxOccurs="unbounded" nillable="true" type="brocom:OrganizationType">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die deel gaat uitmaken van de vergunninghouder, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: Een wijziging van de vergunninghouder wordt zelden eerst geregistreerd als een lopende wijziging. Normaliter volgt de registratie het proces van overdracht en wordt het gegeven direct gewijzigd (vergunningOvergedragen).</xs:documentation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die tot vergunninghouder hoort, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+Explanation: Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan het handelsnummer van de organisatie onbekend zijn.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
