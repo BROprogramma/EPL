@@ -150,6 +150,103 @@
                     </eplcom:validity>
                 </eplcom:GrantedArea>
             </eplcom:grantedArea>
+            <eplcom:grantedArea>                
+                <eplcom:GrantedArea gml:id="id_0004">
+                    <eplcom:areaNumber>2</eplcom:areaNumber>
+                    <eplcom:areaName>area2</eplcom:areaName>
+                    <eplcom:deliveredBoundary>
+                        <!-- You have a CHOICE of the next 2 items at this level
+						<gml:Surface>?</gml:Surface>
+						<gml:Polygon>?</gml:Polygon>
+						-->
+                        <!--
+						<gml:Surface gml:id="id_0002" srsDimension="2" srsName="?">
+                            - 1 or more repetitions -
+                            <gml:patches>
+                                <gml:PolygonPatch interpolation="planar">
+                                    <gml:exterior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:exterior>
+                                    - 0 or more repetitions -
+                                    <gml:interior>
+                                        <gml:LinearRing>
+                                            <gml:posList></gml:posList>
+                                        </gml:LinearRing>
+                                    </gml:interior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </gml:Surface>
+                        -->
+                        <gml:Polygon gml:id="id_0005" srsDimension="2" srsName="urn:ogc:def:crs:EPSG::28992">
+                            <gml:exterior>
+                                <gml:LinearRing>
+                                    <gml:posList>
+                                        151575 469400
+                                        151575 469420
+                                        151560 469455
+                                        151500 469455
+                                        151450 469400
+                                        151500 469380
+                                        151575 469400
+                                    </gml:posList>
+                                </gml:LinearRing>
+                            </gml:exterior>
+                            <!-- 0 or more repetitions -
+                            <gml:interior>
+                                <gml:LinearRing>
+                                    <gml:posList></gml:posList>
+                                </gml:LinearRing>
+                            </gml:interior>
+                            -->
+                        </gml:Polygon>
+                    </eplcom:deliveredBoundary>
+                    <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                    <!-- Optional; required if verticalBounded = ja -->
+                    <eplcom:depthRange>
+                        <!-- At least one of the 4 options must be present -->
+                        <!-- Optional:
+						<eplcom:beginDepth uom="?">?</eplcom:beginDepth>
+						-->
+                        <!-- Optional: -->
+                        <eplcom:endDepth uom="m">2500</eplcom:endDepth>
+                        <!-- Optional:
+						<eplcom:geologicalUpperBoundary>
+							<eplcom:unit codeSpace="?">?</eplcom:unit>
+							<eplcom:boundary codeSpace="?">?</eplcom:boundary>
+						</eplcom:geologicalUpperBoundary>
+						-->
+                        <!-- Optional:
+						<eplcom:geologicalLowerBoundary>
+							<eplcom:unit codeSpace="?">?</eplcom:unit>
+							<eplcom:boundary codeSpace="?">?</eplcom:boundary>
+						</eplcom:geologicalLowerBoundary>
+						-->
+                    </eplcom:depthRange>
+                    <eplcom:validity>
+                        <eplcom:startDate>
+                            <!-- Choose one of these 4 options:
+							<brocom:date>2021-08-01</brocom:date>
+							<brocom:yearMonth>2021-08</brocom:yearMonth>
+							<brocom:year>2021</brocom:year>
+							<brocom:voidReason>onbekend</brocom:voidReason>
+							-->
+                            <brocom:date>2021-08-01</brocom:date>
+                        </eplcom:startDate>
+                        <!-- Optional: -->
+                        <eplcom:endDate>
+                            <!-- Choose one of these 4 options:
+							<brocom:date>2031-06-15</brocom:date>
+							<brocom:yearMonth>2031-06</brocom:yearMonth>
+							<brocom:year>2031</brocom:year>
+							<brocom:voidReason>onbekend</brocom:voidReason>
+							-->
+                            <brocom:date>2031-06-15</brocom:date>
+                        </eplcom:endDate>
+                    </eplcom:validity>
+                </eplcom:GrantedArea>
+            </eplcom:grantedArea>
         </eplcom:EPL_PublicationLicence>	
     </sourceDocument>   
 </registrationRequest>

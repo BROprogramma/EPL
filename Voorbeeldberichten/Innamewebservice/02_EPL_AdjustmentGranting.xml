@@ -19,8 +19,8 @@
     <sourceDocument>
         <eplcom:EPL_AdjustmentGranting gml:id="id_0001">
             <eplcom:eventDate>2021-11-01</eplcom:eventDate>
-            <eplcom:eventName codeSpace="urn:bro:epl:EventName">verleningsbesluitBekendgemaakt</eplcom:eventName>
-            <eplcom:decreeNumber></eplcom:decreeNumber>
+            <eplcom:eventName codeSpace="urn:bro:epl:EventName">verleningsbesluitBijgesteld</eplcom:eventName>
+            <eplcom:decreeNumber>52</eplcom:decreeNumber>
             <!-- Optional:
 			<eplcom:effectiveDate>?</eplcom:effectiveDate>
 			-->
