@@ -10,7 +10,7 @@
                 xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-				xsi:schemaLocation="http://www.broservices.nl/xsd/dsepl/1.0 ../../XSD/dsepl-messages.xsd">
+                xsi:schemaLocation="http://www.broservices.nl/xsd/dsepl/1.0 ../../XSD/dsepl-messages.xsd">
             <!-- Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de uitgifteservice.
                 Het houdt geen rekening met bedrijfsregels en is mogelijkerwijs vaktechnisch/inhoudelijk niet voorbeeldig.
                 xsi:schemaLocation="http://www.broservices.nl/xsd/dsepl/1.0 https://schema.broservices.nl/xsd/dsepl/1.0/dsepl-messages.xsd">
