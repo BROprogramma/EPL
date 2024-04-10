@@ -28,10 +28,13 @@
         </xs:appinfo>
     </xs:annotation>
 
-    <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="eplcommon.xsd"/>
-    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="./eplcommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="./gml-profile.xsd"/>
     <!--
+    Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
+    Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
+    Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/eplcommon/1.0/eplcommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>

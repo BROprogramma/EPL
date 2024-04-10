@@ -22,8 +22,11 @@
         <documentation>GML 3.2.1 profile for BRO. 0.0.2-3.2.1:anyURI toegevoegd aan TimePositionUnion</documentation>
         <documentation>GML 3.2.1 profile for BRO. 0.0.3-3.2.1: June 2021: Added gml:BoundingShapeType, CurvePropertyType, MultiPointPropertyType, MultiSuMultiSurfacePropertyTyperface; Adjusted SurfaceType</documentation>
     </annotation>
-    <import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink-profile.xsd"/>
+    <import namespace="http://www.w3.org/1999/xlink" schemaLocation="./xlink-profile.xsd"/>
     <!--
+    Bovenstaande schemaLocation gebruikt een relatief pad naar een lokaal bestand.
+    Dit werkt prima zolang (de meest recente versie van) het betreffende XSD-bestand nog niet beschikbaar is op de officiële locatie.
+    Het heeft de voorkeur bovenstaande schemaLocation te vervangen door onderstaande schemaLocation naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
     <import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://schema.broservices.nl/profile/xlink/1.0/xlink-profile.xsd"/>
     -->
     <!--  =================================================  -->

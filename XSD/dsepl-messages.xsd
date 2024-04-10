@@ -12,33 +12,24 @@
     terzake tussen de partijen gesloten overeenkomst.
 
 -->
-<xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-           xmlns:dsepl="http://www.broservices.nl/xsd/dsepl/1.0"
-           xmlns:eplcom="http://www.broservices.nl/xsd/eplcommon/1.0"
-           xmlns:gml="http://www.opengis.net/gml/3.2"
-           xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified"
-           version="1.0.0">
+<xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" xmlns:dsepl="http://www.broservices.nl/xsd/dsepl/1.0" xmlns:eplcom="http://www.broservices.nl/xsd/eplcommon/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.2">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
-
-    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
-    <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="eplcommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="./eplcommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="./gml-profile.xsd"/>
     <!--
+    Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
+    Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
+    Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/eplcommon/1.0/eplcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
     -->
-
     <xs:element name="parseFault" type="brocom:ParseFaultType"/>
-
     <xs:element name="dispatchDataRequest" type="dsepl:DispatchDataRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verzoek tot uitgifte van objectgegevens.</xs:documentation>
@@ -57,7 +48,6 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:element name="dispatchDataResponse" type="dsepl:DispatchDataResponseType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek mijnbouwwetvergunning registratieobject verzonden naar de aanvrager.</xs:documentation>
@@ -76,7 +66,6 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:element name="dispatchCharacteristicsRequest" type="dsepl:DispatchCharacteristicsRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
@@ -95,7 +84,6 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:element name="dispatchCharacteristicsResponse" type="dsepl:DispatchCharacteristicsResponseType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchCharacteristicsResponse is een specialisatie van DispatchResponse in de package brocommon, waaraan het een attribuut numberOfDocuments en een associatie relatie naar AbstractRegistrationObject in de package brocommon toevoegt.</xs:documentation>
@@ -115,7 +103,6 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:element name="EPL_PO_DP" type="dsepl:EPL_PO_DPType" substitutionGroup="brocom:RegistrationObject">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat actuele gegevens bevat van een mijnbouwwetvergunning, die beschikbaar zijn voor de dataleverancier en/of bronhouder, ongeacht of een registratieobject uit registratie is genomen of niet.</xs:documentation>
@@ -240,7 +227,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De intrekking van de vergunning die nog niet is ingegaan.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1" maxOccurs="unbounded" name="grantedArea" nillable="false" type="eplcom:GrantedAreaPropertyType"/>
+                    <xs:element minOccurs="1" maxOccurs="unbounded" name="grantedArea" nillable="false" type="dsepl:GrantedAreaPropertyType"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -250,7 +237,6 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_PO_DP"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:element name="EPL_PO" type="dsepl:EPL_POType" substitutionGroup="dsepl:EPL_PO_DP">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat de actuele gegevens bevat van een mijnbouwwetvergunning, die niet uit registratie is genomen, die beschikbaar zijn voor een standaard afnemer.</xs:documentation>
@@ -266,7 +252,6 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_PO"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:element name="EPL_C" type="dsepl:EPL_CType" substitutionGroup="brocom:AbstractCharacteristicsV2">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De lijst met kengegevens van de registratieobjecten die voldoen aan de criteria in het uitgifteverzoek.</xs:documentation>
@@ -359,7 +344,70 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_C"/>
         </xs:sequence>
     </xs:complexType>
-
+    <xs:element name="GrantedArea" type="dsepl:GrantedAreaType" substitutionGroup="gml:AbstractFeature">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het gebied of een gebiedsdeel waarvoor de vergunning verleend is.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="GrantedAreaType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="areaNumber" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het nummer dat door of voor de bronhouder wordt gebruikt om het verleende gebied van de mijnbouwwetvergunning te identificeren.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="areaName" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De herkenbare naam van het gebied.
+Explanation: Vergunningen die onshore liggen hebben een geografische naam, vergunningen die offshore liggen worden aangeduid met een bloknummer, zoals aangegeven in de Mijnbouwregeling. Het vergunninggebied heeft gewoonlijk een naam die niet verandert en dat is de naam van het oorspronkelijk verleende gebied. Bij uitzondering geeft de vergunningverlener bij verkleining een nieuwe naam aan het verleende gebied. In dat geval krijgt het gegeven een nieuwe waarde. De oude waarde blijft behouden.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="deliveredBoundary" type="gml:SurfacePropertyType" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De begrenzing van het gebied op het aardoppervlak, zoals die is aangeleverd aan de basisregistratie ondergrond.
+Explanation: De aangeleverde begrenzing wordt vastgelegd als vlak (surface). In het besluit van de vergunningverlener is de begrenzing van het gebied beschreven. De aangeleverde begrenzing is een meer nauwkeurige invulling van die beschrijving. Het gegeven heeft altijd een waarde en die waarde staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden. In de Mijnbouwregeling is bepaald dat de begrenzing van een gebied dat aan de landzijde van de mijnbouwgrens (onshore) ligt wordt uitgedrukt in RD (Rijksdriehoeksmeting), en de begrenzing van een gebied aan zeezijde van de mijnbouwgrens (offshore) wordt uitgedrukt in ETRS89 (European Terrestrial Reference System 1989). Begrenzingen van offshore gebieden die zijn vastgesteld voor 22 februari 2014 werden uitgedrukt in ED50 (Europese vereffening). Begrenzingen van verleende gebieden die zijn vastgesteld in ED50 en zijn aangeleverd in het kader van archiefoverdracht, zijn voorafgaand aan opname in de basisregistratie ondergrond getransformeerd naar ETRS89.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="verticalBounded" type="brocom:IndicationYesNoUnknownType" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding die aangeeft of het verleende gebied in de diepte is begrensd op het moment dat de registratie ondergrond wordt bevraagd.
+Explanation: De vergunning heeft betrekking op de ruimte onder het door het gebied begrensde deel van het aardoppervlak. Aan het dieptebereik worden expliciet grenzen gesteld, wanneer de vergunningverlener dat vanuit het oogpunt van goed beheer van de ondergrondse ruimte nodig acht. Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan het voorkomen dat niet bekend is of het gebied in diepte is begrensd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="depthRange" nillable="false" type="eplcom:DepthRangeType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het deel van de ondergrond van het gebied waarop het recht betrekking heeft.
+Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1" maxOccurs="1" name="validity" nillable="false" type="eplcom:ValidityType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke het verleend gebied geldig is.
+Explanation: Gedurende de periode dat het verleend gebied geldig is binnen de vergunning kunnen er wijzigingen met betrekking tot het gebied plaatsvinden, bijvoorbeeld met betrekking tot de aangeleverde begrenzing ervan.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="GrantedAreaPropertyType">
+        <xs:sequence minOccurs="0">
+            <xs:element ref="dsepl:GrantedArea"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+    </xs:complexType>
     <xs:complexType name="AmendmentInProgressType">
         <xs:sequence>
             <xs:element name="plannedEffectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
@@ -604,7 +652,6 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-
     <xs:simpleType name="DataToBeDeliveredType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van toegestane waarden voor het duiden welke gegevens over het registratieobject worden opgevraagd. Uitbreiding van de keuzelijst is niet mogelijk.</xs:documentation>
@@ -614,7 +661,6 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:enumeration value="actueelHistorisch"/>
         </xs:restriction>
     </xs:simpleType>
-
     <xs:complexType name="CurrentStatusType">
         <xs:simpleContent>
             <xs:restriction base="gml:CodeWithAuthorityType">

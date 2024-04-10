@@ -18,8 +18,11 @@
         targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0"
         elementFormDefault="qualified"
         version="3.0.8">
-    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="./gml-profile.xsd"/>
     <!--
+    Bovenstaande schemaLocation gebruikt een relatief pad naar een lokaal bestand.
+    Dit werkt prima zolang (de meest recente versie van) het betreffende XSD-bestand nog niet beschikbaar is op de officiële locatie.
+    Het heeft de voorkeur bovenstaande schemaLocation te vervangen door onderstaande schemaLocation naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
     <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd" />
     -->
     <annotation>

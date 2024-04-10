@@ -8,6 +8,10 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 ../../XSD/isepl-messages.xsd">
     <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
         Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+
+        Bovenstaand statement gebruikt een relatief pad naar een lokaal bestand als schemaLocation.
+        Dit werkt prima zolang (de meest recente versie van) het betreffende XSD-bestand nog niet beschikbaar is op de officiële locatie.
+        Het heeft de voorkeur bovenstaande schemaLocation te vervangen door onderstaande schemaLocation naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
         xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd">
     -->
     <brocom:requestReference>07_EPL_PublicationTermination</brocom:requestReference>

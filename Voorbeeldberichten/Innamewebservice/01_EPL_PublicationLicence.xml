@@ -8,6 +8,10 @@
         xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 ../../XSD/isepl-messages.xsd">
     <!--Disclaimer: dit voorbeeldbericht valideert tegen de XSD van de innameservice.
         Het is niet gevalideert door de innameservice en is vaktechnisch/inhoudelijk niet voorbeeldig.
+
+        Bovenstaand statement gebruikt een relatief pad naar een lokaal bestand als schemaLocation.
+        Dit werkt prima zolang (de meest recente versie van) het betreffende XSD-bestand nog niet beschikbaar is op de officiële locatie.
+        Het heeft de voorkeur bovenstaande schemaLocation te vervangen door onderstaande schemaLocation naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
         xsi:schemaLocation="http://www.broservices.nl/xsd/isepl/1.0 https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd">
     -->
     <brocom:requestReference>01_EPL_PublicationLicence</brocom:requestReference>
@@ -127,27 +131,6 @@
 						</eplcom:geologicalLowerBoundary>
 						-->
                     </eplcom:depthRange>
-                    <eplcom:validity>
-                        <eplcom:startDate>
-                            <!-- Choose one of these 4 options:
-							<brocom:date>2021-08-01</brocom:date>
-							<brocom:yearMonth>2021-08</brocom:yearMonth>
-							<brocom:year>2021</brocom:year>
-							<brocom:voidReason>onbekend</brocom:voidReason>
-							-->
-                            <brocom:date>2021-08-01</brocom:date>
-                        </eplcom:startDate>
-                        <!-- Optional: -->
-                        <eplcom:endDate>
-                            <!-- Choose one of these 4 options:
-							<brocom:date>2031-06-15</brocom:date>
-							<brocom:yearMonth>2031-06</brocom:yearMonth>
-							<brocom:year>2031</brocom:year>
-							<brocom:voidReason>onbekend</brocom:voidReason>
-							-->
-                            <brocom:date>2031-06-15</brocom:date>
-                        </eplcom:endDate>
-                    </eplcom:validity>
                 </eplcom:GrantedArea>
             </eplcom:grantedArea>
             <eplcom:grantedArea>                
@@ -224,27 +207,6 @@
 						</eplcom:geologicalLowerBoundary>
 						-->
                     </eplcom:depthRange>
-                    <eplcom:validity>
-                        <eplcom:startDate>
-                            <!-- Choose one of these 4 options:
-							<brocom:date>2021-08-01</brocom:date>
-							<brocom:yearMonth>2021-08</brocom:yearMonth>
-							<brocom:year>2021</brocom:year>
-							<brocom:voidReason>onbekend</brocom:voidReason>
-							-->
-                            <brocom:date>2021-08-01</brocom:date>
-                        </eplcom:startDate>
-                        <!-- Optional: -->
-                        <eplcom:endDate>
-                            <!-- Choose one of these 4 options:
-							<brocom:date>2031-06-15</brocom:date>
-							<brocom:yearMonth>2031-06</brocom:yearMonth>
-							<brocom:year>2031</brocom:year>
-							<brocom:voidReason>onbekend</brocom:voidReason>
-							-->
-                            <brocom:date>2031-06-15</brocom:date>
-                        </eplcom:endDate>
-                    </eplcom:validity>
                 </eplcom:GrantedArea>
             </eplcom:grantedArea>
         </eplcom:EPL_PublicationLicence>	

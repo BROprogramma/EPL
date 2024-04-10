@@ -28,11 +28,14 @@
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isepl/1.0" targetNamespace="http://www.broservices.nl/wsdl/isepl/1.0">
-            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="isepl-messages.xsd" />
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="./isepl-messages.xsd"/>
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
             <!--
-            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd" />
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
+            Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
+            Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
+            Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
+            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd"/>
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
             -->
         </xsd:schema>
     </wsdl:types>
