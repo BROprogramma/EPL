@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20210503</p>
       <p>Imvertor: 3.0.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.99-3-20210503-20231220-101101</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.99-3-20210503-20240417-135210</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -63,7 +63,7 @@
          <section>
             <h2>Het domeinmodel</h2>
             <section>
-               <div class="imageinfo overview"><img src="Images/EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563.png" usemap="#imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563"><area shape="rect" alt="Mijnbouwwetvergunning" coords="14,14,454,532" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Verleend gebied" coords="519,118,854,333" href="#global_class_Model_Verleendgebied"></map><p><b>Domeinmodel mijnbouwwetvergunning</b></p>
+               <div class="imageinfo overview"><img src="Images/EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563.png" usemap="#imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563"><area shape="rect" alt="Mijnbouwwetvergunning" coords="14,14,454,532" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Verleend gebied" coords="533,116,868,332" href="#global_class_Model_Verleendgebied"></map><p><b>Domeinmodel mijnbouwwetvergunning</b></p>
                </div>
             </section>
          </section>
@@ -773,7 +773,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -803,18 +803,6 @@
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Reden geen waarde</th>
-                              <td>
-                                 
-                                 <p>Het kan voorkomen dat de ingangsdatum nog niet bepaald is, alleen in dat geval ontbreekt
-                                    de waarde.</p>
-                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -857,7 +845,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -877,25 +865,21 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum moet liggen na de <em>ingangsdatum</em>.</p>
+                                 <p>De datum moet liggen na de <em>ingangsdatum</em>.<br clear="none">
+                                    Het attribuut moet aanwezig zijn wanneer het attribuut <em>ingangsdatum</em> aanwezig is.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>ingangsdatum</em> niet aanwezig is.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Regels IMBRO/A</th>
+                              <td>
+                                 
+                                 <p>Voor IMBRO/A-gegevens mag het attribuut ontbreken wanneer het attribuut <em>ingangsdatum</em> aanwezig is.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Reden geen waarde</th>
-                              <td>
-                                 
-                                 <p>De waarde mag niet aanwezig wanneer de waarde van het attribuut <em>ingangsdatum</em> ontbreekt.<br clear="none">
-                                    Voor IMBRO/A-gegevens kan het voorkomen dat de vervaldatum niet bepaald is, in dat
-                                    geval ontbreekt de waarde.</p>
-                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -907,8 +891,8 @@
                                     Het gegeven kan een nieuwe waarde krijgen bij een wijziging of beëindiging. In dat
                                     geval blijft de oude waarde behouden.<br clear="none">
                                     Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum
-                                    niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig en heeft
-                                    het gegeven geen waarde.<br clear="none">
+                                    niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig en ontbreekt
+                                    het gegeven.<br clear="none">
                                     De datum mag in de toekomst liggen.</p>
                                  </td>
                            </tr>
@@ -1023,7 +1007,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e3594">
+                  <section id="detail_d50702e3557">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1061,7 +1045,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e3779">
+                  <section id="detail_d50702e3742">
                      <h4>  levensduur</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1099,7 +1083,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e3964">
+                  <section id="detail_d50702e3927">
                      <h4>  vergunninggeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1137,7 +1121,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e4149">
+                  <section id="detail_d50702e4112">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1184,7 +1168,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e4375">
+                  <section id="detail_d50702e4338">
                      <h4>  vergunninghouder</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1230,7 +1214,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e4607">
+                  <section id="detail_d50702e4570">
                      <h4>  voorschrift</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1276,7 +1260,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e4833">
+                  <section id="detail_d50702e4796">
                      <h4>  lopende wijziging</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1314,7 +1298,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e5018">
+                  <section id="detail_d50702e4981">
                      <h4>  lopende intrekking</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2247,7 +2231,7 @@
                         </tr>
                      </tbody>
                   </table>
-                  <section id="detail_d50803e8086">
+                  <section id="detail_d50702e8049">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2924,8 +2908,8 @@
                               <td>
                                  
                                  <p>Het gebied moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
-                                    Het referentiestelsel moet gelijk zijn aan <em>RD</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Vergunninggebied</em> gelijk is aan <em>ja</em>.<br clear="none">
-                                    Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Vergunninggebied</em> gelijk is aan <em>nee</em>.</p>
+                                    Het referentiestelsel moet gelijk zijn aan <em>RD</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Mijnbouwwetvergunning</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> wanneer de waarde van het attribuut <em>onshore</em> van de entiteit <em>Mijnbouwwetvergunning</em> gelijk is aan <em>nee</em>.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3020,7 +3004,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e10839">
+                  <section id="detail_d50702e10802">
                      <h4>  dieptebereik</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3075,7 +3059,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e11132">
+                  <section id="detail_d50702e11095">
                      <h4>  geldigheid</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3089,7 +3073,8 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De periode gedurende welke het verleend gebied geldig is.</p>
+                                 <p>Een periode gedurende welke een aantal kenmerken van het verleend gebied ongewijzigd
+                                    geldig is.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3098,7 +3083,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Gegevensgroeptype</th>
@@ -3114,9 +3099,11 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Gedurende de periode dat het verleend gebied geldig is binnen de vergunning kunnen
-                                    er wijzigingen met betrekking tot het gebied plaatsvinden, bijvoorbeeld met betrekking
-                                    tot de aangeleverde begrenzing ervan.</p>
+                                 <p>In de loop van de tijd kunnen kenmerken van een verleend gebied wijzigen, bijvoorbeeld
+                                    de naam of de begrenzing ervan. Eén geldigheidsperiode betreft een periode waarin
+                                    deze kenmerken niet veranderen. Bij wijziging van één van deze kenmerken is er sprake
+                                    van een nieuwe geldigheidsperiode.<br clear="none">
+                                    Het gegeven is afwezig als de ingangsdatum van de vergunning nog niet bekend is.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3276,7 +3263,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e11891">
+                  <section id="detail_d50702e11862">
                      <h4>  geologische bovengrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3326,7 +3313,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e12125">
+                  <section id="detail_d50702e12096">
                      <h4>  geologische ondergrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3514,7 +3501,8 @@
                            <th>Definitie</th>
                            <td>
                               
-                              <p>Het tijdsinterval dat de geldigheid van het verleend gebied beschrijft.</p>
+                              <p>Een periode gedurende welke een aantal kenmerken van het verleend gebied ongewijzigd
+                                 geldig is.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3534,7 +3522,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum die het begin aangeeft van de periode gedurende welke het gebied geldig is.</p>
+                                 <p>De datum die het begin aangeeft van de geldigheidsperiode.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3543,7 +3531,7 @@
                            </tr>
                            <tr>
                               <th>Kardinaliteit</th>
-                              <td>1</td>
+                              <td>0..1</td>
                            </tr>
                            <tr>
                               <th>Domein</th>
@@ -3567,23 +3555,14 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De datum mag niet liggen voor de <em>ingangsdatum</em> van de entiteit <em>Mijnbouwwetvergunning</em>.</p>
+                                 <p>De datum mag niet liggen voor de <em>ingangsdatum</em> van de entiteit <em>Mijnbouwwetvergunning</em>.<br clear="none">
+                                    Het attribuut moet aanwezig zijn wanneer het attribuut <em>ingangsdatum</em> van de entiteit <em>Mijnbouwwetvergunning</em> aanwezig is.<br clear="none">
+                                    Het attribuut mag niet aanwezig zijn wanneer het attribuut <em>ingangsdatum</em> van de entiteit <em>Mijnbouwwetvergunning</em> niet aanwezig is.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Reden geen waarde</th>
-                              <td>
-                                 
-                                 <p>Het kan voorkomen dat de <em>ingangsdatum</em> van de <em>Mijnbouwwetvergunning</em> nog niet bepaald is, alleen in dat geval ontbreekt de waarde.</p>
-                                 </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
@@ -3611,7 +3590,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De datum waarop het gebied haar geldigheid heeft verloren.</p>
+                                 <p>De datum die het einde aangeeft van de geldigheidsperiode.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3812,7 +3791,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e13822">
+                  <section id="detail_d50702e13769">
                      <h4>  te wijzigen gegevens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4045,7 +4024,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e14655">
+                  <section id="detail_d50702e14602">
                      <h4>  gebiedsgegevens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4083,7 +4062,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50803e14840">
+                  <section id="detail_d50702e14787">
                      <h4>  vergunninghouder</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4322,7 +4301,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50803e15775">
+                  <section id="detail_d50702e15722">
                      <h4>  dieptebereik</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
