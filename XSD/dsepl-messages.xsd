@@ -21,7 +21,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.3">
+           version="1.0.4">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -41,6 +41,7 @@
     -->
 
     <xs:element name="parseFault" type="brocom:ParseFaultType"/>
+
     <xs:element name="dispatchDataRequest" type="dsepl:DispatchDataRequestType">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verzoek tot uitgifte van objectgegevens.</xs:documentation>
@@ -88,7 +89,7 @@
         <xs:complexContent>
             <xs:extension base="brocom:AbstractDispatchCharacteristicsRequestType">
                 <xs:sequence>
-                    <xs:element minOccurs="1" maxOccurs="1" name="criteria" nillable="false" type="dsepl:EPL_C_CriteriasetType">
+                    <xs:element minOccurs="1" maxOccurs="1" name="criteria" nillable="false" type="dsepl:EPL_CriteriasetType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
                         </xs:annotation>
@@ -524,7 +525,7 @@ Explanation: Een wijziging van de vergunninghouder wordt geregistreerd als een l
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="EPL_C_CriteriasetType">
+    <xs:complexType name="EPL_CriteriasetType">
         <xs:complexContent>
             <xs:extension base="brocom:CriteriaSetType">
                 <xs:sequence>

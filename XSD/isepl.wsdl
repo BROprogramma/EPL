@@ -28,15 +28,8 @@
 
     <wsdl:types>
         <xsd:schema xmlns:tns="http://www.broservices.nl/wsdl/isepl/1.0" targetNamespace="http://www.broservices.nl/wsdl/isepl/1.0">
-            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="./isepl-messages.xsd"/>
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
-            <!--
-            Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
-            Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
-            Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
-            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd"/>
-            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-            -->
+            <xsd:import namespace="http://www.broservices.nl/xsd/isepl/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepl/1.0/isepl-messages.xsd" />
+            <xsd:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd" />
         </xsd:schema>
     </wsdl:types>
 
@@ -46,6 +39,10 @@
 
     <wsdl:message name="replaceRequest">
         <wsdl:part name="request" element="msg:replaceRequest" />
+    </wsdl:message>
+
+    <wsdl:message name="insertRequest">
+        <wsdl:part name="request" element="msg:insertRequest" />
     </wsdl:message>
 
     <wsdl:message name="deleteRequest">
@@ -64,10 +61,6 @@
         <wsdl:part name="parseFault" element="msg:parseFault" />
     </wsdl:message>
 
-    <wsdl:message name="DeliveryResponsiblePartyHeader">
-        <wsdl:part name="deliveryResponsibleParty" element="brocom:deliveryResponsibleParty"/>
-    </wsdl:message>
-
     <wsdl:portType name="isepl">
         <wsdl:operation name="register">
             <wsdl:input message="tns:registrationRequest" wsam:Action="http://www.broservices.nl/wus/isepl/registrationRequest" />
@@ -76,6 +69,11 @@
         </wsdl:operation>
         <wsdl:operation name="replace">
             <wsdl:input message="tns:replaceRequest" wsam:Action="http://www.broservices.nl/wus/isepl/replaceRequest" />
+            <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
+            <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
+        </wsdl:operation>
+        <wsdl:operation name="insert">
+            <wsdl:input message="tns:insertRequest" wsam:Action="http://www.broservices.nl/wus/isepl/insertRequest" />
             <wsdl:output message="tns:intakeResponse" wsam:Action="http://www.broservices.nl/wus/isepl/intakeResponse" />
             <wsdl:fault message="tns:parseSoapFault" name="parseFault" wsam:Action="http://www.broservices.nl/wus/isepl/parseSoapFault" />
         </wsdl:operation>
@@ -97,7 +95,6 @@
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />
-                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
             </wsdl:input>
             <wsdl:output>
                 <soap:body use="literal" />
@@ -110,7 +107,18 @@
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />
-                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="parseFault">
+                <soap:fault name="parseFault" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="insert">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
             </wsdl:input>
             <wsdl:output>
                 <soap:body use="literal" />
@@ -123,7 +131,6 @@
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />
-                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
             </wsdl:input>
             <wsdl:output>
                 <soap:body use="literal" />
@@ -136,7 +143,6 @@
             <soap:operation soapAction="" style="document" />
             <wsdl:input>
                 <soap:body use="literal" />
-                <soap:header use="literal" part="deliveryResponsibleParty" message="tns:DeliveryResponsiblePartyHeader" />
             </wsdl:input>
             <wsdl:output>
                 <soap:body use="literal" />
