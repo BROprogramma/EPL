@@ -21,7 +21,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.4">
+           version="1.0.5">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -72,7 +72,7 @@
                 <xs:sequence>
                     <xs:element minOccurs="0" maxOccurs="1" name="dispatchDocument" nillable="false" type="brocom:AbstractRegistrationObjectPropertyType">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een mijnbouwwetvergunning registratieobject. Vanwege het polymorfe karakter is het type of een BRO_DO uit de package brocom of één van de types EPL_PO of EPL_PO_DP uit de package dsepl. Deze drie types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het element dispatchDocument bevat de gegevens van een mijnbouwwetvergunning registratieobject. Vanwege het polymorfe karakter is het type of een BRO_DO uit de package brocom of één van de types EPL_PO, EPL_PO_DP, EPL_PPO of EPL_PPO_DP uit de package dsepl. Deze vijf types hebben allen als gemeenschappelijke vader het type AbstractRegistrationObject uit de package brocom.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                 </xs:sequence>
@@ -224,7 +224,7 @@ Explanation: Er is sprake van opvolging wanneer de vergunning wordt gesplitst of
                     <xs:element minOccurs="1" maxOccurs="1" name="standardizedLocation" nillable="false" type="brocom:StandardizedLocationV2Type">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De begrenzing van het gebied op het aardoppervlak zoals die door de basisregistratie ondergrond is getransformeerd.
-Explanation: De gestandaardiseerde locatie van de mijnbouwwetvergunning is gedefinieerd als een multivlak en omvat alle geldige verleende gebieden van de vergunning.</xs:documentation>
+Explanation: De gestandaardiseerde locatie van de mijnbouwwetvergunning is gedefinieerd als een multivlak en omvat alle geldige verleende gebieden van de vergunning. Wanneer de vergunning niet meer geldig is, omvat de gestandaardiseerde locatie de laatste geldige toestand van het vergunningsgebied.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1" maxOccurs="1" name="licenceHolder" nillable="false" type="eplcom:LicenceHolderType">
@@ -267,6 +267,38 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
     <xs:complexType name="EPL_POPropertyType">
         <xs:sequence minOccurs="1">
             <xs:element ref="dsepl:EPL_PO"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPL_PPO_DP" type="dsepl:EPL_PPO_DPType" substitutionGroup="dsepl:EPL_PO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Definition: Het uitgiftedocument met de gegevens van een mijnbouwwetvergunning tijdens het starten van de registratie en de volledige objectgeschiedenis, dat wordt uitgeleverd als de afnemer tevens de bronhouder of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPL_PPO_DPType">
+        <xs:complexContent>
+            <xs:extension base="dsepl:EPL_PO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPL_PPO_DPPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepl:EPL_PPO_DP"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPL_PPO" type="dsepl:EPL_PPOType" substitutionGroup="dsepl:EPL_PPO_DP">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Definition: Het uitgiftedocument met de gegevens van mijnbouwwetvergunning tijdens het starten van de registratie en de volledige objectgeschiedenis, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPL_PPOType">
+        <xs:complexContent>
+            <xs:extension base="dsepl:EPL_PPO_DPType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPL_PPOPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepl:EPL_PPO"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -362,7 +394,7 @@ Explanation: De vergunninghouder staat vast op het moment dat de vergunning is v
             <xs:element ref="dsepl:EPL_C"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:element name="GrantedArea" type="dsepl:GrantedAreaType" substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het gebied of een gebiedsdeel waarvoor de vergunning verleend is.</xs:documentation>
@@ -413,8 +445,7 @@ Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verl
                     </xs:element>
                     <xs:element minOccurs="0" maxOccurs="1" name="validity" nillable="false" type="eplcom:ValidityType">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke het verleend gebied geldig is.
-Explanation: Gedurende de periode dat het verleend gebied geldig is binnen de vergunning kunnen er wijzigingen met betrekking tot het gebied plaatsvinden, bijvoorbeeld met betrekking tot de aangeleverde begrenzing ervan. Het gegeven is afwezig als de ingangsdatum van de vergunning nog niet bekend is."</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke het verleend gebied geldig is.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                 </xs:sequence>
@@ -427,7 +458,7 @@ Explanation: Gedurende de periode dat het verleend gebied geldig is binnen de ve
         </xs:sequence>
         <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
     </xs:complexType>
-    
+
     <xs:complexType name="AmendmentInProgressType">
         <xs:sequence>
             <xs:element name="plannedEffectiveDate" type="xs:date" minOccurs="0" maxOccurs="1">
