@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/EPL conceptueel/20210503</p>
       <p>Imvertor: 3.0.0</p>
-      <p>Model release: Conceptualmodel-EPLconceptueel-0.99-3-20210503-20240828-081802</p>
+      <p>Model release: Conceptualmodel-EPLconceptueel-0.99-3-20210503-20240920-083037</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -63,7 +63,7 @@
          <section>
             <h2>Het domeinmodel</h2>
             <section>
-               <div class="imageinfo overview"><img src="Images/EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563.png" usemap="#imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563"><area shape="rect" alt="Mijnbouwwetvergunning" coords="14,14,453,531" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Verleend gebied" coords="532,116,867,332" href="#global_class_Model_Verleendgebied"></map><p><b>Domeinmodel mijnbouwwetvergunning</b></p>
+               <div class="imageinfo overview"><img src="Images/EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563.png" usemap="#imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_A75AF5F5_F0DC_4d20_BF91_1F77F75E5563"><area shape="rect" alt="Mijnbouwwetvergunning" coords="14,14,453,531" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Verleend gebied" coords="532,116,867,349" href="#global_class_Model_Verleendgebied"></map><p><b>Domeinmodel mijnbouwwetvergunning</b></p>
                </div>
             </section>
          </section>
@@ -1007,7 +1007,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e3557">
+                  <section id="detail_d52096e3557">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1045,7 +1045,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e3742">
+                  <section id="detail_d52096e3742">
                      <h4>  levensduur</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1083,7 +1083,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e3927">
+                  <section id="detail_d52096e3927">
                      <h4>  vergunninggeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1121,7 +1121,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e4112">
+                  <section id="detail_d52096e4112">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1170,7 +1170,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e4340">
+                  <section id="detail_d52096e4340">
                      <h4>  vergunninghouder</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1216,7 +1216,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e4572">
+                  <section id="detail_d52096e4572">
                      <h4>  voorschrift</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1262,7 +1262,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e4798">
+                  <section id="detail_d52096e4798">
                      <h4>  lopende wijziging</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1300,7 +1300,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e4983">
+                  <section id="detail_d52096e4983">
                      <h4>  lopende intrekking</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2233,7 +2233,7 @@
                         </tr>
                      </tbody>
                   </table>
-                  <section id="detail_d50841e8051">
+                  <section id="detail_d52096e8051">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2762,6 +2762,15 @@
                               <p>Het gebied of een gebiedsdeel waarvoor de vergunning verleend is.</p>
                               </td>
                         </tr>
+                        <tr>
+                           <th>Regels</th>
+                           <td>
+                              
+                              <p>Exact één van de volgende gegevens moet aanwezig zijn: de gegevensgroep <em>dieptebereik</em>, de gegevensgroep <em>geologische lagen</em>, wanneer de waarde van het attribuut <em>verticaal begrensd</em> gelijk is aan <em>ja</em>.<br clear="none">
+                                 De volgende gegevens mogen niet aanwezig zijn in alle andere gevallen: de gegevensgroep
+                                 <em>dieptebereik</em>, de gegevensgroep <em>geologische lagen</em>.</p>
+                              </td>
+                        </tr>
                      </tbody>
                   </table>
                   <section id="detail_attribute_Model_Verleendgebied_gebiedsnummer">
@@ -3006,7 +3015,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e10804">
+                  <section id="detail_d52096e10819">
                      <h4>  dieptebereik</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3038,15 +3047,6 @@
                                  </td>
                            </tr>
                            <tr>
-                              <th>Regels</th>
-                              <td>
-                                 
-                                 <p>De gegevensgroep moet aanwezig zijn wanneer de waarde van het attribuut <em>verticaal begrensd</em> gelijk is aan <em>ja</em>.<br clear="none">
-                                    De gegevensgroep mag niet aanwezig zijn in alle andere gevallen.<br clear="none">
-                                    </p>
-                                 </td>
-                           </tr>
-                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Ja</td>
                            </tr>
@@ -3061,7 +3061,46 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e11097">
+                  <section id="detail_d52096e11051">
+                     <h4>  geologische lagen</h4>
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Gegevensgroep van Verleend gebied</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van
+                                    het gebied waarop het recht betrekking heeft.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>0..1</td>
+                           </tr>
+                           <tr>
+                              <th>Gegevensgroeptype</th>
+                              <td>
+                                 <a class="link" href="#global_class_Model_Geologischelagen">Geologische lagen</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </section>
+                  <section id="detail_d52096e11236">
                      <h4>  geldigheid</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3131,7 +3170,11 @@
                            <td>
                               
                               <p>Wanneer een vergunning in diepte wordt begrensd gebeurt dat meestal op basis van geologische
-                                 grenzen en soms door de diepte in meters uit te drukken.</p>
+                                 grenzen en soms door de diepte in meters uit te drukken.<br clear="none">
+                                 Wanneer alleen de geologische ondergrens (óf einddiepte) is aangegeven, dan kan het
+                                 dieptebereik geïnterpreteerd worden als het deel vanaf de aardbodem, tot deze ondergrens.<br clear="none">
+                                 Wanneer alleen de geologische bovengrens (óf begindiepte) is aangegeven, dan kan het
+                                 dieptebereik geïnterpreteerd worden als het deel vanaf deze bovengrens, en alles eronder.</p>
                               </td>
                         </tr>
                      </tbody>
@@ -3183,9 +3226,9 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
-                                    de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
-                                    Amsterdams Peil).</p>
+                                 <p>Bij de begrenzing van de diepte in meters gaat het om een globale diepte.<br clear="none">
+                                    De diepte wordt gegeven ten opzichte van de aardbodem als verticaal referentievlak.
+                                    De aardbodem is op land gelijk aan het maaiveld, en op zee gelijk aan de waterbodem.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -3245,15 +3288,15 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt
-                                    de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal
-                                    Amsterdams Peil).</p>
+                                 <p>Bij de begrenzing van de diepte in meters gaat het om een globale diepte.<br clear="none">
+                                    De diepte wordt gegeven ten opzichte van de aardbodem als verticaal referentievlak.
+                                    De aardbodem is op land gelijk aan het maaiveld, en op zee gelijk aan de waterbodem.</p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e11815">
+                  <section id="detail_d52096e11998">
                      <h4>  geologische bovengrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3303,7 +3346,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e12049">
+                  <section id="detail_d52096e12232">
                      <h4>  geologische ondergrens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3350,6 +3393,138 @@
                         </tbody>
                      </table>
                   </section>
+               </section>
+               <section id="global_class_Model_Geologischelagen">
+                  <h3>   Geologische lagen</h3>
+                  <div class="imageinfo "><img src="Images/EAID_10812F11_9FBA_4ba2_955D_C4C6EC751336.png" usemap="#imagemap-EAID_10812F11_9FBA_4ba2_955D_C4C6EC751336" alt="Diagram "></div>
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Type gegeven</th>
+                           <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van
+                                 het gebied waarop het recht betrekking heeft.</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <section id="detail_d52096e12599">
+                     <h4>  geologische laag</h4>
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Gegevensgroep van Geologische lagen</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Een eenheid die zich in horizontale richting uitstrekt en in verticale richting is
+                                    begrensd.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1..*</td>
+                           </tr>
+                           <tr>
+                              <th>Gegevensgroeptype</th>
+                              <td>
+                                 <a class="link" href="#global_class_Model_Geologischelaag">Geologische laag</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </section>
+               </section>
+               <section id="global_class_Model_Geologischelaag">
+                  <h3>   Geologische laag</h3>
+                  <div class="imageinfo "><img src="Images/EAID_50872051_4C17_4daa_B7DD_5F28F4D35105.png" usemap="#imagemap-EAID_50872051_4C17_4daa_B7DD_5F28F4D35105" alt="Diagram "></div>
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Type gegeven</th>
+                           <td>Entiteit</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Een eenheid die zich in horizontale richting uitstrekt en in verticale richting is
+                                 begrensd.</p>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <section id="detail_attribute_Model_Geologischelaag_eenheid">
+                     <h4>  eenheid</h4>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Type gegeven</th>
+                              <td>Attribuut van Geologische laag</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De geologische eenheid uit de Stratigrafische Nomenclator.</p>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Juridische status</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Domein</th>
+                              <td></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Naam</th>
+                              <td><a class="link" href="#detail_class_Model_GeologischeEenheid">GeologischeEenheid</a></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst uitbreidbaar</td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Identificerend gegeven</th>
+                              <td>Waarde</td>
+                           </tr>
+                           <tr>
+                              <th>Materiële geschiedenis</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
                </section>
                <section id="global_class_Model_Geologischvlak">
                   <h3>   Geologisch vlak</h3>
@@ -3789,7 +3964,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e13749">
+                  <section id="detail_d52096e14471">
                      <h4>  te wijzigen gegevens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4022,7 +4197,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e14582">
+                  <section id="detail_d52096e15305">
                      <h4>  gebiedsgegevens</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4060,7 +4235,7 @@
                         </tbody>
                      </table>
                   </section>
-                  <section id="detail_d50841e14767">
+                  <section id="detail_d52096e15490">
                      <h4>  vergunninghouder</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4299,7 +4474,7 @@
                         </tbody>
                      </table>
                      </section>
-                  <section id="detail_d50841e15702">
+                  <section id="detail_d52096e16425">
                      <h4>  dieptebereik</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
