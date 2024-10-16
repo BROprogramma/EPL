@@ -7,7 +7,7 @@
            targetNamespace="http://www.broservices.nl/xsd/eplcommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.4">
+           version="1.0.5">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -607,6 +607,11 @@ Explanation: De vergunning heeft betrekking op de ruimte onder het door het gebi
 Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="stratigraficDelimitation" nillable="false" type="eplcom:StratigraficDelimitationType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van het gebied waarop het recht betrekking heeft.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -704,6 +709,11 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied in de diepte.</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="stratigraficDelimitation" nillable="false" type="eplcom:StratigraficDelimitationType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van het gebied waarop het recht betrekking heeft.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="AreaToBeSplittedType">
@@ -730,7 +740,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
             <xs:element name="beginDepth" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De globale diepte vanaf waar de vergunning geldt.
-Explanation: Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal Amsterdams Peil).</xs:documentation>
+Explanation: Bij de begrenzing van de diepte in meters gaat het om een globale diepte. De diepte wordt gegeven ten opzichte van de aardbodem als verticaal referentievlak. De aardbodem is op land gelijk aan het maaiveld, en op zee gelijk aan de waterbodem.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
@@ -743,7 +753,7 @@ Explanation: Bij de begrenzing van de diepte in meters gaat het om een globale d
             <xs:element name="endDepth" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De globale diepte tot waar de vergunning geldt.
-Explanation: Bij de begrenzing van de diepte in meters gaat het om een globale diepte. Op zee wordt de diepte gegeven t.o.v. MSL (Mean Sea Level), op land ten opzichte van NAP (Normaal Amsterdams Peil).</xs:documentation>
+Explanation: Bij de begrenzing van de diepte in meters gaat het om een globale diepte. De diepte wordt gegeven ten opzichte van de aardbodem als verticaal referentievlak. De aardbodem is op land gelijk aan het maaiveld, en op zee gelijk aan de waterbodem.</xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
@@ -834,6 +844,24 @@ Explanation: Van vergunningen die zijn aangeleverd in het kader van archiefoverd
             <xs:element minOccurs="0" maxOccurs="1" name="depthRange" nillable="false" type="eplcom:DepthRangeType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied in de diepte.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="stratigraficDelimitation" nillable="false" type="eplcom:StratigraficDelimitationType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van het gebied waarop het recht betrekking heeft.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="StratigraficDelimitationType">
+        <xs:sequence>
+            <xs:element name="unit" minOccurs="1" maxOccurs="unbounded" type="eplcom:GeologicalUnitType">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <CodeListName>GeologicalUnit</CodeListName>
+                        <CodeListURI>urn:bro:epl:GeologicalUnit</CodeListURI>
+                    </xs:appinfo>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geologische eenheid uit de Stratigrafische Nomenclator.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>

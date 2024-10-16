@@ -8,7 +8,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.5">
+           version="1.0.6">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -430,6 +430,11 @@ Explanation: De vergunning heeft betrekking op de ruimte onder het door het gebi
 Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verleend. Het gegeven kan een nieuwe waarde krijgen bij een wijziging. In dat geval blijft de oude waarde behouden.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="stratigraficDelimitation" nillable="false" type="eplcom:StratigraficDelimitationType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van het gebied waarop het recht betrekking heeft.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
                     <xs:element minOccurs="0" maxOccurs="1" name="validity" nillable="false" type="eplcom:ValidityType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke het verleend gebied geldig is.</xs:documentation>
@@ -502,6 +507,11 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
             <xs:element minOccurs="0" maxOccurs="1" name="depthRange" nillable="false" type="eplcom:DepthRangeType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe begrenzing van het gebied in de diepte.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="stratigraficDelimitation" nillable="false" type="eplcom:StratigraficDelimitationType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De opeenvolging van geologische lagen die het deel van de ondergrond beschrijven van het gebied waarop het recht betrekking heeft.</xs:documentation>
                 </xs:annotation>
             </xs:element>
         </xs:sequence>
