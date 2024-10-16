@@ -78,8 +78,14 @@
                         </gml:Surface>
                     </eplcom:deliveredBoundary>
                     <eplcom:verticalBounded>nee</eplcom:verticalBounded>
-                    <!-- Optional:
+                    <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present
                     <eplcom:depthRange>?</eplcom:depthRange>
+                    -->
+                    <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                    <eplcom:stratigraficDelimitation>
+                        - 1 or more repetitions -
+                        <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                    </eplcom:stratigraficDelimitation>
                     -->
                 </eplcom:GrantedArea>
 			</eplcom:grantedArea>

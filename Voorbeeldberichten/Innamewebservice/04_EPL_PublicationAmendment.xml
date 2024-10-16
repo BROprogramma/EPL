@@ -109,7 +109,7 @@
                     </eplcom:deliveredBoundary>
                     <!-- Optional: -->
                     <eplcom:verticalBounded>ja</eplcom:verticalBounded>
-                    <!-- Optional: -->
+                    <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present -->
                     <eplcom:depthRange>
                         <!-- Optional: -->
                         <eplcom:beginDepth uom="m">3</eplcom:beginDepth>
@@ -126,6 +126,12 @@
                             <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
                         </eplcom:geologicalLowerBoundary>
                     </eplcom:depthRange>
+                    <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                    <eplcom:stratigraficDelimitation>
+                        - 1 or more repetitions -
+                        <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                    </eplcom:stratigraficDelimitation>
+                    -->
                 </eplcom:areaToBeAmended>
                 <!-- 0 or more repetitions:-->
                 <!--Een splitsing waarbij een verleend gebied wordt vervangen door 2 of meer gebieden.-->
@@ -158,6 +164,7 @@
                             </gml:Polygon>
                         </eplcom:deliveredBoundary>
                         <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                        <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present -->
                         <eplcom:depthRange>
                             <!-- optional: 
 							<eplcom:beginDepth uom="m">30</eplcom:beginDepth>
@@ -176,6 +183,12 @@
                                 <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
                             </eplcom:geologicalLowerBoundary>
                         </eplcom:depthRange>
+                        <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                        <eplcom:stratigraficDelimitation>
+                            - 1 or more repetitions -
+                            <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                        </eplcom:stratigraficDelimitation>
+                        -->
                     </eplcom:newArea>
                     <eplcom:newArea>
                         <eplcom:areaNumber>8</eplcom:areaNumber>
@@ -202,6 +215,7 @@
                             </gml:Polygon>
                         </eplcom:deliveredBoundary>
                         <eplcom:verticalBounded>ja</eplcom:verticalBounded>
+                        <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present -->
                         <eplcom:depthRange>
                             <!-- Optional:
 							<eplcom:beginDepth uom="m">300</eplcom:beginDepth>
@@ -220,6 +234,12 @@
                                 <eplcom:boundary codeSpace="urn:bro:epl:BoundaryGeologicalUnit">basis</eplcom:boundary>
                             </eplcom:geologicalLowerBoundary>
                         </eplcom:depthRange>
+                        <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                        <eplcom:stratigraficDelimitation>
+                            - 1 or more repetitions -
+                            <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                        </eplcom:stratigraficDelimitation>
+                        -->
                     </eplcom:newArea>
                 </eplcom:areaToBeSplitted>
             </eplcom:amendmentArea>

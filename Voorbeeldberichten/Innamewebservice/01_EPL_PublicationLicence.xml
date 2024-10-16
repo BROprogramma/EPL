@@ -110,7 +110,7 @@
                         </gml:Polygon>
                     </eplcom:deliveredBoundary>
                     <eplcom:verticalBounded>ja</eplcom:verticalBounded>
-                    <!-- Optional; required if verticalBounded = ja -->
+                    <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present -->
                     <eplcom:depthRange>
                         <!-- At least one of the 4 options must be present -->
                         <!-- Optional:
@@ -131,6 +131,12 @@
 						</eplcom:geologicalLowerBoundary>
 						-->
                     </eplcom:depthRange>
+                    <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                    <eplcom:stratigraficDelimitation>
+                        - 1 or more repetitions -
+                        <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                    </eplcom:stratigraficDelimitation>
+                    -->
                 </eplcom:GrantedArea>
             </eplcom:grantedArea>
             <eplcom:grantedArea>                
@@ -186,7 +192,7 @@
                         </gml:Polygon>
                     </eplcom:deliveredBoundary>
                     <eplcom:verticalBounded>ja</eplcom:verticalBounded>
-                    <!-- Optional; required if verticalBounded = ja -->
+                    <!-- Optional; required if and only if verticalBounded = ja and stratigraficDelimitation is not present -->
                     <eplcom:depthRange>
                         <!-- At least one of the 4 options must be present -->
                         <!-- Optional:
@@ -207,6 +213,12 @@
 						</eplcom:geologicalLowerBoundary>
 						-->
                     </eplcom:depthRange>
+                    <!-- Optional; required if and only if verticalBounded = ja and depthRange is not present
+                    <eplcom:stratigraficDelimitation>
+                        - 1 or more repetitions -
+                        <eplcom:unit codeSpace="urn:bro:epl:GeologicalUnit">?</eplcom:unit>
+                    </eplcom:stratigraficDelimitation>
+                    -->
                 </eplcom:GrantedArea>
             </eplcom:grantedArea>
         </eplcom:EPL_PublicationLicence>	
