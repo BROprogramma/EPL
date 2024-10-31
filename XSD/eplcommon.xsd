@@ -7,19 +7,16 @@
            targetNamespace="http://www.broservices.nl/xsd/eplcommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.5">
+           version="1.0.6">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
 
-    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
-    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="./gml-profile.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
     <!--
-    Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
-    Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
-    Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
     -->
@@ -33,7 +30,7 @@
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="objectIdAccountableParty" minOccurs="1" maxOccurs="1" type="xs:string">
+                    <xs:element name="objectIdAccountableParty" minOccurs="0" maxOccurs="1" type="xs:string">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.
 Explanation: Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder. Het is in de registratie opgenomen om de communicatie tussen de registerbeheerder en de bronhouder of dataleverancier te vergemakkelijken.</xs:documentation>
