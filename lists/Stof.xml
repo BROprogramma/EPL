@@ -28,7 +28,7 @@
 		<Waarde>waterstof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De stof waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H&lt;sub&gt;2&lt;/sub&gt;.</Omschrijving>
+		<Omschrijving>De stof waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H<sub>2</sub>.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>zoutWater</Waarde>

@@ -16,7 +16,7 @@
 		<Waarde>intrekkingDefinitief</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het intrekken van de verleende vergunning is definitief; het besluit is onherroepelijk en de intrekking is ingegaan. Het intrekkingsproces is daarmee voltooid en de vergunning is &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Het besluit tot het intrekken van de verleende vergunning is definitief; het besluit is onherroepelijk en de intrekking is ingegaan. Het intrekkingsproces is daarmee voltooid en de vergunning is <i>beëindigd</i>.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>intrekkingVastgesteld</Waarde>
@@ -28,7 +28,7 @@
 		<Waarde>intrekkingIngegaan</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De intrekking is ingegaan. Het intrekkingsproces is daarmee voltooid en de vergunning is &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De intrekking is ingegaan. Het intrekkingsproces is daarmee voltooid en de vergunning is beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>intrekkingAfgebroken</Waarde>
@@ -46,7 +46,7 @@
 		<Waarde>opvolgingVoltooid</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het verlenen van de vervolgvergunning is definitief; het besluit is onherroepelijk en de nieuwe vergunning is ingegaan. Het proces van opvolging is daarmee voltooid en de vergunning is &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Het besluit tot het verlenen van de vervolgvergunning is definitief; het besluit is onherroepelijk en de nieuwe vergunning is ingegaan. Het proces van opvolging is daarmee voltooid en de vergunning is beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>opvolgingAfgebroken</Waarde>
@@ -76,13 +76,13 @@
 		<Waarde>vergunningVerlopen</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De geldigheid van de vergunning is verlopen. De vergunning is daarmee &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De geldigheid van de vergunning is verlopen. De vergunning is daarmee beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>vergunningVervallen</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunningverlener deelt mee dat de vergunning is vervallen omdat de vergunninghouder afstand van de vergunning heeft gedaan of van rechtswege. De vergunning is daarmee &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunningverlener deelt mee dat de vergunning is vervallen omdat de vergunninghouder afstand van de vergunning heeft gedaan of van rechtswege. De vergunning is daarmee beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>verleningsbesluitBekendgemaakt</Waarde>
@@ -100,13 +100,13 @@
 		<Waarde>verleningDefinitief</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het verlenen van de vergunning is definitief; het besluit is onherroepelijk en de vergunning is ingegaan. Het verleningsproces is daarmee voltooid en de vergunning is &lt;i&gt;verleend&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Het besluit tot het verlenen van de vergunning is definitief; het besluit is onherroepelijk en de vergunning is ingegaan. Het verleningsproces is daarmee voltooid en de vergunning is verleend.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>verleningVastgesteld</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het verlenen van de vergunning is definitief; het besluit is onherroepelijk. De vergunning is nog niet ingegaan. De vergunning is daarmee &lt;i&gt;verleend&lt;/i&gt;. Het verleningsproces is nog niet voltooid.</Omschrijving>
+		<Omschrijving>Het besluit tot het verlenen van de vergunning is definitief; het besluit is onherroepelijk. De vergunning is nog niet ingegaan. De vergunning is daarmee verleend. Het verleningsproces is nog niet voltooid.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>verleningIngegaan</Waarde>
@@ -118,7 +118,7 @@
 		<Waarde>verleningAfgebroken</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunningverlener deelt mee dat hij zijn eerdere besluit tot het verlenen van de vergunning heeft ingetrokken. De aanvraag is tijdens het verleningsproces vervallen van rechtswege of omdat de vergunninghouder de aanvraag heeft ingetrokken. Het verleningsproces is daarmee afgebroken en de vergunning is &lt;i&gt;voortijdig beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunningverlener deelt mee dat hij zijn eerdere besluit tot het verlenen van de vergunning heeft ingetrokken. De aanvraag is tijdens het verleningsproces vervallen van rechtswege of omdat de vergunninghouder de aanvraag heeft ingetrokken. Het verleningsproces is daarmee afgebroken en de vergunning is voortijdig beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>weigeringGestart</Waarde>
@@ -130,7 +130,7 @@
 		<Waarde>weigeringVoltooid</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het weigeren van de vergunning is definitief; het besluit is onherroepelijk. Het beëindigingsproces is daarmee voltooid en de vergunning is &lt;i&gt;voortijdig beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>Het besluit tot het weigeren van de vergunning is definitief; het besluit is onherroepelijk. Het beëindigingsproces is daarmee voltooid en de vergunning is voortijdig beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>wijzigingsbesluitBekendgemaakt</Waarde>
@@ -172,7 +172,7 @@
 		<Waarde>ingetrokken</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is ingetrokken, op verzoek van de vergunninghouder of ambtshalve besloten door de vergunningverlener. Het intrekkingsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de intrekking is ingegaan. De vergunning is daarmee &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is ingetrokken, op verzoek van de vergunninghouder of ambtshalve besloten door de vergunningverlener. Het intrekkingsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de intrekking is ingegaan. De vergunning is daarmee beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>gewijzigd</Waarde>
@@ -184,12 +184,12 @@
 		<Waarde>opgevolgd</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is gesplitst of samengevoegd, of een vergunning voor een vervolgactiviteit is verleend. Het opvolgingsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de opvolging is ingegaan. De vergunning is daarmee &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is gesplitst of samengevoegd, of een vergunning voor een vervolgactiviteit is verleend. Het opvolgingsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de opvolging is ingegaan. De vergunning is daarmee beëindigd.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>verleend</Waarde>
 		<IMBRO> </IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is verleend. Het verleningsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de verlening is ingegaan. De vergunning is daarmee &lt;i&gt;verleend&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is verleend. Het verleningsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de verlening is ingegaan. De vergunning is daarmee verleend.</Omschrijving>
 	</NaamGebeurtenis>
 </domeintabel>

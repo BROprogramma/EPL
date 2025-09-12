@@ -10,7 +10,7 @@
 		<Waarde>verleend</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is verleend. De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen; het besluit is onherroepelijk. De vergunning is &lt;i&gt;verleend&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is verleend. De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen; het besluit is onherroepelijk. De vergunning is verleend.</Omschrijving>
 	</ActueleStatus>
 	<ActueleStatus>
 		<Waarde>voortijdigBeeindigdNietDefinitief</Waarde>
@@ -22,7 +22,7 @@
 		<Waarde>voortijdigBeeindigd</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is &lt;i&gt;voortijdig beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is voortijdig beëindigd.</Omschrijving>
 	</ActueleStatus>
 	<ActueleStatus>
 		<Waarde>wijzigingLoopt</Waarde>
@@ -46,6 +46,6 @@
 		<Waarde>beeindigd</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+		<Omschrijving>De vergunning is beëindigd.</Omschrijving>
 	</ActueleStatus>
 </domeintabel>
