@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<KaderAanlevering>
+		<Waarde>MBW</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De wet is op 1 januari 2003 in werking getreden.</Omschrijving>
+	</KaderAanlevering>
+	<KaderAanlevering>
+		<Waarde>archiefoverdracht</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De gegevens zijn aangeleverd in het kader van archiefoverdracht.</Omschrijving>
+	</KaderAanlevering>
+</domeintabel>
