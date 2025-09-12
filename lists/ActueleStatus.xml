@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ActueleStatus>
+		<Waarde>verleendNietDefinitief</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen; het besluit is nog niet onherroepelijk. Het verleningsproces loopt.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>verleend</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunning is verleend. De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen; het besluit is onherroepelijk. De vergunning is &lt;i&gt;verleend&lt;/i&gt;.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>voortijdigBeeindigdNietDefinitief</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunningverlener heeft besloten het verleningsproces af te breken en de vergunning voortijdig te beëindigen; het besluit is nog niet onherroepelijk. Het beëindigingsproces loopt.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>voortijdigBeeindigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunning is &lt;i&gt;voortijdig beëindigd&lt;/i&gt;.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>wijzigingLoopt</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunningverlener heeft besloten de vergunning te wijzigen; er loopt een wijzigingsproces.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>intrekkingLoopt</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunningverlener heeft besloten de vergunning in te trekken. Het beëindigingsproces loopt.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>opvolgingLoopt</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunningverlener heeft besloten de vergunning op te volgen. Het beëindigingsproces loopt.</Omschrijving>
+	</ActueleStatus>
+	<ActueleStatus>
+		<Waarde>beeindigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunning is &lt;i&gt;beëindigd&lt;/i&gt;.</Omschrijving>
+	</ActueleStatus>
+</domeintabel>

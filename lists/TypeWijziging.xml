@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TypeWijziging>
+		<Waarde>gebiedswijziging</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het vergunninggebied is gewijzigd; er zijn één of meer verleende gebieden af ge staan, gewijzigd of opgesplitst.</Omschrijving>
+	</TypeWijziging>
+	<TypeWijziging>
+		<Waarde>wijzigingGeenGebiedGeldigheidHouder</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ander gegeven dan het vergunninggebied, de geldigheidsduur of de vergunninghouder van de vergunning is gewijzigd.</Omschrijving>
+	</TypeWijziging>
+	<TypeWijziging>
+		<Waarde>wijzigingGeldigheid</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De geldigheid is gewijzigd; de geldigheidsduur van de vergunning is verlengd of de ingangsdatum is gewijzigd.</Omschrijving>
+	</TypeWijziging>
+	<TypeWijziging>
+		<Waarde>wijzigingVergunninghouder</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vergunninghouder is gewijzigd; er zijn één of meer organisaties tot de partij toegetreden, er zijn één of meer organisaties die de partij hebben verlaten, of de vergunning is overgegaan op een geheel nieuwe partij.</Omschrijving>
+	</TypeWijziging>
+</domeintabel>

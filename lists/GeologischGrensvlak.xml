@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GeologischGrensvlak>
+		<Waarde>basis</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De onderkant van de geologische eenheid.</Omschrijving>
+	</GeologischGrensvlak>
+	<GeologischGrensvlak>
+		<Waarde>top</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De bovenkant van de geologische eenheid.</Omschrijving>
+	</GeologischGrensvlak>
+</domeintabel>

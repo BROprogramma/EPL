@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Delfstof>
+		<Waarde>koolwaterstoffen</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De verzamelnaam voor de delfstoffen aardolie, condensaat en aardgas.</Omschrijving>
+	</Delfstof>
+	<Delfstof>
+		<Waarde>steenkool</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Steenkool.</Omschrijving>
+	</Delfstof>
+	<Delfstof>
+		<Waarde>steenzout</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Steenzout.</Omschrijving>
+	</Delfstof>
+</domeintabel>
