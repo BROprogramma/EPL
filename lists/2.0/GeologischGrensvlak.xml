@@ -7,6 +7,12 @@
 		<Omschrijving>De onderkant van de geologische eenheid.</Omschrijving>
 	</GeologischGrensvlak>
 	<GeologischGrensvlak>
+		<Waarde>midden</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het midden van de geologische eenheid.</Omschrijving>
+	</GeologischGrensvlak>
+	<GeologischGrensvlak>
 		<Waarde>top</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
