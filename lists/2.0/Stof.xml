@@ -4,36 +4,42 @@
 		<Waarde>aardgas</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Aardgas.</Omschrijving>
+		<Omschrijving>Een natuurlijk mengsel van gasvormige koolwaterstoffen dat voornamelijk bestaat uit methaan. Aardgas wordt opgeslagen in de ondergrond als energiebuffer.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>gasolie</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Gasolie (dieselolie).</Omschrijving>
+		<Omschrijving>Een aardolieproduct. Gasolie wordt opgeslagen in de ondergrond als strategische voorraad.</Omschrijving>
+	</Stof>
+	<Stof>
+		<Waarde>perslucht</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Lucht onder een hogere druk dan de atmosferische druk. Perslucht wordt opgeslagen in de ondergrond als energiebuffer.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>stikstof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Stikstof.</Omschrijving>
+		<Omschrijving>Een chemische verbinding met de chemische formule N<sub>2</sub>. Stikstof wordt opgeslagen in de ondergrond voor gebruik als toevoeging bij aardgas.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>vulstof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Een stof om een lege ruimte in de ondergrond op te vullen.</Omschrijving>
+		<Omschrijving>Een restproduct uit zoutproductie. Vulstof wordt in de ondergrond gebruikt voor de stabilisatie van zoutcavernes.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>waterstof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De stof waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H<sub>2</sub>.</Omschrijving>
+		<Omschrijving>Waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H<sub>2</sub>. Waterstof wordt opgeslagen in de ondergrond als energiebuffer.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>zoutWater</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Zout water.</Omschrijving>
+		<Omschrijving>Water dat (gedeeltelijk) verzadigd is met zout. Zout water is een restproduct (membraanconcentraat) van drinkwaterwinning. Zout water wordt geloosd in de ondergrond.</Omschrijving>
 	</Stof>
 </domeintabel>
