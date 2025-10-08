@@ -34,7 +34,7 @@
 		<Waarde>waterstof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H<sub>2</sub>.</Omschrijving>
+		<Omschrijving>Waterstof wordt ook aangeduid als diwaterstof of waterstofgas. In gasvorm is de chemische formule H<sub>2</sub>. Waterstof wordt opgeslagen in de ondergrond als energiebuffer.</Omschrijving>
 	</Stof>
 	<Stof>
 		<Waarde>zoutWater</Waarde>
@@ -43,3 +43,4 @@
 		<Omschrijving>Water dat (gedeeltelijk) verzadigd is met zout. Zout water is een restproduct (membraanconcentraat) van drinkwaterwinning. Zout water wordt geloosd in de ondergrond.</Omschrijving>
 	</Stof>
 </domeintabel>
+
