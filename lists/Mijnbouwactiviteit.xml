@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Mijnbouwactiviteit>
-		<Waarde>onderzoekMijnbouw</Waarde>
+		<Waarde>onderzoekAardwarmte</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het opsporen of winnen van delfstoffen uit de ondergrond op een diepte van meer dan 100 meter onder het aardoppervlak om gegevens te verzamelen voor wetenschappelijk onderzoek of beleid.</Omschrijving>
+		<Omschrijving>Het opsporen in of winnen van aardwarmte uit de ondergrond op een diepte van meer dan 500 meter onder het aardoppervlak om gegevens te verzamelen voor wetenschappelijk onderzoek of beleid.</Omschrijving>
+	</Mijnbouwactiviteit>
+	<Mijnbouwactiviteit>
+		<Waarde>onderzoekDelfstof</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het opsporen in of winnen van delfstoffen uit de ondergrond op een diepte van meer dan 100 meter onder het aardoppervlak om gegevens te verzamelen voor wetenschappelijk onderzoek of beleid.</Omschrijving>
 	</Mijnbouwactiviteit>
 	<Mijnbouwactiviteit>
 		<Waarde>opslaanCO2</Waarde>
@@ -16,7 +22,7 @@
 		<Waarde>opslaanStof</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het opslaan van stoffen in de ondergrond op een diepte van meer dan 100 meter onder het aardoppervlak , dan wel het terughalen van de opgeslagen stoffen.</Omschrijving>
+		<Omschrijving>Het opslaan van stoffen in de ondergrond op een diepte van meer dan 100 meter onder het aardoppervlak, dan wel het terughalen van de opgeslagen stoffen.</Omschrijving>
 	</Mijnbouwactiviteit>
 	<Mijnbouwactiviteit>
 		<Waarde>opsporenAardwarmte</Waarde>
@@ -55,3 +61,4 @@
 		<Omschrijving>Het winnen van kalksteen uit de ondergrond, met gebruikmaking van een boorgat, tunnel, schacht of ander ondergronds werk.</Omschrijving>
 	</Mijnbouwactiviteit>
 </domeintabel>
+
