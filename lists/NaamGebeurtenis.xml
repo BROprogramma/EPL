@@ -16,8 +16,7 @@
 		<Waarde>intrekkingDefinitief</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het besluit tot het intrekken van de verleende vergunning is definitief; het besluit is onherroepelijk en de intrekking is ingegaan.
-			Het intrekkingsproces is daarmee voltooid en de vergunning is <i>beëindigd</i>.</Omschrijving>
+		<Omschrijving>Het besluit tot het intrekken van de verleende vergunning is definitief; het besluit is onherroepelijk en de intrekking is ingegaan. Het intrekkingsproces is daarmee voltooid en de vergunning is <i>beëindigd</i>.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>intrekkingVastgesteld</Waarde>
@@ -41,7 +40,8 @@
 		<Waarde>opvolgingGestart</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunningverlener heeft het besluit genomen de vergunning te willen splitsen of samenvoegen, of een vergunning voor een vervolgactiviteit te willen verlenen. Het proces van opvolging is daarmee gestart.</Omschrijving>
+		<Omschrijving>De vergunningverlener heeft het besluit genomen de vergunning te willen splitsen of samenvoegen, of een vergunning voor een vervolgactiviteit te willen verlenen.
+			Het proces van opvolging is daarmee gestart.</Omschrijving>
 	</NaamGebeurtenis>
 	<NaamGebeurtenis>
 		<Waarde>opvolgingVoltooid</Waarde>
@@ -194,4 +194,5 @@
 		<Omschrijving>De vergunning is verleend. Het verleningsproces is geregistreerd als één gebeurtenis en dat is het moment waarop de verlening is ingegaan. De vergunning is daarmee verleend.</Omschrijving>
 	</NaamGebeurtenis>
 </domeintabel>
+
 
