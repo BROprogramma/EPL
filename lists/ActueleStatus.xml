@@ -10,7 +10,7 @@
 		<Waarde>verleend</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De vergunning is verleend. De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen. Onder het kwaliteitsregime IMBRO is het besluit onherroepelijk; onder IMBRO/A is dat niet altijd zo. De vergunning is verleend.</Omschrijving>
+		<Omschrijving>De vergunningverlener heeft besloten de vergunning aan een bepaalde partij te verlenen. Onder het kwaliteitsregime IMBRO is het besluit onherroepelijk; onder IMBRO/A is dat niet altijd zo. De vergunning is verleend.</Omschrijving>
 	</ActueleStatus>
 	<ActueleStatus>
 		<Waarde>voortijdigBeeindigdNietDefinitief</Waarde>
@@ -49,4 +49,5 @@
 		<Omschrijving>De vergunning is beëindigd.</Omschrijving>
 	</ActueleStatus>
 </domeintabel>
+
 
