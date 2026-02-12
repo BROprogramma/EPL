@@ -8,24 +8,25 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepl/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.6">
+           version="1.0.7">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
         </xs:appinfo>
     </xs:annotation>
-
+    <!--
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="./brocommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="./eplcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="./gml-profile.xsd"/>
-    <!--
+
     Bovenstaande import statements gebruiken een relatief pad naar een lokaal bestand als schemaLocation.
     Dit werkt prima zolang (de meest recente versie van) de betreffende XSD-bestanden nog niet beschikbaar zijn op de officiële locatie.
     Het heeft de voorkeur bovenstaande schemaLocations te vervangen door onderstaande schemaLocations naar de officiële locatie zodra dit kan, of gebruik te maken van een schema catalog indien de gebruikte tooling dit ondersteunt.
+    -->
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/eplcommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/eplcommon/1.0/eplcommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-    -->
+
 
     <xs:element name="parseFault" type="brocom:ParseFaultType"/>
 
@@ -176,7 +177,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
 Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval wordt de datum op een later moment vastgesteld. Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet en zijn aangeleverd in het kader van archiefoverdracht, kan de ingangsdatum niet bekend zijn. De datum mag in de toekomst liggen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="expiryDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                    <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de vergunning haar geldigheid zal verliezen, dan wel de datum waarop de vergunning haar geldigheid heeft verloren.
 Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval worden de ingangsdatum en vervaldatum op een later moment vastgesteld. Het gegeven kan een nieuwe waarde krijgen bij een wijziging of beëindiging. In dat geval blijft de oude waarde behouden. Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig en ontbreekt het gegeven. De datum mag in de toekomst liggen.</xs:documentation>
@@ -349,7 +350,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
 Explanation: Gewoonlijk staat de ingangsdatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval wordt de datum op een later moment vastgesteld. Van vergunningen die zijn verleend voor 1 januari 2003 onder voorgangers van de Mijnbouwwet en zijn aangeleverd in het kader van archiefoverdracht, kan de ingangsdatum niet bekend zijn. De datum mag in de toekomst liggen.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="expiryDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                    <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de vergunning haar geldigheid zal verliezen, dan wel de datum waarop de vergunning haar geldigheid heeft verloren.
 Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer in het definitieve besluit een voorwaarde is opgenomen waaraan de vergunninghouder moet hebben voldaan voordat de vergunning ingaat. In dat geval worden de ingangsdatum en vervaldatum op een later moment vastgesteld. Het gegeven kan een nieuwe waarde krijgen bij een wijziging of beëindiging. In dat geval blijft de oude waarde behouden. Van vergunningen die zijn aangeleverd in het kader van archiefoverdracht kan de vervaldatum niet bepaald zijn. In dat geval is de vergunning voor onbepaalde tijd geldig en ontbreekt het gegeven. De datum mag in de toekomst liggen.</xs:documentation>
@@ -524,7 +525,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
 Explanation: Gewoonlijk kan de ingangsdatum niet meer wijzigen vanaf het moment dat de vergunning is verleend. Er is één uitzondering en dat is wanneer de ingangsdatum na de datum ligt waarop het besluit definitief is vastgesteld. Zolang de vergunning niet is ingegaan, kan de ingangsdatum van de vergunning gewijzigd worden.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="expiryDate" type="xs:date" minOccurs="0" maxOccurs="1">
+            <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De nieuwe datum waarop de vergunning haar geldigheid zal verliezen.</xs:documentation>
                 </xs:annotation>
@@ -601,7 +602,7 @@ Explanation: De basisregistratie ondergrond kent automatisch de juiste waarde aa
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen de datum, die het begin aangeeft van de periode gedurende welke de vergunning geldig is, ligt.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="0" maxOccurs="1" name="expiryDatePeriod" nillable="false" type="brocom:DatePeriodType">
+                    <xs:element minOccurs="0" maxOccurs="1" name="endDatePeriod" nillable="false" type="brocom:DatePeriodType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het datuminterval waarbinnen de datum, waarop de vergunning haar geldigheid zal verliezen, dan wel de datum waarop de vergunning haar geldigheid heeft verloren, ligt.</xs:documentation>
                         </xs:annotation>
