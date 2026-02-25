@@ -7,7 +7,7 @@
            targetNamespace="http://www.broservices.nl/xsd/eplcommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.7">
+           version="1.0.8">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -636,7 +636,7 @@ Explanation: Het dieptebereik staat vast op het moment dat de vergunning is verl
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verleende gebieden waarvan de gegevens gewijzigd zullen worden zodra de wijziging ingaat.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="areaToBeSplitted" nillable="false" type="eplcom:AreaToBeSplittedType">
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="areaToBeSplit" nillable="false" type="eplcom:AreaToBeSplitType">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Verleende gebieden die zullen worden opgesplitst zodra de wijziging ingaat.</xs:documentation>
                 </xs:annotation>
@@ -713,7 +713,7 @@ Explanation: Gewoonlijk staat de vervaldatum vast op het moment dat de vergunnin
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="AreaToBeSplittedType">
+    <xs:complexType name="AreaToBeSplitType">
         <xs:sequence>
             <xs:element name="areaToBeReplaced" minOccurs="1" maxOccurs="1">
                 <xs:annotation>

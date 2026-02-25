@@ -1,0 +1,241 @@
+Changelog eplcommon.xsd
+-----------------------
+
+14-12-2021 v1.0.0
+    * initiele versie
+03-03-2023 v1.0.0
+    * EPL_PublicationTermination
+        * expiryDate from minOccurs 1 to minOccurs 0
+    * EPL_TerminationLicence
+        * expiryDate from minOccurs 1 to minOccurs 0
+13-06-2023 v1.0.0
+    * Added:
+        * sourcedocument EPL_AmendmentLicence
+            * as a root element
+            * as a type
+            * as a property type
+        * sourcedocument brondocument EPL_ClosureTermination
+            * as a root element
+            * as a type
+            * as a property type
+    * Moved:
+        * AreaDataType
+            * Moved to dsepl-messages.xsd
+        * DataToBeAmendedType
+            * Moved to dsepl-messages.xsd
+    * bug fixes:
+        * EPL_PublicationLicenceType
+            * decreeNumber
+                * was: type="xs:string"
+                * wordt: type="xs:string" maxLength = 30
+            * expiryDate:
+                * Added XML-attribute nilReason (optional, may be ignored).
+        * EPL_AdjustmentGranting
+            * decreeNumber
+                * was: type="xs:string"
+                * wordt: type="xs:string" maxLength = 30
+            * expiryDate:
+                * Added XML-attribute nilReason (optional, may be ignored).
+        * EPL_FinalisationGrantingType
+            * expiryDate:
+                * Added XML-attribute nilReason (optional, may be ignored).
+        * EPL_PublicationAmendment
+            * decreeNumber
+                * was: type="xs:string"
+                * wordt: type="xs:string" maxLength = 30
+        * EPL_ClosureAmendmentType
+            * effectiveDate
+                * was:
+                    type="brocom:PartialDateType"
+                    minOccurs="1"
+                * wordt:
+                    type="xs:date"
+                    minOccurs="0"
+        * EPL_PublicationTermination
+            * decreeNumber
+                * was: type="xs:string"
+                * wordt: type="xs:string" maxLength = 30
+            * expiryDate
+                * was: minOccurs="1"
+                * wordt: minOccurs="0"
+                * Added XML-attribute nilReason (optional, may be ignored).
+        * EPL_TerminationLicenceType
+            * expiryDate:
+                * Added XML-attribute nilReason (optional, may be ignored).
+        * GrantedAreaType
+            * verticalBounded
+                * was: type="brocom:IndicationYesNoType"
+                * wordt: type="brocom:IndicationYesNoUnknownType"
+        * AmendmentAreaType
+            * areaToBeRenounced
+                * was: type ="xs:integer"
+                * wordt type="xs:integer" totalDigits = 1
+        * AreaToBeAmendedType
+            * areaNumber
+                * was: type ="xs:integer"
+                * wordt type="xs:integer" totalDigits = 1
+                * areaName
+                * was: type="xs:string"
+                * wordt type="xs:string" maxLength = 100
+        * AreaToBeSplittedType
+                * areaToBeReplaced
+                * was: type ="xs:integer"
+                * wordt type="xs:integer" totalDigits = 1
+        * NewAreaType
+            * areaNumber
+                * was: type ="xs:integer"
+                * wordt; type="xs:integer" totalDigits = 1
+            * areaName
+                * was: type="xs:string"
+                * wordt type="xs:string" maxLength = 100
+        * WithdrawalInProgressType
+            * plannedWithdrawalDate
+                * was: minOccurs="0"
+                * wordt: minOccurs="1"
+        * choice sourceDocumentType
+            * Hernoemd in SourceDocumentType
+            * toegevoegde keuze elementen:
+                * eplcom:EPL_AmendmentLicence
+                * eplcom:EPL_ClosureTermination
+11-10-2023 v1.0.0
+    * Toegevoegd:
+        * EPL_PublicationAmendmentType
+            * effectiveDate 0..1 : xs:Date
+        * AmendmentLicenceHolderType
+            * organization 1..unbounded, nillable : brocom:OrganizationType
+        * GrantedAreaType
+            * validity
+                * annotation.documentation.Explanation = Gedurende de periode dat het verleend gebied geldig is binnen de vergunning kunnen er wijzigingen met betrekking tot het gebied plaatsvinden, bijvoorbeeld met betrekking tot de aangeleverde begrenzing ervan.
+    * Verwijderd
+        * EPL_PublicationTermination
+            * attribuut followedBy verwijderd.
+        * AmendmentLicenceHolderType
+            * attribuut departingOrganization verwijderd.
+            * attribuut joiningOrganization verwijderd.
+    * Gewijzigd:
+        * EPL_PublicationLicenceType
+            * effectiveDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+            * expiryDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_AdjustmentGrantingType
+            * effectiveDate
+                * was: 
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * nillable="false”
+                    * without nilreason
+            * expiryDate
+                * was: 
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_FinalisationGrantingType
+            * effectiveDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+            * expiryDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_ClosureAmendmentType
+            * effectiveDate
+                * was:
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * nillable="false”
+                    * without nilreason
+        * EPL_PublicationTerminationType
+            * expiryDate
+                * was:
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_TerminationLicenceType
+            * expiryDate
+                * was:
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * AmendmentValidityType
+            * effectiveDate
+                * annotation.documentation
+            * expiryDate
+                * annotation.documentation
+        * LicenceHolderType
+            * organization
+                * was:
+                    * nillable="false"
+                * wordt:
+                    * nillable="true"
+        * ValidityType
+            * startDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+11-10-2023 v1.0.2
+    * Verwijderd: attribuut validaty van GrantedArea.
+
+19-06-2024 v1.0.4 (previous version is 1.0.2)
+    * updated version number (no further changes).
+
+16-10-2024 v1.0.5
+    * stratigraficDelimitation toegevoegd naast depthRange en Explanation aangepast bij beginDepth en endDepth van DepthRange.
+
+31-10-2024 v1.0.6
+    * Kardinaliteit van objectIdAccountableParty gewijzigd van [1] naar [0..1].
+
+28-01-2026 v1.0.7
+    * expiryDate vervangen door endDate
+    * decreenumber in EPL_AmendmentLicense gewijzigd van [1] naar [0..1].
+
+18-02-2026 v1.0.8
+    * AreaToBeSplitted gewijzigd in AreaToBeSplit
