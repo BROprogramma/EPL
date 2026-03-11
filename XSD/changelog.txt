@@ -1,6 +1,7 @@
-Changelog eplcommon.xsd
------------------------
-
+Changelog eplcommon.xsd en dsepl-messages.xsd
+----------------------------------------------
+1. eplcommond.xd
+----------------------
 14-12-2021 v1.0.0
     * initiele versie
 03-03-2023 v1.0.0
@@ -239,3 +240,130 @@ Changelog eplcommon.xsd
 
 18-02-2026 v1.0.8
     * AreaToBeSplitted gewijzigd in AreaToBeSplit
+
+11-03-2026 v1.0.9
+    * Definities en Toelichtingen aangepast bij effectiveDates en endDates n.a.v. werkafspraken.
+
+------------------------
+2. dsepl-messages.xsd
+----------------------------
+
+14-12-2021 v1.0.0
+    * initiele versie
+
+13-06-2023 v1.0.0
+    * Added dispatch document EPL_PPO_DP.
+    * Added dispatch document EPL_PPO.
+    * EPL_PO_DPType:
+      - expiryDate:
+        + Added XML-attribute nilReason (optional, may be ignored).
+      - lifespan:
+        + was: minOccurs="0"
+        + wordt: minOccurs="1"
+    * EPL_CType:
+      - effectiveDate:
+        + was: minOccurs="0"
+        + wordt: minOccurs="1"
+      - expiryDate:
+        + was: minOccurs="0"
+        + wordt: minOccurs="1"
+        + Added XML-attribute nilReason (optional, may be ignored).
+    * AreaDataType:
+      - verticalBounded:
+        + was: type="IndicationYesNoUnknownType"
+        + wordt: type="IndicationYesNoType"
+    * EPL_C_CriteriasetType:
+      - licenceHolder:
+        + was: type="eplcom:LicenceHolderType"
+        + wordt: type="brocom:OrganizationType"
+    * EventType:
+      - sourceDocument:
+        + was: type="eplcom:sourceDocumentType"
+        + wordt: type="eplcom:SourceDocumentType"
+
+11-10-2023 v1.0.0
+    * Toegevoegd:
+        * DataToBeAmendedType
+            * licenceHolder 0..1 : eplcom:LicenceHolderType
+    * Verwijderd
+        * DataToBeAmendedType
+            * attribuut departingOrganization verwijderd.
+            * attribuut joiningOrganization verwijderd.
+    * Gewijzigd:
+        * EPL_PO_DPType
+            * effectiveDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+            * expiryDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_CType
+            * effectiveDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+            * expiryDate
+                * was: 
+                    * minOccurs="1"
+                    * nillable="true"
+                    * with nilreason
+                    * annotation.documentation.Explanation = … en heeft het gegeven geen waarde.
+                * wordt:
+                    * minOccurs="0"
+                    * nillable="false”
+                    * without nilreason
+                    * annotation.documentation.Explanation = … en ontbreekt het gegeven.
+        * EPL_C_CriteriasetType
+            * licenceHolder
+                * was:
+                    * nillable="false"
+                * wordt:
+                    * nillable="true"
+        * LifespanType
+            * startDate
+                * annotation.documentation
+11-10-2023 v1.0.2
+    * Toegevoegd:
+        * GrantedArea from eplcommon, inclusief attribuut validity.
+    * Gewijzigd:
+        * Type van attribuut grantedArea van EPL_PO_DPType is nu dsepl:GrantedAreaPropertyType.
+
+17-04-2024 v1.0.3
+    * Gewijzigd:
+        * Kardinaliteit van Validity veranderd naar [0..1] en toelichting hiervan uitgebruik conform werkafspraak.
+
+19-06-2024 v1.0.4
+    * Replaced EPL_C_CriteriasetType by EPL_CriteriasetType
+
+20-09-2024 v1.0.5
+    * Added dispatchdocuments EPL_PPO and EPL_PPO_DP.
+
+16-10-2024 v1.0.6
+    * stratigraficDelimitation toegevoegd naast depthRange en Explanation aangepast bij beginDepth en endDepth van DepthRange.
+
+28-01-2026 v1.0.7
+    * expiryDate vervangen door endDate bij DataToBeAmended, EPL_PO_DP en EPL_C.
+    * expiryDatePeriod vervangen door endDatePeriod bij EPL_Criteriaset.
+
+11-03-2026 v1.0.8
+    * Definities en Toelichtingen aangepast bij effectiveDates en endDates n.a.v. werkafspraken.
+
