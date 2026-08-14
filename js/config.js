@@ -5,16 +5,16 @@
   title:
     "Catalogus registratie ondergrond Mijnbouwwetvergunning",
   //subtitle: "Versie 2.0",
-  //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                 // Werkversie
+    //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
+  specStatus: "wv",// Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
   //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                 // Norm
-  //specType: "ST",                   // Standaard
-  specType: "IM",                 // Informatie Model
+  specType: "ST", // Standaard
+  //specType: "IM",                 // Informatie Model
   //specType: "PR",                 // Praktijkrichtlijn
   //specType: "HR",                 // HandReiking
   //specType: "WA",                 // Werkafspraak
@@ -28,14 +28,14 @@
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by", // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "EPL",
+  shortName: "epl",
   //-- publishDate is verplicht -------------------------------------------------------
-  //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
+  //-- De tag moet ingevuld zijn om de hyperlinks “Laatst gepubliceerde versie” en “Vorige versie” bovenaan de catalogus te tonen. Dit geldt ook voor een werkversie.
   publishDate: "2026-08-12",
   //custom header lines
-  //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
-  publishVersion: "2.1",
-  previousVersion: "2.0",
+  //publishVersion en previousVersion in de Werkversie invullen als “ “ (d.w.z. een spatie). De tag moet ingevuld zijn om de hyperlinks bovenaan de catalogus te tonen.
+  publishVersion: " ",
+  previousVersion: " ",
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit!
   previousPublishDate: "2021-10-21",
   previousMaturity: "def",
